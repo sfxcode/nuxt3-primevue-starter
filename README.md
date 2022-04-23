@@ -17,6 +17,7 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 - PrimeVue 3.12.x
 - Logging
 
+
 ## Plugins
 
 - [PrimeVue](https://www.primefaces.org/primevue/)
