@@ -1,0 +1,20 @@
+// Suggested location to add your overrides so that migration would be easy by just updating the SASS folder in the future
+
+a {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+button {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.p-radiobutton {
+  margin-right: 5px;
+}
+
+.field-radiobutton {
+  margin-top: 10px;
+}
+
