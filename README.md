@@ -30,16 +30,23 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 - [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine.
 - [Pinia](https://pinia.esm.dev/) - intuitive, type safe, light and flexible Store for Vue.
 
-## IDE
-
-We recommend using [VS Code](https://code.visualstudio.com/) with [Volar](https://github.com/johnsoncodehk/volar) to get the best experience (You might want to disable Vetur if you have it).
-
 ## Variations
 
-- [vitesse](https://github.com/antfu/vitesse) - Opinionated Vite Starter Template
-- [vitesse-lite](https://github.com/antfu/vitesse-lite) - Lightweight version of Vitesse
-- [vitesse-nuxt-bridge](https://github.com/antfu/vitesse-nuxt-bridge) - Vitesse for Nuxt 2 with Bridge
-- [vitesse-webext](https://github.com/antfu/vitesse-webext) - WebExtension Vite starter template
+### vite-primevue-starter
+
+[vite-primevue-starter](https://github.com/sfxcode/vite-primevue-starter) - Vite Primevue Starter Template
+
+* Pages, Layouts, and other NUXT like features by VITE Plugins
+* UnoCSS
+* Markdown
+* CachedPiniaStore
+* ...
+
+### vite-primevue-starter-lite
+
+[vite-primevue-starter-lite](https://github.com/sfxcode/vite-primevue-starter) - Vite Primevue Starter Template Lite
+
+Like vite-primevue-starter, but only with basic NUXT like functions
 
 ## Project setup and usage
 
