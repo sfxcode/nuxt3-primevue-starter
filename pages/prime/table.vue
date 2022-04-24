@@ -38,6 +38,8 @@
 
       </template>
     </DataTable>
+
+    <Button class="mt-6" label="Update Products" @click="update"/>
   </div>
 </template>
 
@@ -58,18 +60,17 @@ filters.value = {
   'inventoryStatus': {value: null, matchMode: FilterMatchMode.STARTS_WITH},
 };
 
-function updateTableData() {
-  tableData.value = dataStore.products as Array<any>;
+
+const {data:products, refresh:refreshProducts } = await useAsyncData('products', () => $fetch('/data/products.json'), {server: false})
+
+watch(products, (newProducts) => {
+  log.debug("number of products loaded: " + newProducts.data.length)
+  tableData.value = newProducts.data
+})
+
+const update = () => {
+  refreshProducts();
 }
-
-// mounted
-onMounted(async () => {
-  await dataStore.initData()
-  updateTableData();
-  log.debug(dataStore.products);
-
-});
-
 
 </script>
 
