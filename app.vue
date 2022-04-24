@@ -4,7 +4,7 @@ useHead({
   title: 'Nuxt 3 PrimeVue Starter',
   link: [
     {
-      id: 'theme-link', rel: 'stylesheet', href: '/themes/vela-blue/theme.css',
+      id: 'theme-link', rel: 'stylesheet', href: 'https://unpkg.com/primevue/resources/themes/vela-blue/theme.css',
     },
   ],
 })

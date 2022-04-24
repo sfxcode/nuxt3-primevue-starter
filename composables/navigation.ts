@@ -26,6 +26,7 @@ export function useNavigationMenu() {
             {
                 label: 'Pages',
                 items: [
+                    {label: 'Stores', icon: 'pi pi-fw pi-database', to: '/stores'},
                     {label: 'Server', icon: 'pi pi-fw pi-database', to: '/server'},
                     {label: 'Not Found', icon: 'pi pi-fw pi-exclamation-circle', to: '/unknown'},
                 ],

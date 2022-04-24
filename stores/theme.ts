@@ -1,7 +1,7 @@
 import {acceptHMRUpdate, defineStore} from 'pinia';
 
 export function updateTheme(themeName: string, themeColor: string) {
-  const newValue = '/themes/' + themeName + '-' + themeColor + '/theme.css'
+  const newValue = 'https://unpkg.com/primevue/resources/themes/' + themeName + '-' + themeColor + '/theme.css'
   const relElements = Array.prototype.slice.call(document.getElementsByTagName('link'));
   relElements.forEach( (element:HTMLElement) => {
     // @ts-ignore
