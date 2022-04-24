@@ -34,17 +34,25 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 
 ### vite-primevue-starter
 
-[vite-primevue-starter](https://github.com/sfxcode/vite-primevue-starter) - Vite Primevue Starter Template
+Vite Primevue Starter Template
+
+[Github Repository](https://github.com/sfxcode/vite-primevue-starter)
+
+[App on Netlify](https://vite-primevue-starter.netlify.app/)
 
 * Pages, Layouts, and other NUXT like features by VITE Plugins
 * UnoCSS
 * Markdown
 * CachedPiniaStore
+* i18n
+* Validation
 * ...
 
 ### vite-primevue-starter-lite
 
-[vite-primevue-starter-lite](https://github.com/sfxcode/vite-primevue-starter) - Vite Primevue Starter Template Lite
+[Github Repository](https://github.com/sfxcode/vite-primevue-starter-lite)
+
+[App on Netlify](https://vite-primevue-starter-lite.netlify.app/)
 
 Like vite-primevue-starter, but only with basic NUXT like functions
 
