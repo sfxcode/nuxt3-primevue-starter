@@ -10,7 +10,7 @@
     </div>
 
     <h5 class='font-bold text-2xl mb-4 text-blue-600'>Data Store</h5>
-    <span class='text-xs'>Example of a Cached Pinia Store, data is cached in local storage ...</span>
+    <span class='text-xs'>Example of a Data Store</span>
     <div class='grid grid-cols-2 mt-6 gap-4'>
       <div>Customers</div>
       <div>{{ dataStore.customers.length }}</div>

@@ -38,19 +38,15 @@
 
       </template>
     </DataTable>
-
-    <Button class="mt-6" label="Update Products" @click="update"/>
   </div>
 </template>
 
 <script setup lang='ts'>
-import {useDataStore} from '~/stores/data';
 import {FilterMatchMode} from 'primevue/api';
 import {useDataTable} from "~/composables/primevue/dataTable";
 import {useLogger} from "vue-logger-plugin";
 
 const log = useLogger();
-const dataStore = useDataStore();
 const {tableData, filters, dataTableRef, exportCSV} = useDataTable();
 
 filters.value = {
@@ -68,9 +64,10 @@ watch(products, (newProducts) => {
   tableData.value = newProducts.data
 })
 
-const update = () => {
+onMounted(async () => {
   refreshProducts();
-}
+});
+
 
 </script>
 
