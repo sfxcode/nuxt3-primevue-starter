@@ -1,5 +1,5 @@
 import { describe, test, expect, assert } from 'vitest'
-import {setup} from '@nuxt/test-utils-edge'
+import {setup} from '@nuxt/test-utils'
 
 describe('Nuxt Test Suite', () => {
 
