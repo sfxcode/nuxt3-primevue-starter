@@ -38,9 +38,6 @@ export default defineNuxtConfig({
         'primevue/resources/primevue.css',
         'primeicons/primeicons.css'
     ],
-    vite: {
-
-    },
     build: {
         transpile: ['primevue']
     },
