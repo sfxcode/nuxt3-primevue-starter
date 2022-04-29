@@ -1,46 +1,45 @@
-import {defineNuxtConfig} from 'nuxt'
+import { defineNuxtConfig } from 'nuxt'
 import pkg from './package.json'
 
 export default defineNuxtConfig({
-    publicRuntimeConfig: {
-        APP_VERSION: pkg.version,
-        APP_NAME: pkg.name,
-        LOG_LEVEL: 'debug'
+  publicRuntimeConfig: {
+    APP_VERSION: pkg.version,
+    APP_NAME: pkg.name,
+    LOG_LEVEL: 'debug',
+  },
+  modules: [
+    '@vueuse/nuxt',
+    '@unocss/nuxt',
+    '@pinia/nuxt',
+    '@nuxtjs/color-mode',
+  ],
+  experimental: {
+    reactivityTransform: true,
+    // viteNode: true,
+  },
+  vueuse: {
+    ssrHandlers: true,
+  },
+  unocss: {
+    uno: true,
+    attributify: true,
+    preflight: false,
+    icons: {
+      scale: 1.2,
     },
-    modules: [
-        '@vueuse/nuxt',
-        '@unocss/nuxt',
-        '@pinia/nuxt',
-        '@nuxtjs/color-mode',
+    shortcuts: [
+      ['btn', 'px-4 py-1 rounded inline-block bg-teal-600 text-white cursor-pointer hover:bg-teal-700 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
     ],
-    experimental: {
-        reactivityTransform: true,
-        // viteNode: true,
-    },
-    vueuse: {
-        ssrHandlers: true,
-    },
-    unocss: {
-        uno: true,
-        attributify: true,
-        preflight: false,
-        icons: {
-            scale: 1.2,
-        },
-        shortcuts: [
-            ['btn', 'px-4 py-1 rounded inline-block bg-teal-600 text-white cursor-pointer hover:bg-teal-700 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
-        ],
-    },
-    colorMode: {
-        classSuffix: '',
-    },
-    css: [
-        'primevue/resources/primevue.css',
-        'primeicons/primeicons.css'
-    ],
-    build: {
-        transpile: ['primevue']
-    },
-
+  },
+  colorMode: {
+    classSuffix: '',
+  },
+  css: [
+    'primevue/resources/primevue.css',
+    'primeicons/primeicons.css',
+  ],
+  build: {
+    transpile: ['primevue'],
+  },
 
 })

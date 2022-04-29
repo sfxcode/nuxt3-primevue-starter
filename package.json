@@ -1,24 +1,23 @@
 {
   "name": "nuxt3-primevue-starter",
   "version": "1.0.1",
-  "license": "MIT",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
     "info": "nuxi info",
+    "module": "nuxi init -t module my-module",
     "start": "node .output/server/index.mjs",
-    "lint": "eslint .",
+    "lint": "eslint --fix .",
     "test:unit": "vitest --run --reporter verbose",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "chart.js": "^3.7.1",
-    "pinia": "^2.0.13",
     "primeicons": "^5.0.0",
-    "primevue": "^3.12.6",
-    "vue-logger-plugin": "^2.2.2"
+    "primevue": "^3.12.6"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.21.1",
@@ -37,7 +36,7 @@
     "eslint": "^8.14.0",
     "nuxt": "^3.0.0-rc.1",
     "sass": "^1.51.0",
-    "typescript": "^4.6.3",
+    "typescript": "^4.6.4",
     "vitest": "^0.10.0"
   }
 }
