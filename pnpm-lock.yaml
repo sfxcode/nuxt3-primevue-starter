@@ -17,6 +17,7 @@ specifiers:
   chart.js: ^3.7.1
   eslint: ^8.14.0
   nuxt: ^3.0.0-rc.1
+  pinia: ^2.0.13
   primeicons: ^5.0.0
   primevue: ^3.12.6
   sass: ^1.51.0
@@ -25,6 +26,7 @@ specifiers:
 
 dependencies:
   chart.js: 3.7.1
+  pinia: 2.0.13_typescript@4.6.4
   primeicons: 5.0.0
   primevue: 3.12.6_primeicons@5.0.0
 
@@ -36,7 +38,7 @@ devDependencies:
   '@iconify-json/twemoji': 1.1.3
   '@nuxt/test-utils': 3.0.0-rc.1
   '@nuxtjs/color-mode': 3.0.2
-  '@pinia/nuxt': 0.1.8
+  '@pinia/nuxt': 0.1.8_pinia@2.0.13
   '@unocss/nuxt': 0.32.1
   '@vitejs/plugin-vue': 2.3.1
   '@vitest/ui': 0.10.0
@@ -886,11 +888,12 @@ packages:
       - webpack
     dev: true
 
-  /@pinia/nuxt/0.1.8:
+  /@pinia/nuxt/0.1.8_pinia@2.0.13:
     resolution: {integrity: sha512-+M1GH/4XQdooOulPL7aYzli6UE1R5rWJtgcPhx2/97yYRLhKZvuIT33OauUCjYZ+tQVs8lyKfzt6S2agqzcmWg==}
     peerDependencies:
       pinia: ~2.0.9
     dependencies:
+      pinia: 2.0.13_typescript@4.6.4
       vue-demi: 0.12.5
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -1493,7 +1496,6 @@ packages:
 
   /@vue/devtools-api/6.1.4:
     resolution: {integrity: sha512-IiA0SvDrJEgXvVxjNkHPFfDx6SXw0b/TUkqMcDZWNg9fnCAHbTpoo59YfJ9QLFkwa3raau5vSlRVzMSLDnfdtQ==}
-    dev: true
 
   /@vue/reactivity-transform/3.2.33:
     resolution: {integrity: sha512-4UL5KOIvSQb254aqenW4q34qMXbfZcmEsV/yVidLUgvwYQQ/D21bGX3DlgPUGI3c4C+iOnNmDCkIxkILoX/Pyw==}
@@ -5333,6 +5335,23 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /pinia/2.0.13_typescript@4.6.4:
+    resolution: {integrity: sha512-B7rSqm1xNpwcPMnqns8/gVBfbbi7lWTByzS6aPZ4JOXSJD4Y531rZHDCoYWBwLyHY/8hWnXljgiXp6rRyrofcw==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.1.4
+      typescript: 4.6.4
+      vue-demi: 0.12.5
+    dev: false
+
   /pkg-types/0.3.2:
     resolution: {integrity: sha512-eBYzX/7NYsQEOR2alWY4rnQB49G62oHzFpoi9Som56aUr8vB8UGcmcIia9v8fpBeuhH3Ltentuk2OGpp4IQV3Q==}
     dependencies:
@@ -7092,7 +7111,6 @@ packages:
     peerDependenciesMeta:
       '@vue/composition-api':
         optional: true
-    dev: true
 
   /vue-eslint-parser/8.3.0_eslint@8.14.0:
     resolution: {integrity: sha512-dzHGG3+sYwSf6zFBa0Gi9ZDshD7+ad14DGOdTLjruRVgZXe2J+DcZ9iUhyR48z5g1PqRa20yt3Njna/veLJL/g==}
