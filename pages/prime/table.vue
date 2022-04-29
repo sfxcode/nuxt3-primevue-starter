@@ -59,7 +59,7 @@ onMounted(async () => {
       <template #footer>
         <div class="flex justify-between">
           <span class="text-2xl">{{ tableData ? tableData.length : 0 }} Products</span>
-          <Button icon="pi pi-external-link" label="Export" @click="exportCSV($event)" />
+          <Button icon="pi pi-external-link" label="Export" @click="exportCSV" />
         </div>
       </template>
       <template #paginatorRight />

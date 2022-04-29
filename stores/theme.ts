@@ -9,8 +9,6 @@ export function updateTheme(themeName: string, themeColor: string) {
   })
 }
 
-// main is the name of the store. It is unique across your application
-// and will appear in devtools
 export const useThemeStore = defineStore('theme', {
   // a function that returns a fresh state
   state: () => ({
