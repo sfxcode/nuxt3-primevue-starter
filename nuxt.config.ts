@@ -2,10 +2,11 @@ import { defineNuxtConfig } from 'nuxt'
 import pkg from './package.json'
 
 export default defineNuxtConfig({
-  publicRuntimeConfig: {
-    APP_VERSION: pkg.version,
-    APP_NAME: pkg.name,
-    LOG_LEVEL: 'debug',
+  runtimeConfig: {
+    public: {
+      APP_VERSION: pkg.version,
+      APP_NAME: pkg.name,
+    },
   },
   modules: [
     '@vueuse/nuxt',
