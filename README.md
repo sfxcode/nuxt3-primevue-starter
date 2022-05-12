@@ -1,6 +1,6 @@
 # Nuxt 3 + PrimeVue Starter
 
-Build your VUE.js App with Nuxt3 (RC1). First Class PrimeVUE support.
+Build your VUE.js App with Nuxt3 (RC3). First Class PrimeVUE support.
 
 
 [![CI](https://github.com/sfxcode/nuxt3-primevue-starter/actions/workflows/main.yml/badge.svg)](https://github.com/sfxcode/nuxt3-primevue-starter/actions/workflows/main.yml)
@@ -15,7 +15,6 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 - Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
 - [State Management via Pinia](https://pinia.esm.dev)
 - PrimeVue 3.12.x
-- Logging
 
 
 ## Plugins
@@ -98,7 +97,7 @@ pnpm start
 
 ## Tools
 
-I use IntelliJ with VUE.js and Prettier plugin.
+I use IntelliJ with VUE.js plugin.
 
 ## Supporters
 
