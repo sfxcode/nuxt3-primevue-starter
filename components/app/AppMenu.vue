@@ -5,16 +5,16 @@ const props = defineProps<{
   model: Array<any>
 }>()
 
-const emit = defineEmits(['menuitem-click'])
+const emit = defineEmits(['menuItemClick'])
 
 function onMenuItemClick(event: any) {
-  emit('menuitem-click', event)
+  emit('menuItemClick', event)
 }
 </script>
 
 <template>
   <div class="layout-menu-container">
-    <AppSubmenu :items="model" class="layout-menu" :root="true" @menuitem-click="onMenuItemClick" />
+    <AppSubmenu :items="model" class="layout-menu" :root="true" @menu-item-click="onMenuItemClick" />
   </div>
 </template>
 

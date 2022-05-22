@@ -22,7 +22,6 @@ watch(products, (newProducts) => {
 onMounted(async () => {
   refreshProducts()
 })
-
 </script>
 
 <template>
@@ -31,11 +30,11 @@ onMounted(async () => {
 
     <DataTable
       ref="dataTableRef" v-model:filters="filters" :value="tableData"
-      data-key="name" :global-filter-fields="['name','code','inventoryStatus']"
+      data-key="name" :global-filter-fields="['name', 'code', 'inventoryStatus']"
       striped-rows
       :paginator="true" :rows="8"
       paginator-template="CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown"
-      :rows-per-page-options="[8,15,50]"
+      :rows-per-page-options="[8, 15, 50]"
       current-page-report-template="Showing {first} to {last} of {totalRecords}"
     >
       <template #header>
@@ -44,7 +43,7 @@ onMounted(async () => {
             <span class="text-xl">Products</span>
             <span class="p-input-icon-left">
               <i class="pi pi-search" />
-              <InputText v-model="filters['global'].value" placeholder="Globale Suche" />
+              <InputText v-model="filters.global.value" placeholder="Globale Suche" />
             </span>
           </div>
         </div>

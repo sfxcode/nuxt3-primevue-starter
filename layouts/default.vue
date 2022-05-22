@@ -125,14 +125,13 @@ onBeforeUpdate(() => {
     removeClass(document.body, 'body-overflow-hidden')
 },
 )
-
 </script>
 
 <template>
   <div :class="containerClass" @click="onWrapperClick">
     <AppTopBar @menu-toggle="onMenuToggle" />
     <div class="layout-sidebar" @click="onSidebarClick">
-      <AppMenu :model="navigation.navigationMenu()" @menuitem-click="onMenuItemClick" />
+      <AppMenu :model="navigation.navigationMenu()" @menu-item-click="onMenuItemClick" />
     </div>
 
     <div class="layout-main-container">

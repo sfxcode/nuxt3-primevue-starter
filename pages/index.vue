@@ -1,5 +1,6 @@
 <script setup lang='ts'>
-import AdvertiseBox from '@/components/AdvertiseBox.vue'; </script>
+import AdvertiseBox from '@/components/AdvertiseBox.vue'
+</script>
 
 <template>
   <div class="surface-0 text-center">

@@ -1,5 +1,4 @@
 <script setup>
-
 useHead({
   title: 'Nuxt 3 PrimeVue Starter',
   link: [

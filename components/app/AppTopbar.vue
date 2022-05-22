@@ -1,6 +1,7 @@
 <script setup lang='ts'>
-
 import { useThemeStore } from '@/stores'
+
+const emit = defineEmits(['menuToggle'])
 
 const themeStore = useThemeStore()
 const op = ref<any>(null)
@@ -13,12 +14,9 @@ function redirectToGithub(event: any) {
   window.open('https://github.com/sfxcode/nuxt3-primevue-starter', '_blank')
 }
 
-const emit = defineEmits(['menu-toggle'])
-
 function onMenuToggle(event: any) {
-  emit('menu-toggle', event)
+  emit('menuToggle', event)
 }
-
 </script>
 
 <template>
@@ -31,8 +29,14 @@ function onMenuToggle(event: any) {
     </button>
 
     <button
-      v-styleclass="{ selector: '@next', enterClass: 'hidden', enterActiveClass: 'scalein',
-                      toggleClass: 'hidden', leaveActiveClass: 'fadeout', hideOnOutsideClick: true}"
+      v-styleclass="{
+        selector: '@next',
+        enterClass: 'hidden',
+        enterActiveClass: 'scalein',
+        toggleClass: 'hidden',
+        leaveActiveClass: 'fadeout',
+        hideOnOutsideClick: true,
+      }"
       class="p-link layout-topbar-menu-button layout-topbar-button"
     >
       <i class="pi pi-ellipsis-v" />

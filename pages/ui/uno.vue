@@ -1,7 +1,5 @@
 <script setup lang='ts' xmlns:all="http://www.w3.org/1999/xhtml">
-
 const isDevelopmentMode = process.env.NODE_ENV?.indexOf('dev') !== -1
-
 </script>
 
 <template>

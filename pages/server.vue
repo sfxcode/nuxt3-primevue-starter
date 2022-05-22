@@ -1,5 +1,4 @@
 <script setup lang='ts'>
-
 import { useCounter } from '#imports'
 
 const count = useCounter()
