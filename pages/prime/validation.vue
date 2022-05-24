@@ -99,25 +99,22 @@ const submitHandler = async () => {
 </script>
 
 <template>
-  <div class="myFormkit">
-    <FormKit
-      id="form"
-      v-model="data"
-      type="form"
-      :submit-attrs="{
-        inputClass: 'p-button p-component',
-      }"
-      @submit="submitHandler"
-    >
-      <FormKitSchema :schema="schema" :data="data" />
-    </FormKit>
+  <div>
+    <div class="myFormkit">
+      <FormKit
+        id="form"
+        v-model="data"
+        type="form"
+        :submit-attrs="{
+          inputClass: 'p-button p-component',
+        }"
+        @submit="submitHandler"
+      >
+        <FormKitSchema :schema="schema" :data="data" />
+      </FormKit>
+    </div>
+    <h4>Data</h4>
+    <pre>{{ data }}</pre>
   </div>
-  <h4>Data</h4>
-  <pre>{{ data }}</pre>
 </template>
 
-<style lang='scss' scoped>
-.p-inputtext {
-  width: 500px;
-}
-</style>
