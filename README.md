@@ -17,16 +17,19 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 - PrimeVue 3.12.x
 
 
+
 ## Plugins
 
 - [PrimeVue](https://www.primefaces.org/primevue/)
 
 ## Nuxt Modules
 
-- [VueUse](https://github.com/vueuse/vueuse) - collection of useful composition APIs.
-- [ColorMode](https://github.com/nuxt-community/color-mode-module) - dark and Light mode with auto detection made easy with Nuxt.
-- [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine.
 - [Pinia](https://pinia.esm.dev/) - intuitive, type safe, light and flexible Store for Vue.
+- [VueUse](https://github.com/vueuse/vueuse) - collection of useful composition APIs.
+- [FormKit](https://formkit.com/) - Validation, PrimeVue Form elements by [formkit-primevue](https://github.com/sfxcode/formkit-primevue)
+- [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine.
+- [ColorMode](https://github.com/nuxt-community/color-mode-module) - dark and Light mode with auto detection made easy with Nuxt.
+
 
 ## Variations
 
