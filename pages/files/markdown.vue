@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div>
+  <div class="markdown">
     <ContentDoc path="/markdown" />
   </div>
 </template>

@@ -17,6 +17,10 @@ export default defineNuxtConfig({
     '@nuxt/content',
   ],
   content: {
+    highlight: {
+      theme: 'one-dark-pro',
+      preload: ['json', 'js', 'ts', 'html', 'css', 'vue'],
+    },
     // Options
   },
   experimental: {
