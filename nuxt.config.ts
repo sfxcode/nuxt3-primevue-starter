@@ -14,7 +14,11 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
     '@formkit/nuxt',
+    '@nuxt/content',
   ],
+  content: {
+    // Options
+  },
   experimental: {
     reactivityTransform: true,
     // viteNode: true,

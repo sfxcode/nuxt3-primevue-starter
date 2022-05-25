@@ -8,18 +8,24 @@ export function useNavigationMenu() {
         }],
       },
       {
-        label: 'UI Demo',
+        label: 'PrimeVue',
+        items: [
+          { label: 'DataTable', icon: 'pi pi-fw pi-table', to: '/prime/table' },
+          { label: 'Messages', icon: 'pi pi-fw pi-user-edit', to: '/prime/messages' },
+          { label: 'Validation', icon: 'pi pi-fw pi-user-edit', to: '/prime/validation' },
+        ],
+      },
+      {
+        label: 'UI',
         items: [
           { label: 'UnoCSS', icon: 'pi pi-fw pi-user-edit', to: '/ui/uno' },
           { label: 'Icons', icon: 'pi pi-fw pi-user-edit', to: '/ui/icons' },
         ],
       },
       {
-        label: 'PrimeVue',
+        label: 'Content',
         items: [
-          { label: 'DataTable', icon: 'pi pi-fw pi-table', to: '/prime/table' },
-          { label: 'Messages', icon: 'pi pi-fw pi-user-edit', to: '/prime/messages' },
-          { label: 'Validation', icon: 'pi pi-fw pi-user-edit', to: '/prime/validation' },
+          { label: 'Markdown', icon: 'pi pi-fw pi-user-edit', to: '/files/markdown' },
         ],
       },
       {
