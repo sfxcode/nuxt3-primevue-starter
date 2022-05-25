@@ -28,6 +28,7 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 - [VueUse](https://github.com/vueuse/vueuse) - collection of useful composition APIs.
 - [FormKit](https://formkit.com/) - Validation, PrimeVue Form elements by [formkit-primevue](https://github.com/sfxcode/formkit-primevue)
 - [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine.
+- [Content](https://content.nuxtjs.org) - parses .md, .yml, .csv and .json files
 - [ColorMode](https://github.com/nuxt-community/color-mode-module) - dark and Light mode with auto detection made easy with Nuxt.
 
 
