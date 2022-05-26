@@ -15,8 +15,8 @@ const { data, pending, error, refresh } = await useFetch(
   '/data/products.json',
 )
 
-watch(data, () => {
-  tableData.value = data.value.data
+watch(data, (newValue) => {
+  tableData.value = newValue.data
 })
 
 onMounted(async () => {
