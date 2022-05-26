@@ -21,9 +21,9 @@ function onMenuToggle(event: any) {
 
 <template>
   <div class="layout-topbar">
-    <router-link to="/" class="layout-topbar-logo">
+    <NuxtLink to="/" class="layout-topbar-logo">
       <span>Nuxt3 PrimeVue Starter</span>
-    </router-link>
+    </NuxtLink>
     <button class="p-link layout-menu-button layout-topbar-button" @click="onMenuToggle">
       <i class="pi pi-bars" />
     </button>

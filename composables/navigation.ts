@@ -10,7 +10,7 @@ export function useNavigationMenu() {
       {
         label: 'PrimeVue',
         items: [
-          { label: 'DataTable', icon: 'pi pi-fw pi-table', to: '/prime/table' },
+          { label: 'DataTable', icon: 'pi pi-fw pi-table', to: '/prime/datatable' },
           { label: 'Messages', icon: 'pi pi-fw pi-user-edit', to: '/prime/messages' },
           { label: 'Validation', icon: 'pi pi-fw pi-user-edit', to: '/prime/validation' },
         ],
