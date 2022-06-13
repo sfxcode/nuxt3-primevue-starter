@@ -15,7 +15,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2.2.2
         with:
-          version: 7.0.1
+          version: 7.2.1
 
       - name: Set node version to 16
         uses: actions/setup-node@v3
