@@ -2,7 +2,7 @@
 
 Hello World Form **Nuxt Content V2**
 
-[Link](/api/components/prose)
+[Link](/cms/sample)
 
 ### Code 
 
