@@ -32,7 +32,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
         Replacement / Alternative for VUEX Store
       </AdvertiseBox>
 
-      <AdvertiseBox header="Nuxt 3 (RC 3)" icon="prime-check-circle" color="green-400">
+      <AdvertiseBox header="Nuxt 3 (RC 4)" icon="prime-check-circle" color="green-400">
         Pages, Layouts, ...
       </AdvertiseBox>
       <AdvertiseBox header="Nitro" icon="prime-check-circle" color="green-400">
