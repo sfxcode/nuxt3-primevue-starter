@@ -15,7 +15,7 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 - Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
 - [State Management via Pinia](https://pinia.esm.dev)
 - PrimeVue 3.15.x
-
+- Vitest
 
 
 ## Plugins
@@ -30,6 +30,8 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 - [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine.
 - [Content](https://content.nuxtjs.org) - parses .md, .yml, .csv and .json files
 - [ColorMode](https://github.com/nuxt-community/color-mode-module) - dark and Light mode with auto detection made easy with Nuxt.
+- [Histoire](https://histoire.dev/?ref=madewithvuejs.com) (Storybook like Component Viewer)
+
 
 
 ## Variations

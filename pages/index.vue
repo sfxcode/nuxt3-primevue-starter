@@ -10,7 +10,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       <span class="text-green-400"> & Nuxt 3</span>
     </div>
     <h2 class="text-2xl pb-6">
-      Starter for Vue.js Development.
+      Starter for Vue.js Development with Nuxt 3.
     </h2>
     <div class="grid grid-cols-2 lg:grid-cols-3 gap-2">
       <AdvertiseBox header="PrimeVue 3.12" icon="prime-check-circle" color="green-600">

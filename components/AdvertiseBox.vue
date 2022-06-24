@@ -1,9 +1,20 @@
 <script setup lang='ts'>
-const props = defineProps<{
-  header: String
-  icon: String
-  color?: String
-}>()
+defineProps({
+  header: {
+    type: String,
+    default: null,
+    required: true,
+  },
+  icon: {
+    type: String,
+    default: null,
+    required: true,
+  },
+  color: {
+    type: String,
+    default: null,
+  },
+})
 </script>
 
 <template>

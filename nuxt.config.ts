@@ -2,6 +2,7 @@ import { defineNuxtConfig } from 'nuxt'
 import pkg from './package.json'
 
 export default defineNuxtConfig({
+  ssr: false,
   runtimeConfig: {
     public: {
       APP_VERSION: pkg.version,
