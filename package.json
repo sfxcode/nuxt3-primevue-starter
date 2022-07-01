@@ -1,6 +1,6 @@
 {
   "name": "nuxt3-primevue-starter",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -26,28 +26,28 @@
     "primevue": "^3.15.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.25.0",
-    "@formkit/nuxt": "1.0.0-beta.8",
+    "@antfu/eslint-config": "^0.25.2",
+    "@formkit/nuxt": "1.0.0-beta.9",
     "@histoire/plugin-nuxt": "^0.7.8",
-    "@iconify-json/carbon": "^1.1.3",
-    "@iconify-json/mdi": "^1.1.10",
-    "@iconify-json/prime": "^1.1.1",
-    "@iconify-json/twemoji": "^1.1.3",
-    "@nuxt/content": "^2.0.0",
+    "@iconify-json/carbon": "^1.1.6",
+    "@iconify-json/mdi": "^1.1.24",
+    "@iconify-json/prime": "^1.1.2",
+    "@iconify-json/twemoji": "^1.1.5",
+    "@nuxt/content": "^2.0.1",
     "@nuxt/test-utils": "^3.0.0-rc.4",
     "@nuxtjs/color-mode": "^3.0.2",
     "@pinia/nuxt": "^0.1.8",
-    "@sfxcode/formkit-primevue": "^0.5.3",
-    "@unocss/nuxt": "^0.39.3",
+    "@sfxcode/formkit-primevue": "^0.5.5",
+    "@unocss/nuxt": "^0.42.0",
     "@vitejs/plugin-vue": "^2.3.1",
-    "@vitest/ui": "^0.15.1",
-    "@vueuse/nuxt": "^8.7.4",
+    "@vitest/ui": "^0.16.0",
+    "@vueuse/nuxt": "^8.7.5",
     "c8": "^7.11.2",
     "eslint": "^8.18.0",
     "histoire": "^0.7.8",
     "nuxt": "^3.0.0-rc.4",
-    "sass": "^1.51.0",
+    "sass": "^1.53.0",
     "typescript": "^4.7.4",
-    "vitest": "^0.15.1"
+    "vitest": "^0.16.0"
   }
 }
