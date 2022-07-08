@@ -28,12 +28,21 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       <AdvertiseBox header="Script Setup" icon="prime-check-circle" color="green-600">
         Reduce a lot of boilerplate code
       </AdvertiseBox>
-      <AdvertiseBox header="Pinia Store 2" icon="prime-check-circle" color="blue-400">
-        Replacement / Alternative for VUEX Store
+      <AdvertiseBox header="Typescript 4.5" icon="prime-check-circle" color="blue-400">
+        Typesafe by default
       </AdvertiseBox>
 
       <AdvertiseBox header="Nuxt 3 (RC 4)" icon="prime-check-circle" color="green-400">
         Pages, Layouts, ...
+      </AdvertiseBox>
+      <AdvertiseBox header="Nuxt Content (V2)" icon="prime-check-circle" color="green-400">
+        Markdown, YML, CSV or JSON and MDC Syntax
+      </AdvertiseBox>
+      <AdvertiseBox header="VueUse" icon="prime-check-circle" color="green-600">
+        VueUse included
+      </AdvertiseBox>
+      <AdvertiseBox header="Pinia Store 2" icon="prime-check-circle" color="blue-400">
+        Replacement / Alternative for VUEX Store
       </AdvertiseBox>
       <AdvertiseBox header="Nitro" icon="prime-check-circle" color="green-400">
         Nuxt 3 Server Engine
@@ -41,12 +50,8 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       <AdvertiseBox header="Vitest" icon="prime-check-circle" color="blue-600">
         Testing with Vitest
       </AdvertiseBox>
-      <AdvertiseBox header="Typescript 4.5" icon="prime-check-circle" color="blue-400">
-        Typesafe by default
-      </AdvertiseBox>
-
-      <AdvertiseBox header="VueUse" icon="prime-check-circle" color="green-600">
-        VueUse Head included
+      <AdvertiseBox header="Histoire" icon="prime-check-circle" color="green-600">
+        Interactive Component Playgrounds
       </AdvertiseBox>
     </div>
   </div>

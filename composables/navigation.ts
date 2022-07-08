@@ -26,6 +26,7 @@ export function useNavigationMenu() {
         label: 'Content',
         items: [
           { label: 'Markdown', icon: 'pi pi-fw pi-user-edit', to: '/cms/markdown' },
+          { label: 'Component', icon: 'pi pi-fw pi-user-edit', to: '/cms/component' },
         ],
       },
       {

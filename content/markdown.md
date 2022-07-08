@@ -2,7 +2,9 @@
 
 Hello World Form **Nuxt Content V2**
 
-[Link](/cms/sample)
+### Navigation
+
+[Component Sample](/cms/component)
 
 ### Code 
 
