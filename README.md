@@ -1,6 +1,6 @@
 # Nuxt 3 + PrimeVue Starter
 
-Build your VUE.js App with Nuxt3 (RC4). First Class PrimeVUE support.
+Build your VUE.js App with Nuxt3 (RC6). First Class PrimeVUE support.
 
 
 [![CI](https://github.com/sfxcode/nuxt3-primevue-starter/actions/workflows/main.yml/badge.svg)](https://github.com/sfxcode/nuxt3-primevue-starter/actions/workflows/main.yml)
