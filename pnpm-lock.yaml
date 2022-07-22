@@ -10,7 +10,6 @@ specifiers:
   '@iconify-json/twemoji': ^1.1.5
   '@nuxt/content': ^2.0.1
   '@nuxt/test-utils': ^3.0.0-rc.6
-  '@nuxtjs/color-mode': ^3.0.2
   '@pinia/nuxt': ^0.3.0
   '@sfxcode/nuxt-primevue': ^0.5.0
   '@unocss/nuxt': ^0.44.5
@@ -39,7 +38,6 @@ devDependencies:
   '@iconify-json/twemoji': 1.1.5
   '@nuxt/content': 2.0.1
   '@nuxt/test-utils': 3.0.0-rc.6
-  '@nuxtjs/color-mode': 3.1.4
   '@pinia/nuxt': 0.3.0_typescript@4.7.4
   '@sfxcode/nuxt-primevue': 0.5.0
   '@unocss/nuxt': 0.44.5
@@ -1198,20 +1196,6 @@ packages:
       - sass
       - stylus
       - supports-color
-      - webpack
-    dev: true
-
-  /@nuxtjs/color-mode/3.1.4:
-    resolution: {integrity: sha512-3pxZNbZCFCzBgkyJLU/YvC2L2l1yRvITuD91zfJoIGm52PTx66y/Q1/UW8i9YFDVhJvvRd67s6eWvgaKQtTPlw==}
-    dependencies:
-      '@nuxt/kit': 3.0.0-rc.4
-      lodash.template: 4.5.0
-      pathe: 0.3.0
-    transitivePeerDependencies:
-      - esbuild
-      - rollup
-      - supports-color
-      - vite
       - webpack
     dev: true
 
