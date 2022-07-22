@@ -1,7 +1,7 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
 
 export function updateTheme(themeName: string, themeColor: string) {
-  const newValue = `https://unpkg.com/primevue/resources/themes/${themeName}-${themeColor}/theme.css`
+  const newValue = `https://cdn.jsdelivr.net/npm/primevue@3.15.0/resources/themes/${themeName}-${themeColor}/theme.css`
   const relElements = Array.prototype.slice.call(document.getElementsByTagName('link'))
   relElements.forEach((element: HTMLElement) => {
     if (element.getAttribute('href') && element.getAttribute('href').includes('/themes/'))

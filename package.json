@@ -1,6 +1,6 @@
 {
   "name": "nuxt3-primevue-starter",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -20,10 +20,7 @@
     "story:preview": "histoire preview"
   },
   "dependencies": {
-    "chart.js": "^3.8.0",
-    "pinia": "^2.0.16",
-    "primeicons": "^5.0.0",
-    "primevue": "^3.15.0"
+    "pinia": "^2.0.16"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",
@@ -37,7 +34,7 @@
     "@nuxt/test-utils": "^3.0.0-rc.6",
     "@nuxtjs/color-mode": "^3.0.2",
     "@pinia/nuxt": "^0.3.0",
-    "@sfxcode/formkit-primevue": "^0.5.5",
+    "@sfxcode/nuxt-primevue": "^0.5.0",
     "@unocss/nuxt": "^0.44.5",
     "@vitejs/plugin-vue": "^3.0.1",
     "@vitest/ui": "^0.18.1",

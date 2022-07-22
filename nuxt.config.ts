@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@formkit/nuxt',
     '@nuxt/content',
+    '@sfxcode/nuxt-primevue',
   ],
   content: {
     highlight: {
