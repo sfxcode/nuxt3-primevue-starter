@@ -1,7 +1,7 @@
 ---
 title: 'Nuxt Content'
 description: 'Component Sample'
-author: 'tom@sfxcode.com'
+author: 'Tom'
 ---
 
 ### Navigation
