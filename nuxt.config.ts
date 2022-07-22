@@ -13,7 +13,6 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
-    '@nuxtjs/color-mode',
     '@formkit/nuxt',
     '@nuxt/content',
     '@sfxcode/nuxt-primevue',
