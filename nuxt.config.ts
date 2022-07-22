@@ -10,12 +10,12 @@ export default defineNuxtConfig({
     },
   },
   modules: [
+    '@formkit/nuxt',
+    '@sfxcode/nuxt-primevue',
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
-    '@formkit/nuxt',
     '@nuxt/content',
-    '@sfxcode/nuxt-primevue',
   ],
   content: {
     highlight: {

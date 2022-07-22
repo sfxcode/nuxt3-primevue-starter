@@ -1,4 +1,8 @@
-## Nuxt Content
+---
+title: 'Nuxt Content'
+description: 'Markdown Sample Page'
+author: 'tom@sfxcode.com'
+---
 
 Hello World Form **Nuxt Content V2**
 

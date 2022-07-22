@@ -1,6 +1,8 @@
-## Nuxt Content
-
-Component Sample
+---
+title: 'Nuxt Content'
+description: 'Component Sample'
+author: 'tom@sfxcode.com'
+---
 
 ### Navigation
 
