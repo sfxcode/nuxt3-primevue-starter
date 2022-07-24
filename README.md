@@ -22,7 +22,7 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 - [Pinia](https://pinia.esm.dev/) - intuitive, type safe, light and flexible Store for Vue.
 - [VueUse](https://github.com/vueuse/vueuse) - collection of useful composition APIs.
 - [FormKit](https://formkit.com/) - Validation
-- [PrimeVue](https://github.com/sfxcode/nuxt-primevue) - PrimeVue Components and Services, PrimeVue Form elements by [formkit-primevue](https://github.com/sfxcode/formkit-primevue)
+- [PrimeVue](https://github.com/sfxcode/nuxt-primevue) - PrimeVue Components and Services, PrimeVue Form Validation by [formkit-primevue](https://github.com/sfxcode/formkit-primevue)
 - [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine.
 - [Content](https://content.nuxtjs.org) - parses .md, .yml, .csv and .json files
 - [Histoire](https://histoire.dev/?ref=madewithvuejs.com) (Storybook like Component Viewer)
