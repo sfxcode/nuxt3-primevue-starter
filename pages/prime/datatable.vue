@@ -1,8 +1,8 @@
 <script setup lang='ts'>
 import { FilterMatchMode } from 'primevue/api'
-import { useDataTable } from '~/composables/primevue/dataTable'
+import { usePrimeDataTable } from '#imports'
 
-const { tableData, filters, dataTableRef, exportCSV } = useDataTable()
+const { tableData, filters, dataTableRef, exportCSV } = usePrimeDataTable()
 
 filters.value = {
   global: { value: null, matchMode: FilterMatchMode.CONTAINS },
