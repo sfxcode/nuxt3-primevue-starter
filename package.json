@@ -25,6 +25,7 @@
     "@antfu/eslint-config": "^0.25.2",
     "@formkit/nuxt": "1.0.0-beta.10",
     "@histoire/plugin-nuxt": "^0.9.0",
+    "@histoire/plugin-vue": "^0.9.0",
     "@iconify-json/carbon": "^1.1.7",
     "@iconify-json/mdi": "^1.1.29",
     "@iconify-json/prime": "^1.1.2",
