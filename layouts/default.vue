@@ -14,8 +14,8 @@ const mobileMenuActive = ref(false)
 const menuClick = ref(false)
 const menuActive = ref(false)
 
-const toast = useToast()
 const primeVue = usePrimeVue()
+const toast = useToast()
 const route = useRoute()
 
 const navigation = useNavigationMenu()
