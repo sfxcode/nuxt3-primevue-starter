@@ -1,11 +1,6 @@
 import { assert, describe, expect, test } from 'vitest'
-import { setup } from '@nuxt/test-utils'
 
 describe('Nuxt Test Suite', () => {
-  setup({
-    // test context options
-  })
-
   test('JSON conversion', () => {
     const input = {
       foo: 'hello',
