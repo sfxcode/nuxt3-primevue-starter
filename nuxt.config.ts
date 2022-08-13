@@ -2,7 +2,7 @@ import { defineNuxtConfig } from 'nuxt'
 import pkg from './package.json'
 
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   runtimeConfig: {
     public: {
       APP_VERSION: pkg.version,
@@ -26,7 +26,6 @@ export default defineNuxtConfig({
   },
   experimental: {
     reactivityTransform: true,
-    // viteNode: true,
   },
   vueuse: {
     ssrHandlers: true,
