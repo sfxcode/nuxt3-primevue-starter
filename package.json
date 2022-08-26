@@ -1,6 +1,6 @@
 {
   "name": "nuxt3-primevue-starter",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "license": "MIT",
   "scripts": {
     "build": "nuxi build",
