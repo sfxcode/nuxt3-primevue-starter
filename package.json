@@ -1,6 +1,6 @@
 {
   "name": "nuxt3-primevue-starter",
-  "version": "1.1.9",
+  "version": "1.2.0",
   "license": "MIT",
   "scripts": {
     "build": "nuxi build",
@@ -27,25 +27,25 @@
     "@histoire/plugin-nuxt": "^0.10.7",
     "@histoire/plugin-vue": "^0.10.7",
     "@iconify-json/carbon": "^1.1.7",
-    "@iconify-json/mdi": "^1.1.31",
-    "@iconify-json/prime": "^1.1.2",
+    "@iconify-json/mdi": "^1.1.33",
+    "@iconify-json/prime": "^1.1.4",
     "@iconify-json/twemoji": "^1.1.5",
-    "@nuxt/content": "^2.1.0",
+    "@nuxt/content": "^2.1.1",
     "@nuxt/test-utils": "^3.0.0-rc.9",
     "@pinia/nuxt": "^0.4.2",
-    "@sfxcode/nuxt-primevue": "^0.8.0",
-    "@unocss/nuxt": "^0.45.18",
+    "@sfxcode/nuxt-primevue": "^0.8.2",
+    "@unocss/nuxt": "^0.45.21",
     "@vitejs/plugin-vue": "^3.1.0",
-    "@vitest/ui": "^0.23.2",
+    "@vitest/ui": "^0.23.4",
     "@vueuse/nuxt": "^9.2.0",
     "c8": "^7.12.0",
-    "eslint": "^8.23.0",
+    "eslint": "^8.23.1",
     "histoire": "^0.10.7",
     "jsdom": "^20.0.0",
-    "nuxt": "^3.0.0-rc.9",
+    "nuxt": "^3.0.0-rc.10",
     "pinia": "^2.0.22",
     "sass": "^1.54.9",
     "typescript": "^4.8.3",
-    "vitest": "^0.23.2"
+    "vitest": "^0.23.4"
   }
 }

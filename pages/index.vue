@@ -28,11 +28,11 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       <AdvertiseBox header="Script Setup" icon="prime-check-circle" color="green-600">
         Reduce a lot of boilerplate code
       </AdvertiseBox>
-      <AdvertiseBox header="Typescript 4.5" icon="prime-check-circle" color="blue-400">
+      <AdvertiseBox header="Typescript 4.8" icon="prime-check-circle" color="blue-400">
         Typesafe by default
       </AdvertiseBox>
 
-      <AdvertiseBox header="Nuxt 3 (RC 6)" icon="prime-check-circle" color="green-400">
+      <AdvertiseBox header="Nuxt 3 (RC 10)" icon="prime-check-circle" color="green-400">
         Pages, Layouts, ...
       </AdvertiseBox>
       <AdvertiseBox header="Nuxt Content (V2)" icon="prime-check-circle" color="green-400">
