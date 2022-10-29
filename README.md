@@ -14,7 +14,7 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 - [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
 - Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
 - [State Management via Pinia](https://pinia.esm.dev)
-- PrimeVue 3.15.x
+- PrimeVue 3.18.x
 - Vitest
 
 ## Nuxt Modules
