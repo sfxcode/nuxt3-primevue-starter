@@ -6,20 +6,13 @@ export const useDataStore = defineStore({
 
   state: () => ({
     appVersion: import.meta.env.VITE_APP_VERSION as string | undefined,
-    customers: [],
     products: [],
   }),
   actions: {
     async initData() {
-      if (this.customers.length === 0) {
+      if (this.products.length === 0) {
         consola.debug('fetching data ...')
-
-        await fetch('/data/customers-medium.json').then(res => res.json()).then((d) => {
-          this.customers = d.data
-        })
-          .catch(error => consola.error(error))
-
-        await fetch('/data/products.json').then(res => res.json()).then((d) => {
+        await fetch('/api/products').then(res => res.json()).then((d) => {
           this.products = d.data
         })
           .catch(error => consola.error(error))

@@ -26,8 +26,6 @@ onMounted(async () => {
     </h5>
     <span class="text-xs">Example of a Data Store</span>
     <div class="grid grid-cols-2 mt-6 gap-4">
-      <div>Customers</div>
-      <div>{{ dataStore.customers.length }}</div>
       <div>Products</div>
       <div>{{ dataStore.products.length }}</div>
     </div>
