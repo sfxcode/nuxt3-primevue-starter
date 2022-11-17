@@ -1,6 +1,8 @@
 <template>
-  <div class="card">
-    <PrimeDemoForm />
+  <div>
+    <div class="card">
+      <PrimeDemoForm />
+    </div>
   </div>
 </template>
 
