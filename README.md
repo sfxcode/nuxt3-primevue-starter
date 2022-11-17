@@ -47,14 +47,6 @@ Vite Primevue Starter Template
 * Validation
 * ...
 
-### vite-primevue-starter-lite
-
-[Github Repository](https://github.com/sfxcode/vite-primevue-starter-lite)
-
-[App on Netlify](https://vite-primevue-starter-lite.netlify.app/)
-
-Like vite-primevue-starter, but only with basic NUXT like functions
-
 ## Project setup and usage
 
 Install node:
