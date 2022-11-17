@@ -1,7 +1,7 @@
 import pkg from './package.json'
 
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
   runtimeConfig: {
     public: {
       APP_VERSION: pkg.version,
@@ -11,10 +11,10 @@ export default defineNuxtConfig({
   modules: [
     '@formkit/nuxt',
     '@sfxcode/nuxt-primevue',
-    '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxt/content',
+    '@vueuse/nuxt',
   ],
   content: {
     highlight: {
@@ -27,7 +27,7 @@ export default defineNuxtConfig({
     reactivityTransform: true,
   },
   vueuse: {
-    ssrHandlers: true,
+    // ssrHandlers: true, todo check if new version fixes useHead
   },
   unocss: {
     uno: true,
