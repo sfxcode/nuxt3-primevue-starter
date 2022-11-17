@@ -12,7 +12,7 @@ specifiers:
   '@nuxt/content': ^2.2.2
   '@nuxt/test-utils': ^3.0.0-rc.14
   '@pinia/nuxt': ^0.4.4
-  '@sfxcode/nuxt-primevue': ^0.9.2
+  '@sfxcode/nuxt-primevue': ^0.9.3
   '@unocss/nuxt': ^0.46.5
   '@vitejs/plugin-vue': ^3.2.0
   '@vitest/ui': ^0.25.2
@@ -39,7 +39,7 @@ devDependencies:
   '@nuxt/content': 2.2.2
   '@nuxt/test-utils': 3.0.0
   '@pinia/nuxt': 0.4.4_typescript@4.9.3
-  '@sfxcode/nuxt-primevue': 0.9.2
+  '@sfxcode/nuxt-primevue': 0.9.3
   '@unocss/nuxt': 0.46.5
   '@vitejs/plugin-vue': 3.2.0
   '@vitest/ui': 0.25.2
@@ -1586,8 +1586,8 @@ packages:
       rollup: 2.79.1
     dev: true
 
-  /@sfxcode/formkit-primevue/0.9.2:
-    resolution: {integrity: sha512-PFapVxi90HpTv0120xGYARzWs28I+0E1iIUD+SOU3CfHeO+OjZdZe1jt8ZX4LfILr6nf/zbtnDJgVABSSXZdCA==}
+  /@sfxcode/formkit-primevue/0.9.3:
+    resolution: {integrity: sha512-eIa4tCA+FeeiFvLEkS47EbJNKIAzTYNMZQRxhqOqqKlhk32kfCSkSTnYfxLVZmZ3XZns2yEnLj9Bt33yREyDMQ==}
     dependencies:
       '@formkit/i18n': 1.0.0-beta.12
       '@formkit/vue': 1.0.0-beta.12
@@ -1600,11 +1600,11 @@ packages:
       - windicss
     dev: true
 
-  /@sfxcode/nuxt-primevue/0.9.2:
-    resolution: {integrity: sha512-BlFWw/iNAWXUCzVb1/iAC8a1FziO/5qGTFtyoLvc5LEGRSDVITOhEn1H/ZxBpbFP70Iehu7N8iiKmQiVc0uXiQ==}
+  /@sfxcode/nuxt-primevue/0.9.3:
+    resolution: {integrity: sha512-NDFw8Ehe/QyS9LSfMj4QpHiSo0MnlaLov+MqqzoZRP3IP1gciZbjKDWJ8hVZFPiICawvivA7S13+/YFFQnHzGw==}
     dependencies:
       '@nuxt/kit': 3.0.0
-      '@sfxcode/formkit-primevue': 0.9.2
+      '@sfxcode/formkit-primevue': 0.9.3
       primeicons: 6.0.1
       primevue: 3.19.0_primeicons@6.0.1
     transitivePeerDependencies:
