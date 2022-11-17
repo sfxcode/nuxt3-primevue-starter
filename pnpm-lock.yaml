@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.31.0
-  '@formkit/nuxt': next
+  '@formkit/nuxt': ^1.0.0-beta.12
   '@histoire/plugin-nuxt': ^0.11.7
   '@histoire/plugin-vue': ^0.11.7
   '@iconify-json/carbon': ^1.1.10
