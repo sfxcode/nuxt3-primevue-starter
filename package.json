@@ -34,7 +34,7 @@
     "@nuxt/test-utils": "^3.0.0-rc.14",
     "@pinia/nuxt": "^0.4.4",
     "@sfxcode/nuxt-primevue": "^0.9.3",
-    "@unocss/nuxt": "^0.46.5",
+    "@unocss/nuxt": "^0.47.4",
     "@vitejs/plugin-vue": "^3.2.0",
     "@vitest/ui": "^0.25.2",
     "@vueuse/nuxt": "^9.5.0",
