@@ -5,8 +5,10 @@ import AppTopBar from '../components/app/AppTopbar.vue'
 import AppMenu from '../components/app/AppMenu.vue'
 import AppFooter from '../components/app/AppFooter.vue'
 import { useNavigationMenu } from '~/composables/navigation'
+import { useThemeStore } from '@/stores'
 
 const layoutMode = ref('static')
+const themeStore = useThemeStore()
 const layoutColorMode = ref('light')
 const staticMenuInactive = ref(false)
 const overlayMenuActive = ref(false)
@@ -128,6 +130,7 @@ onBeforeUpdate(() => {
 </script>
 
 <template>
+  <Link rel="stylesheet" :href="themeStore.link || 'https://cdn.jsdelivr.net/npm/primevue@3.15.0/resources/themes/vela-blue/theme.css'" />
   <div :class="containerClass" @click="onWrapperClick">
     <AppTopBar @menu-toggle="onMenuToggle" />
     <div class="layout-sidebar" @click="onSidebarClick">
@@ -142,4 +145,3 @@ onBeforeUpdate(() => {
     </div>
   </div>
 </template>
-
