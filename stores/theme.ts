@@ -2,11 +2,7 @@ import { acceptHMRUpdate, defineStore } from 'pinia'
 
 export function updateTheme(themeName: string, themeColor: string) {
   const newValue = `https://cdn.jsdelivr.net/npm/primevue@3.15.0/resources/themes/${themeName}-${themeColor}/theme.css`
-  const relElements = Array.prototype.slice.call(document.getElementsByTagName('link'))
-  relElements.forEach((element: HTMLElement) => {
-    if (element.getAttribute('href') && element.getAttribute('href').includes('/themes/'))
-      element.setAttribute('href', newValue)
-  })
+  return newValue
 }
 
 export const useThemeStore = defineStore('theme', {
@@ -14,6 +10,7 @@ export const useThemeStore = defineStore('theme', {
   state: () => ({
     themeName: 'vela',
     themeColor: 'blue',
+    link: 'https://cdn.jsdelivr.net/npm/primevue@3.15.0/resources/themes/vela-blue/theme.css',
   }),
   // optional getters
   getters: {
@@ -26,19 +23,19 @@ export const useThemeStore = defineStore('theme', {
   actions: {
     setDark() {
       this.themeName = 'arya'
-      updateTheme(this.themeName, this.themeColor)
+      this.link = updateTheme(this.themeName, this.themeColor)
     },
     setDim() {
       this.themeName = 'vela'
-      updateTheme(this.themeName, this.themeColor)
+      this.link = updateTheme(this.themeName, this.themeColor)
     },
     setLight() {
       this.themeName = 'saga'
-      updateTheme(this.themeName, this.themeColor)
+      this.link = updateTheme(this.themeName, this.themeColor)
     },
     setColor(colorName: string) {
       this.themeColor = colorName
-      updateTheme(this.themeName, this.themeColor)
+      this.link = updateTheme(this.themeName, this.themeColor)
     },
   },
 })
