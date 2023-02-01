@@ -22,7 +22,7 @@
     "@formkit/nuxt": "^1.0.0-beta.12"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.34.1",
+    "@antfu/eslint-config": "^0.35.1",
     "@formkit/nuxt": "^1.0.0-beta.12",
     "@histoire/plugin-nuxt": "^0.12.4",
     "@histoire/plugin-vue": "^0.12.4",
