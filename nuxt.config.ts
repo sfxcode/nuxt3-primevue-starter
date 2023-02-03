@@ -23,12 +23,6 @@ export default defineNuxtConfig({
     },
     // Options
   },
-  experimental: {
-    reactivityTransform: true,
-  },
-  vueuse: {
-    // ssrHandlers: true, todo check if new version fixes useHead
-  },
   unocss: {
     uno: true,
     attributify: true,
@@ -51,8 +45,4 @@ export default defineNuxtConfig({
     '@sfxcode/formkit-primevue/dist/sass/formkit-prime-inputs.scss',
     '@sfxcode/formkit-primevue/dist/sass/formkit-primevue.scss',
   ],
-  build: {
-    transpile: ['primevue'],
-  },
-
 })
