@@ -14,8 +14,12 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 ### I provide a full keycloak demo for test purposes. Please do not use it for production or with sensible data!
 
 https://keycloak.nicedemo.de/
-Admin user: demo - demo
-Vue user: demouser - 1234
+* Admin user: 
+ Username: demo 
+ Password: demo
+* Vue user: 
+ Username: demouser
+ Password: 1234
 
 add the follow .env file to this project:
 ```
