@@ -8,6 +8,10 @@ export default defineNuxtConfig({
       APP_NAME: pkg.name,
     },
   },
+  auth: {
+    enableGlobalAppMiddleware: true,
+    defaultProvider: 'keycloak'
+  },
   modules: [
     '@formkit/nuxt',
     '@sfxcode/nuxt-primevue',
@@ -15,6 +19,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxt/content',
     '@vueuse/nuxt',
+    '@sidebase/nuxt-auth'
   ],
   content: {
     highlight: {

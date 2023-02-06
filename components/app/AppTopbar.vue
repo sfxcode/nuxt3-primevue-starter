@@ -1,21 +1,28 @@
 <script setup lang='ts'>
-import { useThemeStore } from '@/stores'
+import { useThemeStore } from "@/stores";
 
-const emit = defineEmits(['menuToggle'])
+const emit = defineEmits(["menuToggle"]);
 
-const themeStore = useThemeStore()
-const op = ref<any>(null)
+const themeStore = useThemeStore();
+const op = ref<any>(null);
 
-function toggle(event: any) {
-  op.value.toggle(event)
+const { status, data, signIn, signOut } = useSession()
+const settingOverlay = ref<any>(null);
+const userOverlay = ref<any>(null);
+
+function toggleSettingOverlay(event: any) {
+  settingOverlay.value.toggle(event);
+}
+function toggleUserOverlay(event: any) {
+  userOverlay.value.toggle(event);
 }
 
 function redirectToGithub(event: any) {
-  window.open('https://github.com/sfxcode/nuxt3-primevue-starter', '_blank')
+  window.open("https://github.com/sfxcode/nuxt3-primevue-starter", "_blank");
 }
 
 function onMenuToggle(event: any) {
-  emit('menuToggle', event)
+  emit("menuToggle", event);
 }
 </script>
 
@@ -24,7 +31,10 @@ function onMenuToggle(event: any) {
     <NuxtLink to="/" class="layout-topbar-logo">
       <span>Nuxt3 PrimeVue Starter</span>
     </NuxtLink>
-    <button class="p-link layout-menu-button layout-topbar-button" @click="onMenuToggle">
+    <button
+      class="p-link layout-menu-button layout-topbar-button"
+      @click="onMenuToggle"
+    >
       <i class="pi pi-bars" />
     </button>
 
@@ -43,14 +53,18 @@ function onMenuToggle(event: any) {
     </button>
 
     <ul class="layout-topbar-menu hidden lg:flex origin-top">
+      <h3>{{ data?.user?.name }}</h3>
       <li>
-        <button class="p-link layout-topbar-button" @click="toggle">
+        <button
+          class="p-link layout-topbar-button"
+          @click="toggleSettingOverlay"
+        >
           <i class="pi pi-cog" />
           <span>Settings</span>
         </button>
       </li>
       <li>
-        <button class="p-link layout-topbar-button">
+        <button class="p-link layout-topbar-button" @click="toggleUserOverlay">
           <i class="pi pi-user" />
           <span>Profile</span>
         </button>
@@ -62,25 +76,48 @@ function onMenuToggle(event: any) {
         </button>
       </li>
     </ul>
+    <!-- Settings -->
+    <OverlayPanel id="overlay_panel" ref="settingOverlay" append-to="body" style="width: 200px">
+      ToDo     
+    </OverlayPanel>
+
+    <!-- Usersettings -->
+    <OverlayPanel id="overlay_panel" ref="userOverlay" append-to="body" style="width: 200px" class="text-center">
+      <Button label="SignOut" class="p-button-raised p-button-text p-button-link" @click="signOut()"></Button>
+    </OverlayPanel>
     <client-only>
-      <OverlayPanel id="overlay_panel" ref="op" append-to="body" style="width: 200px">
+      <OverlayPanel
+        id="overlay_panel"
+        ref="op"
+        append-to="body"
+        style="width: 200px"
+      >
         <div class="field-radiobutton">
           <RadioButton
-            id="saga" v-model="themeStore.themeName" name="layoutColorMode" value="saga"
+            id="saga"
+            v-model="themeStore.themeName"
+            name="layoutColorMode"
+            value="saga"
             @change="themeStore.setLight()"
           />
           <label>Light</label>
         </div>
         <div class="field-radiobutton">
           <RadioButton
-            id="vela" v-model="themeStore.themeName" name="layoutColorMode" value="vela"
+            id="vela"
+            v-model="themeStore.themeName"
+            name="layoutColorMode"
+            value="vela"
             @change="themeStore.setDim()"
           />
           <label>Dim</label>
         </div>
         <div class="field-radiobutton">
           <RadioButton
-            id="arya" v-model="themeStore.themeName" name="layoutColorMode" value="arya"
+            id="arya"
+            v-model="themeStore.themeName"
+            name="layoutColorMode"
+            value="arya"
             @change="themeStore.setDark()"
           />
           <label>Dark</label>
@@ -89,19 +126,23 @@ function onMenuToggle(event: any) {
         <h6>Primary Color</h6>
         <div class="flex">
           <div
-            style="width:2rem;height:2rem;border-radius:6px" class="bg-blue-500 mr-3 cursor-pointer"
+            style="width: 2rem; height: 2rem; border-radius: 6px"
+            class="bg-blue-500 mr-3 cursor-pointer"
             @click="themeStore.setColor('blue')"
           />
           <div
-            style="width:2rem;height:2rem;border-radius:6px" class="bg-green-500 mr-3 cursor-pointer"
+            style="width: 2rem; height: 2rem; border-radius: 6px"
+            class="bg-green-500 mr-3 cursor-pointer"
             @click="themeStore.setColor('green')"
           />
           <div
-            style="width:2rem;height:2rem;border-radius:6px" class="bg-yellow-300 mr-3 cursor-pointer"
+            style="width: 2rem; height: 2rem; border-radius: 6px"
+            class="bg-yellow-300 mr-3 cursor-pointer"
             @click="themeStore.setColor('orange')"
           />
           <div
-            style="width:2rem;height:2rem;border-radius:6px" class="bg-purple-500 cursor-pointer"
+            style="width: 2rem; height: 2rem; border-radius: 6px"
+            class="bg-purple-500 cursor-pointer"
             @click="themeStore.setColor('purple')"
           />
         </div>
