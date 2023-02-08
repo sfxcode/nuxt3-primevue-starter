@@ -7,6 +7,31 @@ Build your VUE.js App with Nuxt3. First Class PrimeVUE support. Validation by Fo
 
 THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for starter code
 
+## Added Feature Authentification with keycloak
+- [Sidebase nuxt-auth](https://sidebase.io/nuxt-auth/) - nuxt-auth is an open source Nuxt module that provides authentication for non-static Nuxt 3 applications.
+- preconfigured for keycloak
+
+### I provide a full keycloak demo for test purposes. Please do not use it for production or with sensible data!
+
+https://keycloak.nicedemo.de/
+* Admin user: 
+ Username: demo 
+ Password: demo
+* Vue user: 
+ Username: demouser
+ Password: 1234
+
+add the follow .env file to this project:
+```
+PORT=3000
+APP_NAME = "Nuxt 3 Auth Demo"
+AUTH_ORIGIN = "http://localhost:3000"
+AUTH_CLIENT_ID = "vuejs"
+AUTH_SECRET = "vX!#2CqBtT&cxY"
+AUTH_URL = "https://keycloak.nicedemo.de/"
+AUTH_REALM = "vue"
+```
+
 ## Features
 
 - [Nuxt 3](https://v3.nuxtjs.org) - SSR, ESR, File-based routing, components auto importing, modules, etc.
