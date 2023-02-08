@@ -13,7 +13,7 @@ specifiers:
   '@nuxt/test-utils': ^3.1.2
   '@pinia/nuxt': ^0.4.6
   '@sfxcode/nuxt-primevue': ^0.9.9
-  '@sidebase/nuxt-auth': 0.4.0-alpha.5
+  '@sidebase/nuxt-auth': 0.4.0-alpha.6
   '@unocss/nuxt': ^0.49.4
   '@vitejs/plugin-vue': ^4.0.0
   '@vitest/ui': ^0.28.4
@@ -30,7 +30,7 @@ specifiers:
   vitest: ^0.28.4
 
 dependencies:
-  '@sidebase/nuxt-auth': 0.4.0-alpha.5_next-auth@4.18.8
+  '@sidebase/nuxt-auth': 0.4.0-alpha.6_next-auth@4.18.8
   next-auth: 4.18.8
 
 devDependencies:
@@ -1912,8 +1912,8 @@ packages:
       - windicss
     dev: true
 
-  /@sidebase/nuxt-auth/0.4.0-alpha.5_next-auth@4.18.8:
-    resolution: {integrity: sha512-ST87T0b9JpHjN8kIi9ZhJYnuKC+7106w8mRxJZajPb05dXJ/HRViSE8qdrxQN2khWfEKao9BYoYmNZg8jSRLLQ==}
+  /@sidebase/nuxt-auth/0.4.0-alpha.6_next-auth@4.18.8:
+    resolution: {integrity: sha512-IqQXaK6aISFt3Q2QKkAz+D4H+XpN/aNLaSSaz+YUqWcf8cTUGNCVMWWYvkHIuD2zqEWgaWKIkj90ZJ2WIsRHMw==}
     peerDependencies:
       next-auth: ^4.18.8
     dependencies:
@@ -8205,14 +8205,6 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /rollup/3.11.0:
-    resolution: {integrity: sha512-+uWPPkpWQ2H3Qi7sNBcRfhhHJyUNgBYhG4wKe5wuGRj2m55kpo+0p5jubKNBjQODyPe6tSBE3tNpdDwEisQvAQ==}
-    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
-    hasBin: true
-    optionalDependencies:
-      fsevents: 2.3.2
-    dev: true
-
   /rollup/3.13.0:
     resolution: {integrity: sha512-HJwQtrXAc0AmyDohTJ/2c+Bx/sWPScJLlAUJ1kuD7rAkCro8Cr2SnVB2gVYBiSLxpgD2kZ24jbyXtG++GumrYQ==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
@@ -9463,7 +9455,7 @@ packages:
       esbuild: 0.16.17
       postcss: 8.4.21
       resolve: 1.22.1
-      rollup: 3.11.0
+      rollup: 3.13.0
       sass: 1.58.0
     optionalDependencies:
       fsevents: 2.3.2
@@ -9498,7 +9490,7 @@ packages:
       esbuild: 0.16.17
       postcss: 8.4.21
       resolve: 1.22.1
-      rollup: 3.11.0
+      rollup: 3.13.0
       sass: 1.58.0
     optionalDependencies:
       fsevents: 2.3.2

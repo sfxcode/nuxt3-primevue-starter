@@ -46,7 +46,7 @@
     "vitest": "^0.28.4"
   },
   "dependencies": {
-    "@sidebase/nuxt-auth": "0.4.0-alpha.5",
+    "@sidebase/nuxt-auth": "0.4.0-alpha.6",
     "next-auth": "4.18.8"
   }
 }
