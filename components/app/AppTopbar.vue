@@ -6,7 +6,6 @@ const emit = defineEmits(["menuToggle"]);
 const themeStore = useThemeStore();
 const op = ref<any>(null);
 
-const { status, data, signIn, signOut } = useSession()
 const settingOverlay = ref<any>(null);
 const userOverlay = ref<any>(null);
 
@@ -83,7 +82,7 @@ function onMenuToggle(event: any) {
 
     <!-- Usersettings -->
     <OverlayPanel id="overlay_panel" ref="userOverlay" append-to="body" style="width: 200px" class="text-center">
-      <Button label="SignOut" class="p-button-raised p-button-text p-button-link" @click="signOut()"></Button>
+      <!-- <Button label="SignOut" class="p-button-raised p-button-text p-button-link" @click="signOut()"></Button> -->
     </OverlayPanel>
     <client-only>
       <OverlayPanel

@@ -9,8 +9,7 @@ export default defineNuxtConfig({
     },
   },
   auth: {
-    enableGlobalAppMiddleware: true,
-    defaultProvider: 'keycloak'
+    enableGlobalAppMiddleware: true
   },
   modules: [
     '@formkit/nuxt',
@@ -18,8 +17,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxt/content',
-    '@vueuse/nuxt',
-    '@sidebase/nuxt-auth'
+    '@vueuse/nuxt'
   ],
   content: {
     highlight: {

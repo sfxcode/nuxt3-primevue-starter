@@ -1,28 +1,28 @@
 <script setup lang='ts'>
 import AdvertiseBox from '@/components/AdvertiseBox.vue'
 
-const headers = useRequestHeaders(['cookie']) as HeadersInit
-  const { data: jwtToken } = await useFetch('/api/token', { headers })
-  const { data: jwtTokenDecoded } = await useFetch('/api/token_decoded', { headers })
+// const headers = useRequestHeaders(['cookie']) as HeadersInit
+//   const { data: jwtToken } = await useFetch('/api/token', { headers })
+//   const { data: jwtTokenDecoded } = await useFetch('/api/token_decoded', { headers })
 
-  let testApiCallResult = ref<string>();
-const testApiCall = async () => {
-  testApiCallResult.value = 'loading'
+//   let testApiCallResult = ref<string>();
+// const testApiCall = async () => {
+//   testApiCallResult.value = 'loading'
 
-  let url = '/api/Posts'
-  testApiCallResult.value =  await $fetch(url, {
-      method: "GET",
-      baseURL: 'https://localhost:44314',
-      credentials: 'omit',
-      headers: {
-        'pragma': 'no-cache',
-        'cache': 'no-cache',
-        'cache-control': 'no-cache',
-        'Expires': '0',
-        'Authorization': `Bearer ${jwtToken.value}`
-      },      
-  })
-};
+//   let url = '/api/Posts'
+//   testApiCallResult.value =  await $fetch(url, {
+//       method: "GET",
+//       baseURL: 'https://localhost:44314',
+//       credentials: 'omit',
+//       headers: {
+//         'pragma': 'no-cache',
+//         'cache': 'no-cache',
+//         'cache-control': 'no-cache',
+//         'Expires': '0',
+//         'Authorization': `Bearer ${jwtToken.value}`
+//       },      
+//   })
+// };
 </script>
 
 <template>
