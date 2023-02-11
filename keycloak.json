@@ -1,0 +1,8 @@
+{
+  "realm": "webinar",
+  "auth-server-url": "https://keycloak.nicedemo.de/",
+  "ssl-required": "external",
+  "resource": "blog-frontend",
+  "public-client": true,
+  "confidential-port": 0
+}

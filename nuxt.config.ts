@@ -17,7 +17,10 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxt/content',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+  ],
+  plugins: [
+    'keycloak',
   ],
   content: {
     highlight: {
