@@ -1,28 +1,11 @@
 <script setup lang='ts'>
 import AdvertiseBox from '@/components/AdvertiseBox.vue'
+const { $api } = useNuxtApp()
 
-// const headers = useRequestHeaders(['cookie']) as HeadersInit
-//   const { data: jwtToken } = await useFetch('/api/token', { headers })
-//   const { data: jwtTokenDecoded } = await useFetch('/api/token_decoded', { headers })
+const testButtonClick = async () => {
+    const {data: testApiCallResult} = await $api.get(`/testCall/${123}`)
+}
 
-//   let testApiCallResult = ref<string>();
-// const testApiCall = async () => {
-//   testApiCallResult.value = 'loading'
-
-//   let url = '/api/Posts'
-//   testApiCallResult.value =  await $fetch(url, {
-//       method: "GET",
-//       baseURL: 'https://localhost:44314',
-//       credentials: 'omit',
-//       headers: {
-//         'pragma': 'no-cache',
-//         'cache': 'no-cache',
-//         'cache-control': 'no-cache',
-//         'Expires': '0',
-//         'Authorization': `Bearer ${jwtToken.value}`
-//       },      
-//   })
-// };
 </script>
 
 <template>
@@ -32,14 +15,13 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       <span class="text-blue-400"> & TypeScript</span>
       <span class="text-green-400"> & Nuxt 3</span>
     </div>
-    <Button class="p-button-rounded p-button-xl" @click="testApiCall">
+    <Button class="p-button-rounded p-button-xl" @click="testButtonClick">
           <i class="pi pi-cog" />
           <span>Test Api Call</span>
         </Button>
        <h1>Result: {{  testApiCallResult }}</h1> 
 
        <AdvertiseBox header="" icon="prime-check-circle" color="green-600">
-        {{ jwtTokenDecoded }}
       </AdvertiseBox>
        
     <h2 class="text-2xl pb-6">

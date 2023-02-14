@@ -1,15 +1,16 @@
 import pkg from './package.json'
 
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
   runtimeConfig: {
     public: {
       APP_VERSION: pkg.version,
       APP_NAME: pkg.name,
+      KEYCLOAK_URL: process.env.KEYCLOAK_URL,
+      KEYCLOAK_REALM: process.env.KEYCLOAK_REALM,
+      KEYCLOAK_CLIENT_ID: process.env.KEYCLOAK_CLIENT_ID,
+      KEYCLOAK_DISABLED: process.env.KEYCLOAK_DISABLED,
     },
-  },
-  auth: {
-    enableGlobalAppMiddleware: true
   },
   modules: [
     '@formkit/nuxt',
