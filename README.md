@@ -17,10 +17,14 @@ https://keycloak.nicedemo.de/
 * Admin user: 
  Username: demo 
  Password: demo
-* Vue user: 
+* (main branch) Vue user: 
  Username: demouser
  Password: 1234
 
+* (keycloakJs branch) Vue user: 
+ Username: publisher
+ Password: 1234
+ 
 ### main branch with sidebase/nuxt-auth (buggy)
 add the follow .env file to this project:
 ```
