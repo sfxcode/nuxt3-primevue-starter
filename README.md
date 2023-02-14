@@ -17,10 +17,15 @@ https://keycloak.nicedemo.de/
 * Admin user: 
  Username: demo 
  Password: demo
-* Vue user: 
+* (main branch) Vue user: 
  Username: demouser
  Password: 1234
 
+* (keycloakJs branch) Vue user: 
+ Username: publisher
+ Password: 1234
+ 
+### main branch with sidebase/nuxt-auth (buggy)
 add the follow .env file to this project:
 ```
 PORT=3000
@@ -30,6 +35,18 @@ AUTH_CLIENT_ID = "vuejs"
 AUTH_SECRET = "vX!#2CqBtT&cxY"
 AUTH_URL = "https://keycloak.nicedemo.de/"
 AUTH_REALM = "vue"
+```
+### keycloakJs branch works well. Big thanks to https://github.com/FAIRDataTeam/TrainHandler-client
+```
+PORT=4200
+APP_NAME = "Nuxt 3 Auth Demo"
+
+NUXT_PUBLIC_API_URL=http://localhost:8080
+NUXT_PUBLIC_KEYCLOAK_URL="https://keycloak.nicedemo.de"
+NUXT_PUBLIC_KEYCLOAK_REALM="webinar"
+NUXT_PUBLIC_KEYCLOAK_CLIENT_ID="blog-frontend"
+NUXT_PUBLIC_KEYCLOAK_CLIENT_SECRET = "ELQTKN7sMrMJueVTZM9bAVzE4PU0Xc1x"
+NUXT_PUBLIC_KEYCLOAK_DISABLED=false
 ```
 
 ## Features
