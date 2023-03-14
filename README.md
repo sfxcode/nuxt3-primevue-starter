@@ -51,7 +51,7 @@ Vite Primevue Starter Template
 
 Install node:
 
-**Latest node LTS version required (16)**
+**Latest node LTS version required (18)**
 Use node manager like **nvm** to install.
 
 Install pnpm:
