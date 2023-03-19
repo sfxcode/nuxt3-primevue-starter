@@ -1,9 +1,10 @@
 <script setup lang='ts'>
 import AdvertiseBox from '@/components/AdvertiseBox.vue'
 const { $api } = useNuxtApp()
+let testApiCallResult = ref<any>(null);
 
 const testButtonClick = async () => {
-    const {data: testApiCallResult} = await $api.get(`/testCall/${123}`)
+    { testApiCallResult } await $api.get(`/api/Posts`)
 }
 
 </script>

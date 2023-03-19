@@ -21,7 +21,7 @@ const slug = route.params.slug.toString()
           Content Page ({{ slug }}) not found
         </h1>
       </template>
-    </contentdoc>
+    </ContentDoc>
   </div>
 </template>
 
