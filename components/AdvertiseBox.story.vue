@@ -5,8 +5,11 @@ import AdvertiseBox from './AdvertiseBox.vue'
 <template>
   <Story>
     <Variant title="Default">
-      <AdvertiseBox header="Header text" icon="prime-check-circle" color="blue">
-        <span>Some Content</span>
+      <AdvertiseBox header="Some PrimeVue Content" icon="prime-check-circle" color="blue">
+        <div class="mb-4">
+          PrimeVue Secondary Button
+        </div>
+        <Button label="Secondary" severity="secondary" rounded />
       </AdvertiseBox>
     </Variant>
   </Story>
