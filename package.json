@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.37.0",
-    "@histoire/plugin-nuxt": "^0.15.9",
+    "@histoire/plugin-nuxt": "0.14.2",
     "@histoire/plugin-vue": "^0.15.8",
     "@iconify-json/carbon": "^1.1.16",
     "@iconify-json/mdi": "^1.1.50",

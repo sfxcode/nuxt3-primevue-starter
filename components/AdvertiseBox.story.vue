@@ -5,7 +5,9 @@ import AdvertiseBox from './AdvertiseBox.vue'
 <template>
   <Story>
     <Variant title="Default">
-      <AdvertiseBox />
+      <AdvertiseBox header="Header text" icon="prime-check-circle" color="blue">
+        <span>Some Content</span>
+      </AdvertiseBox>
     </Variant>
   </Story>
 </template>

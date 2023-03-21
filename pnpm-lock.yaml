@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.37.0
-  '@histoire/plugin-nuxt': ^0.15.9
+  '@histoire/plugin-nuxt': 0.14.2
   '@histoire/plugin-vue': ^0.15.8
   '@iconify-json/carbon': ^1.1.16
   '@iconify-json/mdi': ^1.1.50
@@ -27,7 +27,7 @@ specifiers:
 
 devDependencies:
   '@antfu/eslint-config': 0.37.0_j4766f7ecgqbon3u7zlxn5zszu
-  '@histoire/plugin-nuxt': 0.15.9_vbilgy47leodjotkt2ld7nqvxq
+  '@histoire/plugin-nuxt': 0.14.2_vbilgy47leodjotkt2ld7nqvxq
   '@histoire/plugin-vue': 0.15.8_histoire@0.15.9
   '@iconify-json/carbon': 1.1.16
   '@iconify-json/mdi': 1.1.50
@@ -1427,20 +1427,17 @@ packages:
       - vite
     dev: true
 
-  /@histoire/plugin-nuxt/0.15.9_vbilgy47leodjotkt2ld7nqvxq:
-    resolution: {integrity: sha512-3MlY93YSTpuXnRxxe79Lmyf8ry3LRh4+5ymJLhWDNMUH6RvsSv8pnNgWba7WWZFRqNEbU+x/g8dU7tM23UEDIA==}
+  /@histoire/plugin-nuxt/0.14.2_vbilgy47leodjotkt2ld7nqvxq:
+    resolution: {integrity: sha512-M+Axjxo0bVsopkaZNQJxAFnadNVx1s1Fx18HeXLAWwXf4DEKedTefD9jc0miqOlmr8B2xk3y9NTRLPHo5PbXMA==}
     peerDependencies:
-      '@histoire/plugin-vue': ^0.15.8
-      histoire: ^0.15.8
+      '@histoire/plugin-vue': ^0.14.2
+      histoire: ^0.14.2
       nuxt: ^3.0.0-rc.11
     dependencies:
       '@histoire/plugin-vue': 0.15.8_histoire@0.15.9
       '@nuxt/kit': 3.3.1
-      h3: 1.6.0
       histoire: 0.15.9_sass@1.59.3
       nuxt: 3.3.1_6ve2mgcmoerusihmx5fhibabvi
-      ofetch: 1.0.1
-      unenv: 1.2.2
     transitivePeerDependencies:
       - rollup
       - supports-color
