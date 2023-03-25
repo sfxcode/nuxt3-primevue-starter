@@ -23,7 +23,7 @@ const route = useRoute()
 const navigation = useNavigationMenu()
 
 watch(() => route,
-  (async) => {
+  () => {
     menuActive.value = false
     toast.removeAllGroups()
   },
