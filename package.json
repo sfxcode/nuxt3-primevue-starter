@@ -19,7 +19,7 @@
     "story:preview": "histoire preview"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.37.0",
+    "@antfu/eslint-config": "^0.38.2",
     "@histoire/plugin-nuxt": "0.14.2",
     "@histoire/plugin-vue": "^0.15.8",
     "@iconify-json/carbon": "^1.1.16",
