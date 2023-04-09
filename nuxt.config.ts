@@ -15,7 +15,16 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxt/content',
     '@vueuse/nuxt',
+    '@nuxt/devtools',
   ],
+
+  devtools: {
+    // Enable devtools (default: true)
+    enabled: true,
+    // VS Code Server options
+    vscode: {},
+    // ...other options
+  },
   content: {
     highlight: {
       theme: 'one-dark-pro',

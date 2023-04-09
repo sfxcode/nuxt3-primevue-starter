@@ -27,6 +27,7 @@
     "@iconify-json/prime": "^1.1.5",
     "@iconify-json/twemoji": "^1.1.11",
     "@nuxt/content": "^2.5.2",
+    "@nuxt/devtools": "^0.3.2",
     "@nuxt/test-utils": "^3.3.3",
     "@pinia/nuxt": "^0.4.8",
     "@sfxcode/nuxt-primevue": "^1.0.6",
@@ -42,6 +43,5 @@
     "sass": "^1.61.0",
     "typescript": "^5.0.4",
     "vitest": "^0.30.0"
-
   }
 }
