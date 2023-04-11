@@ -13,7 +13,14 @@ const isDevelopmentMode = process.env.NODE_ENV?.indexOf('dev') !== -1
         <div op30 text-lg fw300 m1>
           The instant on-demand Atomic CSS engine.
         </div>
-        <div m2 flex justify-center text-2xl op30 hover="op80">
+        <div
+          m2
+          flex
+          justify-center
+          text-2xl
+          op30
+          hover="op80"
+        >
           <a
             i-mdi-github-circle
             text-inherit
@@ -23,7 +30,14 @@ const isDevelopmentMode = process.env.NODE_ENV?.indexOf('dev') !== -1
         </div>
       </div>
     </div>
-    <div bottom-5 right-0 left-0 text-center op30 fw300>
+    <div
+      bottom-5
+      right-0
+      left-0
+      text-center
+      op30
+      fw300
+    >
       on-demand · instant · fully customizable
     </div>
 

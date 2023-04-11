@@ -9,7 +9,7 @@ filters.value = {
   global: { value: null, matchMode: FilterMatchMode.CONTAINS },
   name: { value: null, matchMode: FilterMatchMode.CONTAINS },
   code: { value: null, matchMode: FilterMatchMode.CONTAINS },
-  inventoryStatus: { value: null, matchMode: FilterMatchMode.STARTS_WITH },
+  inventoryStatus: { value: null, matchMode: FilterMatchMode.STARTS_WITH }
 }
 
 const dataStore = useDataStore()
@@ -24,10 +24,14 @@ onMounted(async () => {
   <div class="card">
     <h5>DataTable Example</h5>
     <DataTable
-      ref="dataTableRef" v-model:filters="filters" :value="tableData"
-      data-key="name" :global-filter-fields="['name', 'code', 'inventoryStatus']"
+      ref="dataTableRef"
+      v-model:filters="filters"
+      :value="tableData"
+      data-key="name"
+      :global-filter-fields="['name', 'code', 'inventoryStatus']"
       striped-rows
-      :paginator="true" :rows="8"
+      :paginator="true"
+      :rows="8"
       paginator-template="CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown"
       :rows-per-page-options="[8, 15, 50]"
       current-page-report-template="Showing {first} to {last} of {totalRecords}"

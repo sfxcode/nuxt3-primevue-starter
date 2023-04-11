@@ -1,6 +1,6 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
 
-export function updateTheme(themeName: string, themeColor: string) {
+export function updateTheme (themeName: string, themeColor: string) {
   const newValue = `https://cdn.jsdelivr.net/npm/primevue@3.15.0/resources/themes/${themeName}-${themeColor}/theme.css`
   return newValue
 }
@@ -10,35 +10,34 @@ export const useThemeStore = defineStore('theme', {
   state: () => ({
     themeName: 'vela',
     themeColor: 'blue',
-    link: 'https://cdn.jsdelivr.net/npm/primevue@3.15.0/resources/themes/vela-blue/theme.css',
+    link: 'https://cdn.jsdelivr.net/npm/primevue@3.15.0/resources/themes/vela-blue/theme.css'
   }),
   // optional getters
   getters: {
     theme: (state) => {
       return `${state.themeName}-${state.themeColor}`
     },
-    isDarkMode: state => state.themeName !== 'saga',
+    isDarkMode: state => state.themeName !== 'saga'
   },
   // optional actions
   actions: {
-    setDark() {
+    setDark () {
       this.themeName = 'arya'
       this.link = updateTheme(this.themeName, this.themeColor)
     },
-    setDim() {
+    setDim () {
       this.themeName = 'vela'
       this.link = updateTheme(this.themeName, this.themeColor)
     },
-    setLight() {
+    setLight () {
       this.themeName = 'saga'
       this.link = updateTheme(this.themeName, this.themeColor)
     },
-    setColor(colorName: string) {
+    setColor (colorName: string) {
       this.themeColor = colorName
       this.link = updateTheme(this.themeName, this.themeColor)
-    },
-  },
+    }
+  }
 })
 
-if (import.meta.hot)
-  import.meta.hot.accept(acceptHMRUpdate(useThemeStore, import.meta.hot))
+if (import.meta.hot) { import.meta.hot.accept(acceptHMRUpdate(useThemeStore, import.meta.hot)) }
