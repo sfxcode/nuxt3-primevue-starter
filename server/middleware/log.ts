@@ -1,5 +1,5 @@
-import consola from 'consola'
+import { consola } from 'consola'
 
 export default defineEventHandler((event) => {
-  consola.debug(`New request: ${event.req.url}`)
+  consola.debug(`New request: ${event.node.req.url}`)
 })

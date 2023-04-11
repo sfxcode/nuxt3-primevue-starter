@@ -1,8 +1,7 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
 
 export function updateTheme (themeName: string, themeColor: string) {
-  const newValue = `https://cdn.jsdelivr.net/npm/primevue@3.15.0/resources/themes/${themeName}-${themeColor}/theme.css`
-  return newValue
+  return `https://cdn.jsdelivr.net/npm/primevue@3.15.0/resources/themes/${themeName}-${themeColor}/theme.css`
 }
 
 export const useThemeStore = defineStore('theme', {

@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxt/content',
     '@vueuse/nuxt',
+    '@nuxtjs/i18n',
     '@nuxt/devtools'
   ],
 

@@ -1,11 +1,13 @@
-import consola from 'consola'
 import { acceptHMRUpdate, defineStore } from 'pinia'
+import { consola } from 'consola'
+
+const config = useRuntimeConfig()
 
 export const useDataStore = defineStore({
   id: 'data',
 
   state: () => ({
-    appVersion: import.meta.env.VITE_APP_VERSION as string | undefined,
+    appVersion: config.public.APP_VERSION,
     products: []
   }),
   actions: {
