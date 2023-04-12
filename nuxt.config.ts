@@ -1,7 +1,7 @@
 import pkg from './package.json'
 
 export default defineNuxtConfig({
-  ssr: true,
+  devtools: true,
   runtimeConfig: {
     public: {
       APP_VERSION: pkg.version,
@@ -14,18 +14,8 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxt/content',
-    '@vueuse/nuxt',
-    '@nuxtjs/i18n',
-    '@nuxt/devtools'
+    '@vueuse/nuxt'
   ],
-
-  devtools: {
-    // Enable devtools (default: true)
-    enabled: true,
-    // VS Code Server options
-    vscode: {}
-    // ...other options
-  },
   content: {
     highlight: {
       theme: 'one-dark-pro',

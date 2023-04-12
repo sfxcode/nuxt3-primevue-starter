@@ -1,13 +1,11 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
 import { consola } from 'consola'
 
-const config = useRuntimeConfig()
-
 export const useDataStore = defineStore({
   id: 'data',
 
   state: () => ({
-    appVersion: config.public.APP_VERSION,
+    appVersion: useRuntimeConfig().public.APP_VERSION,
     products: []
   }),
   actions: {
