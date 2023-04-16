@@ -39,8 +39,8 @@ devDependencies:
     specifier: ^0.4.8
     version: 0.4.8(typescript@5.0.4)(vue@3.2.47)
   '@sfxcode/nuxt-primevue':
-    specifier: ^1.0.9
-    version: 1.0.9(vue@3.2.47)
+    specifier: ^1.1.0
+    version: 1.1.0(vue@3.2.47)
   '@tiptap/extension-highlight':
     specifier: ^2.0.3
     version: 2.0.3(@tiptap/core@2.0.3)
@@ -1877,8 +1877,8 @@ packages:
       rollup: 3.20.2
     dev: true
 
-  /@sfxcode/formkit-primevue@1.0.5(vue@3.2.47):
-    resolution: {integrity: sha512-wAVUdUvmI0+j32sTiqBFVzLanBB4J0yPhFeyHDHidvpaKn7Tb0wmJISyD3JHa+qMx54hk3FQjlqrxahU6il2RA==}
+  /@sfxcode/formkit-primevue@1.0.6(vue@3.2.47):
+    resolution: {integrity: sha512-mGkyeXra2zOgYu4BH65X5gQkvOrc/CRQYeyChLjtfEitAwzTyWXmc33uhNjB0smVxqerkqL3c9rx3Zrmdxj5Mw==}
     dependencies:
       '@formkit/i18n': 0.16.4
       '@formkit/vue': 0.16.4(vue@3.2.47)
@@ -1891,12 +1891,12 @@ packages:
       - windicss
     dev: true
 
-  /@sfxcode/nuxt-primevue@1.0.9(vue@3.2.47):
-    resolution: {integrity: sha512-TtmyObQoL/RPFBRAye4iSkVpzplDkcQGTC3XSV7vIcRfdSJTT+3Pcre39CMpy2dzr773Mu+QCClFAjXIS9koPw==}
+  /@sfxcode/nuxt-primevue@1.1.0(vue@3.2.47):
+    resolution: {integrity: sha512-OfgcGbflQF3QGNXfkpLzg5yI1uTB0xGlbc5g7wGn3e6CmVPHUeRxtHRH6mSxMbYBP3FQR4/c9dwkYtQX1L6eww==}
     dependencies:
       '@formkit/nuxt': 0.16.4(vue@3.2.47)
       '@nuxt/kit': 3.4.1
-      '@sfxcode/formkit-primevue': 1.0.5(vue@3.2.47)
+      '@sfxcode/formkit-primevue': 1.0.6(vue@3.2.47)
     transitivePeerDependencies:
       - rollup
       - supports-color
