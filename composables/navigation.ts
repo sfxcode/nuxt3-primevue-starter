@@ -19,7 +19,8 @@ export function useNavigationMenu () {
         label: 'UI',
         items: [
           { label: 'UnoCSS', icon: 'pi pi-fw pi-user-edit', to: '/ui/uno' },
-          { label: 'Icons', icon: 'pi pi-fw pi-user-edit', to: '/ui/icons' }
+          { label: 'Icons', icon: 'pi pi-fw pi-user-edit', to: '/ui/icons' },
+          { label: 'TipTap', icon: 'pi pi-fw pi-user-edit', to: '/ui/tiptap' }
         ]
       },
       {

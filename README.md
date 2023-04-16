@@ -15,6 +15,7 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 - Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
 - [State Management via Pinia](https://pinia.esm.dev)
 - PrimeVue 3.18.x
+- [TipTap](https://tiptap.dev) - Headless Editor
 - Vitest
 
 ## Nuxt Modules

@@ -46,6 +46,12 @@ export default defineNuxtConfig({
     '@sfxcode/formkit-primevue/dist/sass/formkit-prime-inputs.scss',
     '@sfxcode/formkit-primevue/dist/sass/formkit-primevue.scss'
   ],
+  pinia: {
+    autoImports: [
+      // automatically imports `defineStore`
+      'defineStore' // import { defineStore } from 'pinia'
+    ]
+  },
   build: {
     transpile: ['nuxt', 'primevue']
   },
