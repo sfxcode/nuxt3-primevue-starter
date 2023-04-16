@@ -47,6 +47,9 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       <AdvertiseBox header="Nitro" icon="prime-check-circle" color="green-400">
         Nuxt 3 Server Engine
       </AdvertiseBox>
+      <AdvertiseBox header="TipTap" icon="prime-check-circle" color="green-600">
+        TipTap Editor Demo
+      </AdvertiseBox>
       <AdvertiseBox header="Vitest" icon="prime-check-circle" color="blue-600">
         Testing with Vitest
       </AdvertiseBox>
