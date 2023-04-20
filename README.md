@@ -10,13 +10,13 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 ## Features
 
 - [Nuxt 3](https://v3.nuxtjs.org) - SSR, ESR, File-based routing, components auto importing, modules, etc.
-- Vite - Instant HMR
+- [Vite](https://vitejs.dev/) - Instant HMR
 - [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
 - Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
 - [State Management via Pinia](https://pinia.esm.dev)
-- PrimeVue 3.18.x
+- [PrimeVue](https://primevue.org/) 3.27.x
 - [TipTap](https://tiptap.dev) - Headless Editor
-- Vitest
+- [Vitest](https://vitest.dev/) - Blazing Fast Unit Test Framework
 
 ## Nuxt Modules
 
