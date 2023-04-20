@@ -34,7 +34,8 @@ export function useNavigationMenu () {
         label: 'Pages',
         items: [
           { label: 'Stores', icon: 'pi pi-fw pi-database', to: '/stores' },
-          { label: 'Server', icon: 'pi pi-fw pi-database', to: '/server' }
+          { label: 'Server', icon: 'pi pi-fw pi-database', to: '/server' },
+          { label: 'I18n', icon: 'pi pi-fw pi-database', to: '/i18n' }
         ]
       },
       {

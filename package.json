@@ -29,6 +29,7 @@
     "@nuxt/devtools": "^0.4.1",
     "@nuxt/test-utils": "^3.4.2",
     "@nuxtjs/eslint-config-typescript": "12.0.0",
+    "@nuxtjs/i18n": "8.0.0-beta.11",
     "@pinia/nuxt": "^0.4.9",
     "@sfxcode/nuxt-primevue": "^1.1.1",
     "@tiptap/extension-highlight": "^2.0.3",

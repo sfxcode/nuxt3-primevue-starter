@@ -38,6 +38,9 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       <AdvertiseBox header="Nuxt Content 2.5" icon="prime-check-circle" color="green-400">
         Markdown, YML, CSV or JSON and MDC Syntax
       </AdvertiseBox>
+      <AdvertiseBox header="I18n" icon="prime-check-circle" color="green-600">
+        Nuxt I18n (Beta)
+      </AdvertiseBox>
       <AdvertiseBox header="VueUse" icon="prime-check-circle" color="green-600">
         VueUse included
       </AdvertiseBox>

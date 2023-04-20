@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     '@sfxcode/nuxt-primevue',
     '@unocss/nuxt',
     '@pinia/nuxt',
+    '@nuxtjs/i18n',
     '@nuxt/content',
     '@vueuse/nuxt'
   ],
@@ -23,6 +24,19 @@ export default defineNuxtConfig({
       preload: ['json', 'js', 'ts', 'html', 'css', 'vue']
     }
     // Options
+  },
+  i18n: {
+    lazy: true,
+    langDir: 'locales',
+    defaultLocale: 'en',
+    strategy: 'no_prefix',
+    locales: [
+      { code: 'en', file: 'en.json', name: 'English' },
+      { code: 'de', file: 'de.json', name: 'German' }
+    ],
+
+    vueI18n: './vue-i18n.options.ts'
+
   },
   unocss: {
     uno: true,
