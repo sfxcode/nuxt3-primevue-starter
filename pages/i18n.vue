@@ -4,7 +4,7 @@ const testDate = new Date()
 const testNumber = 42.4242
 
 const availableLocales = computed(() => {
-  return locales.value?.filter(i => i.code !== locale.value)
+  return locales.value?.filter(l => l.code !== locale.value)
 })
 
 </script>
@@ -14,11 +14,11 @@ const availableLocales = computed(() => {
     <h3>Localization</h3>
     Switch Locale to
     <a
-      v-for="locale in availableLocales"
-      :key="locale.code"
+      v-for="currentLocale in availableLocales"
+      :key="currentLocale.code"
       href="#"
-      @click.prevent.stop="setLocale(locale.code)"
-    >{{ locale.name }}</a>
+      @click.prevent.stop="setLocale(currentLocale.code)"
+    >{{ currentLocale.name }}</a>
     <p>{{ t('save') }}</p>
     <p>{{ d(testDate, 'short') }}</p>
     <p>{{ n(testNumber, 'currency') }}</p>
