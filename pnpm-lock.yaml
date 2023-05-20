@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+overrides:
+  consola: 3.1.0
+  unenv: 1.4.1
+
 devDependencies:
   '@histoire/plugin-nuxt':
     specifier: ^0.16.1
@@ -32,8 +36,8 @@ devDependencies:
     specifier: 12.0.0
     version: 12.0.0(eslint@8.41.0)(typescript@5.0.4)
   '@nuxtjs/i18n':
-    specifier: 8.0.0-beta.12
-    version: 8.0.0-beta.12(vue@3.3.4)
+    specifier: 8.0.0-beta.11
+    version: 8.0.0-beta.11(vue@3.3.4)
   '@pinia/nuxt':
     specifier: ^0.4.11
     version: 0.4.11(typescript@5.0.4)(vue@3.3.4)
@@ -1573,7 +1577,7 @@ packages:
     resolution: {integrity: sha512-bSO4g2aNk7AT5abAIJtHLTN+FZFYMvwP6MH9oP6XAo/SsIowvFq7g38in3jK/OMDR+dZq3Nt1z8GrMDGipzsfQ==}
     dependencies:
       '@nuxt/kit': 3.2.3
-      consola: 2.15.3
+      consola: 3.1.0
       defu: 6.1.2
       destr: 1.2.2
       detab: 3.0.2
@@ -1717,7 +1721,7 @@ packages:
     dependencies:
       '@nuxt/schema': 3.2.3
       c12: 1.4.1
-      consola: 2.15.3
+      consola: 3.1.0
       defu: 6.1.2
       globby: 13.1.4
       hash-sum: 2.0.0
@@ -1970,9 +1974,9 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxtjs/i18n@8.0.0-beta.12(vue@3.3.4):
-    resolution: {integrity: sha512-f149HXPyk4RJZul3ThWo4YVN7WmL3scge8UZx08cxAiKjhoCIoHySKxX05CwAu0v7sfYxeYeP+qCeQyGaBErpQ==}
-    engines: {node: ^14.16.0 || >=16.11.0}
+  /@nuxtjs/i18n@8.0.0-beta.11(vue@3.3.4):
+    resolution: {integrity: sha512-002P0yR7uJbcMrnz8YG+ELMFWP5IgdrF6es8LOIEgteF+YjBXLWrEEAW+2hlBtB87RdO4mQPtxJFhdtYJ0yMZQ==}
+    engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
     dependencies:
       '@intlify/bundle-utils': 5.5.0(vue-i18n@9.3.0-beta.17)
       '@intlify/shared': 9.3.0-beta.17
@@ -4420,10 +4424,6 @@ packages:
       utils-merge: 1.0.1
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /consola@2.15.3:
-    resolution: {integrity: sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw==}
     dev: true
 
   /consola@3.1.0:

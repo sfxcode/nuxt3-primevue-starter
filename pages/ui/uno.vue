@@ -1,5 +1,4 @@
 <script setup lang='ts' xmlns:all="http://www.w3.org/1999/xhtml">
-const isDevelopmentMode = process.env.NODE_ENV?.indexOf('dev') !== -1
 </script>
 
 <template>
@@ -41,20 +40,22 @@ const isDevelopmentMode = process.env.NODE_ENV?.indexOf('dev') !== -1
       on-demand · instant · fully customizable
     </div>
 
-    <div v-if="isDevelopmentMode">
-      <h4 pt-10>
-        Inspector
-      </h4>
-      <div pb-4>
-        <span>Only visible in Development mode - click info icon below</span>
+    <client-only>
+      <div v-if="process && process.env?.NODE_ENV?.indexOf('dev') !== -1">
+        <h4 pt-10>
+          Inspector
+        </h4>
+        <div pb-4>
+          <span>Only visible in Development mode - click info icon below</span>
+        </div>
+        <a href="../__unocss" target="_blank">
+          <div class="i-mdi-information text-4xl text-green-600-500-500" />
+        </a>
+        <article class="pt-4 text-base prose prose-truegray xl:text-xl">
+          View, play and analyse rules and setup ...
+        </article>
       </div>
-      <a href="../__unocss" target="_blank">
-        <div class="i-mdi-information text-4xl text-green-600-500-500" />
-      </a>
-      <article class="pt-4 text-base prose prose-truegray xl:text-xl">
-        View, play and analyse rules and setup ...
-      </article>
-    </div>
+    </client-only>
   </div>
 </template>
 
