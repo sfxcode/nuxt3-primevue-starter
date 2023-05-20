@@ -1,116 +1,155 @@
 .layout-sidebar {
-	position: fixed;
-	width: 300px;
-	height: calc(100vh - 9rem);
-	z-index: 999;
-	overflow-y: auto;
-	user-select: none;
-	top: 7rem;
-	left: 2rem;
-	transition: transform $transitionDuration, left $transitionDuration;
-	background-color: var(--surface-overlay);
-	border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0px 3px 5px rgba(0,0,0,.02), 0px 0px 2px rgba(0,0,0,.05), 0px 1px 4px rgba(0,0,0,.08)
+    position: fixed;
+    width: 300px;
+    height: calc(100vh - 9rem);
+    z-index: 999;
+    overflow-y: auto;
+    user-select: none;
+    top: 7rem;
+    left: 2rem;
+    transition: transform $transitionDuration, left $transitionDuration;
+    background-color: var(--surface-overlay);
+    border-radius: $borderRadius;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.02), 0px 0px 2px rgba(0, 0, 0, 0.05), 0px 1px 4px rgba(0, 0, 0, 0.08);
 }
 
 .layout-menu {
-    list-style-type: none;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 
-    li {
-        &.layout-menuitem-category {
-            margin-top: .75rem;
+    .layout-root-menuitem {
+        > .layout-menuitem-root-text {
+            font-size: 0.857rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--surface-900);
+            margin: 0.75rem 0;
+        }
 
-            &:first-child {
-                margin-top: 0;
+        > a {
+            display: none;
+        }
+    }
+
+    a {
+        user-select: none;
+
+        &.active-menuitem {
+            > .layout-submenu-toggler {
+                transform: rotate(-180deg);
             }
         }
-        
-        .layout-menuitem-root-text {
-            text-transform: uppercase;
-            color:var(--surface-900);
-            font-weight: 600;
-            margin-bottom: .5rem;
-            font-size: .875rem;
+    }
+
+    li.active-menuitem {
+        > a {
+            .layout-submenu-toggler {
+                transform: rotate(-180deg);
+            }
         }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
 
         a {
-            cursor: pointer;
-            text-decoration: none;
             display: flex;
             align-items: center;
-            color:var(--text-color);
-            transition: color $transitionDuration;
+            position: relative;
+            outline: 0 none;
+            color: var(--text-color);
+            cursor: pointer;
+            padding: 0.75rem 1rem;
             border-radius: $borderRadius;
-            padding: .75rem 1rem;
-            transition: background-color .15s;
+            transition: background-color $transitionDuration, box-shadow $transitionDuration;
 
-            span {
-                margin-left: 0.5rem;
+            .layout-menuitem-icon {
+                margin-right: 0.5rem;
             }
 
-            .menuitem-toggle-icon {
+            .layout-submenu-toggler {
+                font-size: 75%;
                 margin-left: auto;
+                transition: transform $transitionDuration;
             }
 
-            &:focus {
-                @include focused-inset();
+            &.active-route {
+                font-weight: 700;
+                color: var(--primary-color);
             }
 
             &:hover {
                 background-color: var(--surface-hover);
             }
 
-            &.router-link-exact-active {
-                font-weight: 700;
-                color: var(--primary-color);
-            }
-
-            .p-badge {
-                margin-left: auto;
-            }
-        }
-
-        &.active-menuitem {
-            > a {
-                .menuitem-toggle-icon {
-                    &:before {
-                        content: '\e933';
-                    }
-                }
+            &:focus {
+                @include focused-inset();
             }
         }
 
         ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
+            overflow: hidden;
+            border-radius: $borderRadius;
 
-            &.layout-submenu-wrapper-enter-from,
-            &.layout-submenu-wrapper-leave-to {
-                max-height: 0;
-            }
+            li {
+                a {
+                    margin-left: 1rem;
+                }
 
-            &.layout-submenu-wrapper-enter-to,
-            &.layout-submenu-wrapper-leave-from {
-                max-height: 1000px;
-            }
+                li {
+                    a {
+                        margin-left: 2rem;
+                    }
 
-            &.layout-submenu-wrapper-leave-active {
-                overflow: hidden;
-                transition: max-height 0.45s cubic-bezier(0, 1, 0, 1);
-            }
+                    li {
+                        a {
+                            margin-left: 2.5rem;
+                        }
 
-            &.layout-submenu-wrapper-enter-active {
-                overflow: hidden;
-                transition: max-height 1s ease-in-out;
-            }
+                        li {
+                            a {
+                                margin-left: 3rem;
+                            }
 
-            ul {
-                padding-left: 1rem;
+                            li {
+                                a {
+                                    margin-left: 3.5rem;
+                                }
+
+                                li {
+                                    a {
+                                        margin-left: 4rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
+}
+
+.layout-submenu-enter-from,
+.layout-submenu-leave-to {
+    max-height: 0;
+}
+
+.layout-submenu-enter-to,
+.layout-submenu-leave-from {
+    max-height: 1000px;
+}
+
+.layout-submenu-leave-active {
+    overflow: hidden;
+    transition: max-height 0.45s cubic-bezier(0, 1, 0, 1);
+}
+
+.layout-submenu-enter-active {
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
 }

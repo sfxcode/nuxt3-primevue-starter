@@ -1,5 +1,7 @@
-<script setup lang='ts'>
+<script setup>
+
 const config = useRuntimeConfig()
+
 </script>
 
 <template>
@@ -7,7 +9,4 @@ const config = useRuntimeConfig()
     <span class="font-medium ml-2">{{ config.public['APP_NAME'] }} - {{ config.public['APP_VERSION'] }}</span>
   </div>
 </template>
-
-<style scoped>
-
-</style>
+<style lang="scss" scoped></style>

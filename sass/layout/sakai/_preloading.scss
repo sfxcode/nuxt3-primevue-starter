@@ -14,7 +14,7 @@
     top: calc(50vh - 75px);
     left: calc(50vw - 75px);
 }
-  
+
 .preloader-content:before, .preloader-content:after{
     content: '';
     border: 1em solid var(--primary-color);

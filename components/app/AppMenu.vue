@@ -1,23 +1,20 @@
-<script setup lang='ts'>
-import AppSubmenu from './AppSubmenu.vue'
+<script setup lang='js'>
+import { ref } from 'vue'
+import AppMenuItem from './AppMenuItem.vue'
+import { useNavigationMenu } from '~/composables/navigation'
 
-const props = defineProps<{
-  model: Array<any>
-}>()
+const { navigationMenu } = useNavigationMenu()
+const model = navigationMenu()
 
-const emit = defineEmits(['menuItemClick'])
-
-function onMenuItemClick(event: any) {
-  emit('menuItemClick', event)
-}
 </script>
 
 <template>
-  <div class="layout-menu-container">
-    <AppSubmenu :items="model" class="layout-menu" :root="true" @menu-item-click="onMenuItemClick" />
-  </div>
+  <ul class="layout-menu">
+    <template v-for="(item, i) in model" :key="item">
+      <app-menu-item v-if="!item.separator" :item="item" :index="i" />
+      <li v-if="item.separator" class="menu-separator" />
+    </template>
+  </ul>
 </template>
 
-<style scoped>
-
-</style>
+<style lang="scss" scoped></style>

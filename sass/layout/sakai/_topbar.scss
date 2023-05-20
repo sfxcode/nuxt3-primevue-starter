@@ -42,7 +42,7 @@
         height: 3rem;
         cursor: pointer;
         transition: background-color $transitionDuration;
-        
+
         &:hover {
             color: var(--text-color);
             background-color: var(--surface-hover);
@@ -79,7 +79,7 @@
         padding: 0;
         list-style: none;
         display: flex;
-        
+
         .layout-topbar-button {
             margin-left: 1rem;
         }
@@ -94,7 +94,7 @@
             width: auto;
             order: 2;
         }
-    
+
         .layout-menu-button {
             margin-left: 0;
             order: 1;
@@ -117,6 +117,13 @@
             right: 2rem;
             top: 5rem;
             min-width: 15rem;
+            display: none;
+            -webkit-animation: scalein 0.15s linear;
+            animation: scalein 0.15s linear;
+
+            &.layout-topbar-menu-mobile-active {
+                display: block
+            }
 
             .layout-topbar-button {
                 margin-left: 0;
