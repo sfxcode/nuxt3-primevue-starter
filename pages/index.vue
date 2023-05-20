@@ -13,7 +13,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       Starter for Vue.js Development with Nuxt 3.
     </h2>
     <div class="grid grid-cols-2 lg:grid-cols-3 gap-2">
-      <AdvertiseBox header="PrimeVue 3.26" icon="prime-check-circle" color="green-600">
+      <AdvertiseBox header="PrimeVue 3.29" icon="prime-check-circle" color="green-600">
         Excellent Component Library for VUE
       </AdvertiseBox>
       <AdvertiseBox header="PrimeVue Theme & Layout" icon="prime-check-circle" color="green-600">
@@ -22,7 +22,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       <AdvertiseBox header="UnoCSS" icon="prime-check-circle" color="green-600">
         UnoCSS for rapid styling
       </AdvertiseBox>
-      <AdvertiseBox header="VUE 3.2" icon="prime-check-circle" color="green-600">
+      <AdvertiseBox header="VUE 3.3" icon="prime-check-circle" color="green-600">
         Composition Api
       </AdvertiseBox>
       <AdvertiseBox header="Script Setup" icon="prime-check-circle" color="green-600">
@@ -32,7 +32,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
         Typesafe by default
       </AdvertiseBox>
 
-      <AdvertiseBox header="Nuxt 3.4" icon="prime-check-circle" color="green-400">
+      <AdvertiseBox header="Nuxt 3.5" icon="prime-check-circle" color="green-400">
         Pages, Layouts, ...
       </AdvertiseBox>
       <AdvertiseBox header="Nuxt Content 2.5" icon="prime-check-circle" color="green-400">
