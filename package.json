@@ -50,11 +50,5 @@
     "sass": "^1.62.1",
     "typescript": "^5.0.4",
     "vitest": "^0.31.1"
-  },
-  "pnpm": {
-    "overrides": {
-      "consola": "3.0.1",
-      "unenv": "1.3.1"
-    }
   }
 }
