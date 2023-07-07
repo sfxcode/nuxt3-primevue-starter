@@ -1,6 +1,6 @@
 {
   "name": "nuxt3-primevue-starter",
-  "version": "1.5.3",
+  "version": "1.6.0",
   "license": "MIT",
   "scripts": {
     "build": "nuxi build",
@@ -29,7 +29,7 @@
     "@nuxt/devtools": "^0.6.7",
     "@nuxt/test-utils": "^3.6.2",
     "@nuxtjs/eslint-config-typescript": "12.0.0",
-    "@nuxtjs/i18n": "8.0.0-beta.12",
+    "@nuxtjs/i18n": "8.0.0-beta.11",
     "@pinia/nuxt": "^0.4.11",
     "@sfxcode/nuxt-primevue": "^1.2.5",
     "@tiptap/extension-highlight": "^2.0.3",
@@ -50,11 +50,5 @@
     "sass": "^1.63.6",
     "typescript": "^5.1.6",
     "vitest": "^0.33.0"
-  },
-  "pnpm": {
-    "overrides": {
-      "consola": "3.1.0",
-      "unenv": "1.4.1"
-    }
   }
 }
