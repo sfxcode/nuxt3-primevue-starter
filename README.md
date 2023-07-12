@@ -15,7 +15,7 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 - [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
 - Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
 - [State Management via Pinia](https://pinia.esm.dev)
-- [PrimeVue](https://primevue.org/) 3.29.x with free Sakai Theme
+- [PrimeVue](https://primevue.org/) 3.30.x with free Sakai Theme
 - [TipTap](https://tiptap.dev) - Headless Editor
 - [Vitest](https://vitest.dev/) - Blazing Fast Unit Test Framework
 
