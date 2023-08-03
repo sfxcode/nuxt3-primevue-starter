@@ -1,6 +1,6 @@
 {
   "name": "nuxt3-primevue-starter",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "license": "MIT",
   "scripts": {
     "build": "nuxi build",
@@ -38,7 +38,7 @@
     "@tiptap/pm": "^2.0.4",
     "@tiptap/starter-kit": "^2.0.4",
     "@tiptap/vue-3": "^2.0.4",
-    "@unocss/nuxt": "0.54.0",
+    "@unocss/nuxt": "0.54.1",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vitest/ui": "^0.34.1",
     "@vueuse/nuxt": "^10.3.0",
