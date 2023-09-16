@@ -1,4 +1,6 @@
 <script setup lang='ts' xmlns:all="http://www.w3.org/1999/xhtml">
+const config = useRuntimeConfig()
+
 </script>
 
 <template>
@@ -41,7 +43,7 @@
     </div>
 
     <client-only>
-      <div v-if="process && process.env?.NODE_ENV?.indexOf('dev') !== -1">
+      <div v-if="'development' === config.public['APP_MODE']">
         <h4 pt-10>
           Inspector
         </h4>
