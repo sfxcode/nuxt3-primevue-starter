@@ -28,7 +28,6 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 - [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine.
 - [Content](https://content.nuxtjs.org) - parses .md, .yml, .csv and .json files
 - [I18n](https://v8.i18n.nuxtjs.org) - Integration with [Vue I18n](https://vue-i18n.intlify.dev/)
-- [Histoire](https://histoire.dev/?ref=madewithvuejs.com) (Storybook like Component Viewer)
 
 
 

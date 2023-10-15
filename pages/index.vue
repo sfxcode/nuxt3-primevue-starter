@@ -59,9 +59,6 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       <AdvertiseBox header="Vitest" icon="prime-check-circle" color="blue-600">
         Testing with Vitest
       </AdvertiseBox>
-      <AdvertiseBox header="Histoire" icon="prime-check-circle" color="green-600">
-        Interactive Component Playgrounds
-      </AdvertiseBox>
     </div>
   </div>
 </template>

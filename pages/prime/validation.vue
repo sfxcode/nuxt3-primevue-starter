@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="card">
-      <div class="max-w-md">
+      <div class="max-w-xl">
         <PrimeDemoForm />
       </div>
     </div>
