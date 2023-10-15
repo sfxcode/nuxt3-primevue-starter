@@ -1,7 +1,6 @@
 <script setup lang='ts'>
 import { FilterMatchMode } from 'primevue/api'
 import { usePrimeDataTable } from '#imports'
-import { useDataStore } from '@/stores'
 
 const { tableData, filters, dataTableRef, exportCSV } = usePrimeDataTable()
 

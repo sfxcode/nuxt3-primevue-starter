@@ -1,7 +1,6 @@
 <script setup lang='ts'>
 import { computed, watch, ref } from 'vue'
 
-import { useThemeStore } from '~/stores'
 import AppMenu from '~/components/app/AppMenu.vue'
 const { layoutConfig, layoutState, isSidebarActive } = useLayout()
 const outsideClickListener = ref(null)

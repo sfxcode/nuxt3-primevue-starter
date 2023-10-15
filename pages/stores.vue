@@ -1,5 +1,4 @@
 <script setup lang='ts'>
-import { useDataStore, useThemeStore, useCounterStore } from '@/stores'
 
 const themeStore = useThemeStore()
 const dataStore = useDataStore()
