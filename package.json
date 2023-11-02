@@ -27,6 +27,7 @@
     "@nuxtjs/eslint-config-typescript": "12.1.0",
     "@nuxtjs/i18n": "8.0.0-rc.5",
     "@pinia/nuxt": "^0.5.1",
+    "quill": "^1.3.7",
     "@sfxcode/formkit-primevue": "^1.4.5",
     "@tiptap/extension-highlight": "^2.1.12",
     "@tiptap/extension-text-align": "^2.1.12",
