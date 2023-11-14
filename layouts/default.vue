@@ -14,8 +14,7 @@ watch(isSidebarActive, (newVal) => {
 })
 const containerClass = computed(() => {
   return {
-    'layout-theme-light': layoutConfig.darkTheme.value === 'light',
-    'layout-theme-dark': layoutConfig.darkTheme.value === 'dark',
+    dark: themeStore.isDarkMode,
     'layout-overlay': layoutConfig.menuMode.value === 'overlay',
     'layout-static': layoutConfig.menuMode.value === 'static',
     'layout-static-inactive': layoutState.staticMenuDesktopInactive.value && layoutConfig.menuMode.value === 'static',
@@ -57,7 +56,7 @@ const isOutsideClicked = (event) => {
 
 <template>
   <div>
-    <Link rel="stylesheet" :href="themeStore.link || 'https://cdn.jsdelivr.net/npm/primevue@3.15.0/resources/themes/vela-blue/theme.css'" />
+    <Link rel="stylesheet" :href="themeStore.link" />
     <div class="layout-wrapper" :class="containerClass">
       <app-topbar />
       <div class="layout-sidebar">

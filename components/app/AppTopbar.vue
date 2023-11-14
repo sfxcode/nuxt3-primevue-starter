@@ -76,7 +76,7 @@ function redirectToGithub (event: any) {
 <template>
   <div class="layout-topbar">
     <NuxtLink to="/" class="layout-topbar-logo">
-      <span>Nuxt3 PrimeVue Starter</span>
+      <span style="color: var(--primary-color)">Nuxt3 PrimeVue Starter</span>
     </NuxtLink>
 
     <button class="p-link layout-menu-button layout-topbar-button" @click="onMenuToggle()">
@@ -109,55 +109,45 @@ function redirectToGithub (event: any) {
       <OverlayPanel id="overlay_panel" ref="op" append-to="body" style="width: 200px">
         <div class="field-radiobutton">
           <RadioButton
-            id="saga"
+            id="lara-dark"
             v-model="themeStore.themeName"
             name="layoutColorMode"
-            value="saga"
-            @change="themeStore.setLight()"
+            value="lara-dark"
+            @change="themeStore.setTheme('lara-dark')"
           />
-          <label>Light</label>
+          <label>Lara Dark</label>
         </div>
         <div class="field-radiobutton">
           <RadioButton
-            id="vela"
+            id="lara-light"
             v-model="themeStore.themeName"
             name="layoutColorMode"
-            value="vela"
-            @change="themeStore.setDim()"
+            value="lara-light"
+            @change="themeStore.setTheme('lara-light')"
           />
-          <label>Dim</label>
-        </div>
-        <div class="field-radiobutton">
-          <RadioButton
-            id="arya"
-            v-model="themeStore.themeName"
-            name="layoutColorMode"
-            value="arya"
-            @change="themeStore.setDark()"
-          />
-          <label>Dark</label>
+          <label>Lara Light</label>
         </div>
 
         <h6>Primary Color</h6>
         <div class="flex">
           <div
-            style="width:2rem;height:2rem;border-radius:6px"
+            style="width:2rem;height:2rem;border-radius:6px;background-color:#10b981; "
+            class="bg-purple-500  mr-3  cursor-pointer"
+            @click="themeStore.setColor('teal')"
+          />
+          <div
+            style="width:2rem;height:2rem;border-radius:6px;background-color:#3B82F6; "
             class="bg-blue-500 mr-3 cursor-pointer"
             @click="themeStore.setColor('blue')"
           />
           <div
-            style="width:2rem;height:2rem;border-radius:6px"
+            style="width:2rem;height:2rem;border-radius:6px;background-color:#6366F1; "
             class="bg-green-500 mr-3 cursor-pointer"
-            @click="themeStore.setColor('green')"
+            @click="themeStore.setColor('indigo')"
           />
           <div
-            style="width:2rem;height:2rem;border-radius:6px"
+            style="width:2rem;height:2rem;border-radius:6px;background-color:#8B5CF6; "
             class="bg-yellow-300 mr-3 cursor-pointer"
-            @click="themeStore.setColor('orange')"
-          />
-          <div
-            style="width:2rem;height:2rem;border-radius:6px"
-            class="bg-purple-500 cursor-pointer"
             @click="themeStore.setColor('purple')"
           />
         </div>

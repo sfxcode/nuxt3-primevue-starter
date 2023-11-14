@@ -41,6 +41,9 @@ export default defineNuxtConfig({
   primevue: {
     components: {
       exclude: ['Chart']
+    },
+    options: {
+      ripple: true
     }
   },
   css: [
