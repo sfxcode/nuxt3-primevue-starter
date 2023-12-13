@@ -30,13 +30,12 @@ export default defineNuxtConfig({
     lazy: true,
     langDir: 'locales',
     defaultLocale: 'en',
+    strategy: 'no_prefix',
     locales: [
       { code: 'en', file: 'en.json', name: 'English' },
       { code: 'de', file: 'de.json', name: 'German' }
     ],
-
     vueI18n: './vue-i18n.options.ts'
-
   },
   primevue: {
     components: {
