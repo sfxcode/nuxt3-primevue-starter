@@ -72,6 +72,8 @@ const schema = reactive(
       value: 'hourly',
       showClear: false,
       filter: false,
+      optionLabel: 'label',
+      optionValue: 'value',
       options,
       help: 'How often should we display a cookie notice?',
       class: 'test'
