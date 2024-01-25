@@ -41,7 +41,7 @@ const schema = reactive(
 
     },
     {
-      $formkit: 'primeInputText',
+      $formkit: 'primePassword',
       name: 'password',
       label: 'Password',
       help: 'Enter your new password.',
