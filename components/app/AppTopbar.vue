@@ -107,6 +107,7 @@ function redirectToGithub (event: any) {
     </div>
     <client-only>
       <OverlayPanel id="overlay_panel" ref="op" append-to="body" style="width: 200px">
+        <h6>Theme</h6>
         <div class="field-radiobutton">
           <RadioButton
             id="lara-dark"
@@ -127,28 +128,53 @@ function redirectToGithub (event: any) {
           />
           <label>Lara Light</label>
         </div>
+        <div class="field-radiobutton">
+          <RadioButton
+            id="aura-dark"
+            v-model="themeStore.themeName"
+            name="layoutColorMode"
+            value="aura-dark"
+            @change="themeStore.setTheme('aura-dark')"
+          />
+          <label>Aura Dark</label>
+        </div>
+        <div class="field-radiobutton">
+          <RadioButton
+            id="aura-light"
+            v-model="themeStore.themeName"
+            name="layoutColorMode"
+            value="aura-light"
+            @change="themeStore.setTheme('aura-light')"
+          />
+          <label>Aura Light</label>
+        </div>
 
         <h6>Primary Color</h6>
         <div class="flex">
           <div
-            style="width:2rem;height:2rem;border-radius:6px;background-color:#10b981; "
-            class="bg-purple-500  mr-3  cursor-pointer"
-            @click="themeStore.setColor('teal')"
+            style="width:2rem;height:2rem;border-radius:6px; "
+            class="bg-green-500  mr-3  cursor-pointer"
+            @click="themeStore.setColor('green')"
           />
           <div
-            style="width:2rem;height:2rem;border-radius:6px;background-color:#3B82F6; "
+            style="width:2rem;height:2rem;border-radius:6px"
             class="bg-blue-500 mr-3 cursor-pointer"
             @click="themeStore.setColor('blue')"
           />
           <div
-            style="width:2rem;height:2rem;border-radius:6px;background-color:#6366F1; "
-            class="bg-green-500 mr-3 cursor-pointer"
-            @click="themeStore.setColor('indigo')"
+            style="width:2rem;height:2rem;border-radius:6px;"
+            class="bg-teal-500 mr-3 cursor-pointer"
+            @click="themeStore.setColor('teal')"
           />
           <div
-            style="width:2rem;height:2rem;border-radius:6px;background-color:#8B5CF6; "
-            class="bg-yellow-300 mr-3 cursor-pointer"
+            style="width:2rem;height:2rem;border-radius:6px"
+            class="bg-purple-500 mr-3 cursor-pointer"
             @click="themeStore.setColor('purple')"
+          />
+          <div
+            style="width:2rem;height:2rem;border-radius:6px"
+            class="bg-amber-500 mr-3 cursor-pointer"
+            @click="themeStore.setColor('amber')"
           />
         </div>
       </OverlayPanel>
