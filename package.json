@@ -13,7 +13,8 @@
     "lint": "eslint --fix .",
     "test:ui": "vitest --ui",
     "test:unit": "vitest --run --reporter verbose",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@formkit/nuxt": "1.5.9",
