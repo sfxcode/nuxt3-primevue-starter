@@ -182,4 +182,11 @@ function redirectToGithub (event: any) {
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+.layout-topbar-menu {
+  .p-link {
+      color: var(--primary-color);
+  }
+}
+</style>

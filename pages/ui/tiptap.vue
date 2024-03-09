@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import TipTap from '~/components/tiptap/TipTap.vue'
-const startText = '<p>I’m running Tiptap with Vue.js and Nuxt. 🎉</p>'
+const startText = '<p>I’m running <strong>Tiptap</strong> with <strong>Vue.js</strong> and <strong>Nuxt</strong>. 🎉</p><hr><blockquote><p>Use TipTap ...</p></blockquote>\n'
 const editorValue = ref(startText)
 
 function resetText () {
@@ -15,8 +15,15 @@ function resetText () {
     <div class="pb-2">
       <Button size="small" label="Reset" @click="resetText" />
     </div>
-    <TipTap v-model="editorValue" />
+    <div class="p-tiptap">
+      <TipTap v-model="editorValue" />
+    </div>
+    <div class="pt-8">
+      <pre v-if="false">{{ editorValue }}</pre>
+    </div>
   </div>
 </template>
 
-<style scoped></style>
+<style lang='scss'>
+
+</style>

@@ -1,6 +1,27 @@
 <script setup lang='ts'>
 import { FormKitSchema } from '@formkit/vue'
 import { ref, reactive } from 'vue'
+import { useFormKitSchema } from '@sfxcode/formkit-primevue/composables'
+
+const { addElement, addList, addListGroup, addComponent, addListGroupFunctions } = useFormKitSchema()
+function addFlexElement (children: any[]) {
+  return addElement('div', children, { class: 'min-w-50rem flex gap-4' })
+}
+
+function addGroupButtons () {
+  const addButtonComponent = (onClick: string = '', label: string = '', icon: string = '', severity: string = '', render: string = 'true', styleClass: string = 'p-button-sm ml-2'): object => {
+    return addComponent('Button', { onClick, label, icon, class: styleClass, severity }, render)
+  }
+
+  return addElement('div', [
+    addButtonComponent('$removeNode($node, $index)', '', 'pi pi-times', 'danger'),
+    addButtonComponent('$copyNode($node, $index)', '', 'pi pi-plus'),
+    addButtonComponent('$moveNodeUp($node, $index)', '', 'pi pi-arrow-up', 'secondary', '$index != 0'),
+    addElement('span', [], { class: 'ml-2 mr-10' }, '$index == 0'),
+    addButtonComponent('$moveNodeDown($node, $index)', '', 'pi pi-arrow-down', 'secondary', '$index < $node.value.length -1'),
+    addElement('span', [], { class: 'ml-2 mr-10' }, '$index == $node.value.length -1')
+  ], { class: 'pt-6' })
+}
 
 const options = [
   { label: 'Every page load', value: 'refresh' },
@@ -8,16 +29,22 @@ const options = [
   { label: 'Every day', value: 'daily' }
 ]
 
+const data = ref()
+
+function createDefaultValue (): object {
+  return { name: 'Sword', damage: '2D20' }
+}
+
+onMounted(() => {
+  const defaultData = { email: 'tom@mydomain.com', additionalMails: [{ email: 'peter@mydomain.com' }, { email: 'paul@mydomain.com' }], myCalendar: new Date() }
+  addListGroupFunctions(defaultData, { email: 'name@mydomain.com' })
+  data.value = defaultData
+})
+
 const schema = reactive(
   [
-    {
-      $el: 'h2',
-      children: ['Validation with FormKit']
-    },
-    {
-      $el: 'h3',
-      children: ['Inputs from PrimeVue']
-    },
+    addElement('h2', ['Validation with FormKit']),
+    addElement('h3', ['Inputs from PrimeVue']),
     {
       $formkit: 'primeInputText',
       name: 'email',
@@ -26,6 +53,25 @@ const schema = reactive(
       validation: 'required|email'
 
     },
+    addList('additionalMails', [
+      addFlexElement([
+        addElement('div', ['Additional Mails'], { class: 'text-xl mb-2' }),
+        addComponent('Button', { onClick: '$addNode($node)', label: 'Add', class: 'p-button-sm', icon: 'pi pi-plus' }, '$node.value.length == 0')
+      ]),
+      addListGroup(
+        [
+          addFlexElement([
+            {
+              $formkit: 'primeInputText',
+              label: 'Additional Mail',
+              name: 'email'
+            },
+            addGroupButtons()
+          ])
+        ]
+      )
+    ], true, 'true'),
+
     {
       $formkit: 'primeTextarea',
       name: 'myText',
@@ -102,18 +148,16 @@ const schema = reactive(
   ]
 )
 
-const data = ref({})
-
 const submitHandler = async () => {
   // Lets pretend this is an ajax request:
   await new Promise(resolve => setTimeout(resolve, 1000))
 }
 </script>
 <template>
-  <div class="card flex flex-wrap gap-12">
+  <div class="card flex flex-wrap gap-16">
     <div class="basis-1/2 md:basis-1/3">
       <span class="" />
-      <div class="myFormkit">
+      <div v-if="data" class="myFormkit max-w-25rem">
         <FormKit
           id="form"
           v-model="data"
@@ -136,4 +180,10 @@ const submitHandler = async () => {
     </div>
   </div>
 </template>
-<style scoped></style>
+<style lang='scss' scoped>
+
+.myFormkit {
+
+}
+
+</style>
