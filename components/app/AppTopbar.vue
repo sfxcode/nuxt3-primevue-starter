@@ -110,43 +110,43 @@ function redirectToGithub (event: any) {
         <h6>Theme</h6>
         <div class="field-radiobutton">
           <RadioButton
-            id="aura-dark"
             v-model="themeStore.themeName"
+            input-id="aura-dark"
             name="layoutColorMode"
             value="aura-dark"
             @change="themeStore.setTheme('aura-dark')"
           />
-          <label>Aura Dark</label>
+          <label for="aura-dark">Aura Dark</label>
         </div>
         <div class="field-radiobutton">
           <RadioButton
-            id="aura-light"
             v-model="themeStore.themeName"
+            input-id="aura-light"
             name="layoutColorMode"
             value="aura-light"
             @change="themeStore.setTheme('aura-light')"
           />
-          <label>Aura Light</label>
+          <label for="aura-light">Aura Light</label>
         </div>
         <div class="field-radiobutton">
           <RadioButton
-            id="lara-dark"
             v-model="themeStore.themeName"
+            input-id="lara-dark"
             name="layoutColorMode"
             value="lara-dark"
             @change="themeStore.setTheme('lara-dark')"
           />
-          <label>Lara Dark</label>
+          <label for="lara-dark">Lara Dark</label>
         </div>
         <div class="field-radiobutton">
           <RadioButton
-            id="lara-light"
             v-model="themeStore.themeName"
+            input-id="lara-light"
             name="layoutColorMode"
             value="lara-light"
             @change="themeStore.setTheme('lara-light')"
           />
-          <label>Lara Light</label>
+          <label for="lara-light">Lara Light</label>
         </div>
 
         <h6>Primary Color</h6>
