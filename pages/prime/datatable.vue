@@ -40,7 +40,7 @@ onMounted(async () => {
             <span class="text-xl">Products</span>
             <IconField icon-position="left">
               <InputIcon class="pi pi-search" />
-              <InputText v-model="filters.global.value" placeholder="Globale Suche" />
+              <InputText v-model="filters.global.value" placeholder="Global Search" />
             </IconField>
           </div>
         </div>
