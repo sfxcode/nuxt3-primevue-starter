@@ -38,10 +38,10 @@ onMounted(async () => {
         <div class="datatable-header">
           <div class="flex justify-between">
             <span class="text-xl">Products</span>
-            <span class="p-input-icon-left">
-              <i class="pi pi-search" />
+            <IconField icon-position="left">
+              <InputIcon class="pi pi-search" />
               <InputText v-model="filters.global.value" placeholder="Globale Suche" />
-            </span>
+            </IconField>
           </div>
         </div>
       </template>
