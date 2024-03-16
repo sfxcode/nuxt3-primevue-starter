@@ -13,19 +13,19 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       Starter for Vue.js Development with Nuxt 3.
     </h2>
     <div class="grid grid-cols-2 lg:grid-cols-3 gap-2">
-      <AdvertiseBox header="PrimeVue 3.49.x" icon="prime-check-circle" color="green-600">
+      <AdvertiseBox header="PrimeVue 3.50.x" icon="prime-check-circle" color="green-600">
         Excellent Component Library for VUE
       </AdvertiseBox>
       <AdvertiseBox header="PrimeVue Theme & Layout" icon="prime-check-circle" color="green-600">
         Free Sakai theme
       </AdvertiseBox>
       <AdvertiseBox header="FormKit" icon="prime-check-circle" color="purple-500">
-        FormKit 1.5.x for Form Validation
+        FormKit 1.6.x for Form Validation
       </AdvertiseBox>
       <AdvertiseBox header="UnoCSS" icon="prime-check-circle" color="green-600">
         UnoCSS for rapid styling
       </AdvertiseBox>
-      <AdvertiseBox header="VUE 3.4" icon="prime-check-circle" color="green-600">
+      <AdvertiseBox header="VUE 3.4.x" icon="prime-check-circle" color="green-600">
         Composition Api
       </AdvertiseBox>
       <AdvertiseBox header="Script Setup" icon="prime-check-circle" color="green-600">
@@ -35,7 +35,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
         Typesafe by default
       </AdvertiseBox>
 
-      <AdvertiseBox header="Nuxt 3.10" icon="prime-check-circle" color="green-400">
+      <AdvertiseBox header="Nuxt 3.10.x" icon="prime-check-circle" color="green-400">
         Pages, Layouts, ...
       </AdvertiseBox>
       <AdvertiseBox header="Nuxt Content 2.10" icon="prime-check-circle" color="green-400">
