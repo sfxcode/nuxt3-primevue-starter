@@ -35,7 +35,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
         Typesafe by default
       </AdvertiseBox>
 
-      <AdvertiseBox header="Nuxt 3.10.x" icon="prime-check-circle" color="green-400">
+      <AdvertiseBox header="Nuxt 3.11.x" icon="prime-check-circle" color="green-400">
         Pages, Layouts, ...
       </AdvertiseBox>
       <AdvertiseBox header="Nuxt Content 2.12.x" icon="prime-check-circle" color="green-400">
