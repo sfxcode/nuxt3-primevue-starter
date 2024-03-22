@@ -6,6 +6,18 @@ a {
   color: var(--primary-color);
 }
 
+.layout-main {
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+
+  a:hover {
+    border-bottom: 1px solid var(--primary-color);
+    padding-bottom: 2px;
+  }
+}
+
 button {
   outline: none !important;
   box-shadow: none !important;

@@ -175,6 +175,9 @@ const submitHandler = async () => {
     </div>
     <div class="basis-1/2 md:basis-1/3">
       <h2>Formkit Debug</h2>
+      <div class="text-xl">
+        More examples: <a href="https://formkit-primevue.netlify.app/">Formkit PrimeVue Demo</a>
+      </div>
       <h3>Data</h3>
       <pre>{{ data }}</pre>
     </div>
