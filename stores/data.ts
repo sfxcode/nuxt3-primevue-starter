@@ -6,10 +6,10 @@ export const useDataStore = defineStore({
 
   state: () => ({
     appVersion: useRuntimeConfig().public.APP_VERSION,
-    products: []
+    products: [],
   }),
   actions: {
-    async initData () {
+    async initData() {
       if (this.products.length === 0) {
         consola.debug('fetching data ...')
         await fetch('/api/products').then(res => res.json()).then((d) => {
@@ -17,10 +17,11 @@ export const useDataStore = defineStore({
         })
           .catch(error => consola.error(error))
       }
-    }
-  }
+    },
+  },
 
-}
+},
 )
 
-if (import.meta.hot) { import.meta.hot.accept(acceptHMRUpdate(useDataStore, import.meta.hot)) }
+if (import.meta.hot)
+  import.meta.hot.accept(acceptHMRUpdate(useDataStore, import.meta.hot))

@@ -1,6 +1,5 @@
 <script setup>
-
-import { EditorContent, Editor, Extension } from '@tiptap/vue-3'
+import { Editor, EditorContent } from '@tiptap/vue-3'
 import { Highlight } from '@tiptap/extension-highlight'
 import { TextAlign } from '@tiptap/extension-text-align'
 import { StarterKit } from '@tiptap/starter-kit'
@@ -9,31 +8,26 @@ const props = defineProps({
   modelValue: {
     type: String,
     default: '',
-    required: true
+    required: true,
   },
   editable: {
     type: Boolean,
-    default: true
-  }
+    default: true,
+  },
 })
+
+const emit = defineEmits(['update:modelValue'])
 
 const editor = ref()
-
-const extensionNames = computed(() => {
-  return props.extensions.map(ext => ext.name)
-})
 
 watch(
   () => props.modelValue,
   (value) => {
     const isSame = editor.value.getHTML() === value
-    if (!isSame) {
+    if (!isSame)
       editor.value.commands.setContent(value, false)
-    }
-  }
+  },
 )
-
-const emit = defineEmits(['update:modelValue'])
 
 onMounted(() => {
   editor.value = new Editor({
@@ -41,13 +35,13 @@ onMounted(() => {
     editable: props.editable,
     editorProps: {
       attributes: {
-        class: ''
-      }
+        class: '',
+      },
     },
     extensions: [StarterKit, Highlight, TextAlign.configure({ types: ['heading', 'paragraph'] })],
     onUpdate: () => {
       emit('update:modelValue', editor.value?.getHTML())
-    }
+    },
   })
 })
 
@@ -55,7 +49,6 @@ onBeforeUnmount(() => {
   editor.value?.destroy()
   editor.value = null
 })
-
 </script>
 
 <template>
@@ -216,7 +209,7 @@ onBeforeUnmount(() => {
         />
       </template>
     </Toolbar>
-    <editor-content :editor="editor" class="p-tiptap p-inputtext" />
+    <EditorContent :editor="editor" class="p-tiptap p-inputtext" />
   </div>
 </template>
 
@@ -256,5 +249,4 @@ onBeforeUnmount(() => {
 #strike {
   text-decoration:line-through;
 }
-
 </style>

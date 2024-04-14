@@ -1,14 +1,14 @@
 import pkg from './package.json'
 
 export default defineNuxtConfig({
-  devtools: true,
   ssr: true,
   runtimeConfig: {
     public: {
       APP_VERSION: pkg.version,
       APP_NAME: pkg.name,
-      APP_MODE: process.env?.NODE_ENV
-    }
+      // eslint-disable-next-line node/prefer-global/process
+      APP_MODE: process.env?.NODE_ENV,
+    },
   },
   modules: [
     'nuxt-primevue',
@@ -17,13 +17,13 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/i18n',
     '@nuxt/content',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
   ],
   content: {
     highlight: {
       theme: 'one-dark-pro',
-      preload: ['json', 'js', 'ts', 'html', 'css', 'vue']
-    }
+      preload: ['json', 'js', 'ts', 'html', 'css', 'vue'],
+    },
     // Options
   },
   i18n: {
@@ -33,28 +33,28 @@ export default defineNuxtConfig({
     strategy: 'no_prefix',
     locales: [
       { code: 'en', file: 'en.json', name: 'English' },
-      { code: 'de', file: 'de.json', name: 'German' }
+      { code: 'de', file: 'de.json', name: 'German' },
     ],
-    vueI18n: './vue-i18n.options.ts'
+    vueI18n: './vue-i18n.options.ts',
   },
   primevue: {
     components: {
-      exclude: ['Chart']
+      exclude: ['Chart'],
     },
     options: {
-      ripple: true
-    }
+      ripple: true,
+    },
   },
   css: [
     'primevue/resources/primevue.css',
     'primeicons/primeicons.css',
-    '@sfxcode/formkit-primevue/dist/sass/formkit-primevue.scss'
+    '@sfxcode/formkit-primevue/dist/sass/formkit-primevue.scss',
   ],
   build: {
-    transpile: ['nuxt', 'primevue', 'formkit-primevue']
+    transpile: ['nuxt', 'primevue', 'formkit-primevue'],
   },
   sourcemap: {
     client: false,
-    server: true
-  }
+    server: true,
+  },
 })

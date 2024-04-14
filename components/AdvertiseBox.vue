@@ -1,20 +1,19 @@
 <script setup lang='ts'>
-
 defineProps({
   header: {
     type: String,
     default: null,
-    required: true
+    required: true,
   },
   icon: {
     type: String,
     default: null,
-    required: true
+    required: true,
   },
   color: {
     type: String,
-    default: null
-  }
+    default: null,
+  },
 })
 </script>
 

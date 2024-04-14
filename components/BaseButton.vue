@@ -2,18 +2,18 @@
 defineProps({
   color: {
     type: String,
-    default: null
+    default: null,
   },
 
   size: {
     type: String,
-    default: null
+    default: null,
   },
 
   disabled: {
     type: Boolean,
-    default: false
-  }
+    default: false,
+  },
 })
 </script>
 

@@ -1,10 +1,10 @@
 <script setup lang='ts'>
-import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
-import { useRouter } from 'vue-router'
-const { layoutConfig, onMenuToggle } = useLayout()
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+
+defineEmits(['menuToggle'])
+const { onMenuToggle } = useLayout()
 const outsideClickListener = ref(null)
 const topbarMenuActive = ref(false)
-const router = useRouter()
 
 onMounted(() => {
   bindOutsideClickListener()
@@ -12,65 +12,54 @@ onMounted(() => {
 onBeforeUnmount(() => {
   unbindOutsideClickListener()
 })
-const logoUrl = computed(() => {
-  return `/layout/images/${layoutConfig.darkTheme.value ? 'logo-white' : 'logo-dark'}.svg`
-})
 
-const onTopBarMenuButton = () => {
+function onTopBarMenuButton() {
   topbarMenuActive.value = !topbarMenuActive.value
-}
-
-const onSettingsClick = () => {
-  topbarMenuActive.value = false
-  router.push('/utilities/documentation')
 }
 
 const topbarMenuClasses = computed(() => {
   return {
-    'layout-topbar-menu-mobile-active': topbarMenuActive.value
+    'layout-topbar-menu-mobile-active': topbarMenuActive.value,
   }
 })
 
-const bindOutsideClickListener = () => {
+function bindOutsideClickListener() {
   if (!outsideClickListener.value) {
     outsideClickListener.value = (event) => {
-      if (isOutsideClicked(event)) {
+      if (isOutsideClicked(event))
         topbarMenuActive.value = false
-      }
     }
 
     document.addEventListener('click', outsideClickListener.value)
   }
 }
 
-const unbindOutsideClickListener = () => {
+function unbindOutsideClickListener() {
   if (outsideClickListener.value) {
     document.removeEventListener('click', outsideClickListener)
     outsideClickListener.value = null
   }
 }
 
-const isOutsideClicked = (event) => {
-  if (!topbarMenuActive.value) { return }
+function isOutsideClicked(event) {
+  if (!topbarMenuActive.value)
+    return
   const sidebarEl = document.querySelector('.layout-topbar-menu')
   const topbarEl = document.querySelector('.layout-topbar-menu-button')
 
   return !(sidebarEl.isSameNode(event.target) || sidebarEl.contains(event.target) || topbarEl.isSameNode(event.target) || topbarEl.contains(event.target))
 }
 
-const emit = defineEmits(['menuToggle'])
-
 const themeStore = useThemeStore()
 const op = ref<any>(null)
 
-function toggle (event: any) {
+function toggle(event: any) {
   op.value.toggle(event)
 }
 
-function redirectToGithub (event: any) {
+function redirectToGithub() {
   window.open('https://github.com/sfxcode/nuxt3-primevue-starter', '_blank')
 }
-
 </script>
 
 <template>
@@ -183,7 +172,6 @@ function redirectToGithub (event: any) {
 </template>
 
 <style lang="scss" scoped>
-
 .layout-topbar-menu {
   .p-link {
       color: var(--primary-color);

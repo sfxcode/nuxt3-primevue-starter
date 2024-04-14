@@ -1,5 +1,4 @@
 <script setup lang='ts'>
-
 const themeStore = useThemeStore()
 const dataStore = useDataStore()
 const counterStore = useCounterStore()
@@ -50,9 +49,7 @@ onMounted(async () => {
 </template>
 
 <style lang='scss' scoped>
-
 h5 {
   color: var(--primary-color)
 }
-
 </style>

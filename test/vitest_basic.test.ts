@@ -1,17 +1,17 @@
-import { assert, expect, test } from 'vitest'
+import { assert, expect, it } from 'vitest'
 
 // Edit an assertion and save to see HMR in action
 
-test('Math.sqrt()', () => {
+it('math.sqrt()', () => {
   expect(Math.sqrt(4)).toBe(2)
   expect(Math.sqrt(144)).toBe(12)
   expect(Math.sqrt(2)).toBe(Math.SQRT2)
 })
 
-test('JSON', () => {
+it('jSON', () => {
   const input = {
     foo: 'hello',
-    bar: 'world'
+    bar: 'world',
   }
 
   const output = JSON.stringify(input)

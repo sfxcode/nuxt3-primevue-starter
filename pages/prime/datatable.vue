@@ -7,7 +7,7 @@ filters.value = {
   global: { value: null, matchMode: FilterMatchMode.CONTAINS },
   name: { value: null, matchMode: FilterMatchMode.CONTAINS },
   code: { value: null, matchMode: FilterMatchMode.CONTAINS },
-  inventoryStatus: { value: null, matchMode: FilterMatchMode.STARTS_WITH }
+  inventoryStatus: { value: null, matchMode: FilterMatchMode.STARTS_WITH },
 }
 
 const dataStore = useDataStore()

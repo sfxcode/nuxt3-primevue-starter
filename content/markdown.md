@@ -10,7 +10,7 @@ Hello World Form **Nuxt Content V2**
 
 [Component Sample](/cms/component)
 
-### Code 
+### Code
 
 ```typescript
 import { useDataStore, useThemeStore } from '@/stores'
@@ -36,6 +36,3 @@ onMounted(async () => {
 | 1        | Wonderful | Table           |
 | 2        | Complete  | Data            |
 | 3        | Cool      | Website         |
-
-
-

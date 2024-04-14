@@ -1,4 +1,4 @@
-import { toRefs, reactive, computed } from 'vue'
+import { computed, reactive, toRefs } from 'vue'
 
 const layoutConfig = reactive({
   ripple: true,
@@ -7,7 +7,7 @@ const layoutConfig = reactive({
   menuMode: 'static',
   theme: 'lara-dark-teal',
   scale: 14,
-  activeMenuItem: null
+  activeMenuItem: null,
 })
 
 const layoutState = reactive({
@@ -16,10 +16,10 @@ const layoutState = reactive({
   profileSidebarVisible: false,
   configSidebarVisible: false,
   staticMenuMobileActive: false,
-  menuHoverActive: false
+  menuHoverActive: false,
 })
 
-export function useLayout () {
+export function useLayout() {
   const changeThemeSettings = (theme, darkTheme) => {
     layoutConfig.darkTheme = darkTheme
     layoutConfig.theme = theme
@@ -34,15 +34,13 @@ export function useLayout () {
   }
 
   const onMenuToggle = () => {
-    if (layoutConfig.menuMode === 'overlay') {
+    if (layoutConfig.menuMode === 'overlay')
       layoutState.overlayMenuActive = !layoutState.overlayMenuActive
-    }
 
-    if (window.innerWidth > 991) {
+    if (window.innerWidth > 991)
       layoutState.staticMenuDesktopInactive = !layoutState.staticMenuDesktopInactive
-    } else {
+    else
       layoutState.staticMenuMobileActive = !layoutState.staticMenuMobileActive
-    }
   }
 
   const isSidebarActive = computed(() => layoutState.overlayMenuActive || layoutState.staticMenuMobileActive)
@@ -57,6 +55,6 @@ export function useLayout () {
     onMenuToggle,
     isSidebarActive,
     isDarkTheme,
-    setActiveMenuItem
+    setActiveMenuItem,
   }
 }
