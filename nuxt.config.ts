@@ -18,7 +18,11 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/content',
     '@vueuse/nuxt',
+    '@nuxt/test-utils/module',
   ],
+  formkit: {
+    autoImport: true,
+  },
   content: {
     highlight: {
       theme: 'one-dark-pro',

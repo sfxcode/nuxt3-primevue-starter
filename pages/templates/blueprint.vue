@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-
+import ToDo from '~/components/ToDo.vue'
 </script>
 
 <template>
@@ -9,6 +9,9 @@
     <NuxtLink to="/">
       Home page
     </NuxtLink>
+    <div>
+      <ToDo text="Work in Progress" />
+    </div>
   </div>
 </template>
 
