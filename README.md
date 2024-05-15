@@ -19,7 +19,7 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 - [TipTap](https://tiptap.dev) - Headless Editor
 - [Vitest](https://vitest.dev/) - Blazing Fast Unit Test Framework ([Getting started](https://vitest.dev/guide))
 - [nuxt-test-utils](https://github.com/nuxt/test-utils) - Support for e2e and unit testing ([Getting started](https://nuxt.com/docs/getting-started/testing))
-  
+
 ## Nuxt Modules
 
 - [PrimeVue-Nuxt](https://primevue.org/nuxt/) PrimeVue Nuxt Module
