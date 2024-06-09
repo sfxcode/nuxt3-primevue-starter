@@ -2,6 +2,7 @@ import pkg from './package.json'
 
 export default defineNuxtConfig({
   ssr: true,
+  devtools: { enabled: true },
   runtimeConfig: {
     public: {
       APP_VERSION: pkg.version,
@@ -59,6 +60,6 @@ export default defineNuxtConfig({
   },
   sourcemap: {
     client: false,
-    server: true,
+    server: false,
   },
 })
