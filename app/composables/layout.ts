@@ -20,16 +20,16 @@ const layoutState = reactive({
 })
 
 export function useLayout() {
-  const changeThemeSettings = (theme, darkTheme) => {
+  const changeThemeSettings = (theme: string, darkTheme: boolean) => {
     layoutConfig.darkTheme = darkTheme
     layoutConfig.theme = theme
   }
 
-  const setScale = (scale) => {
+  const setScale = (scale: number) => {
     layoutConfig.scale = scale
   }
 
-  const setActiveMenuItem = (item) => {
+  const setActiveMenuItem = (item: any) => {
     layoutConfig.activeMenuItem = item.value || item
   }
 

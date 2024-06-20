@@ -1,6 +1,9 @@
 import pkg from './package.json'
 
 export default defineNuxtConfig({
+  future: {
+    compatibilityVersion: 4,
+  },
   ssr: true,
   devtools: { enabled: true },
   runtimeConfig: {
@@ -20,6 +23,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt',
     '@nuxt/test-utils/module',
+    "@nuxt/image"
   ],
   formkit: {
     autoImport: true,
