@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt',
     '@nuxt/test-utils/module',
-    "@nuxt/image"
+    '@nuxt/image',
   ],
   formkit: {
     autoImport: true,
@@ -48,7 +48,7 @@ export default defineNuxtConfig({
   },
   primevue: {
     components: {
-      exclude: ['Chart'],
+      exclude: ['Chart', 'Editor'],
     },
     options: {
       ripple: true,
