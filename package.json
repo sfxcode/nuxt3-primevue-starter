@@ -56,5 +56,6 @@
     "unstorage": "^1.10.2",
     "vitest": "^1.6.0",
     "vue-sidebar-menu": "^5.4.0"
-  }
+  },
+  "packageManager": "pnpm@9.4.0+sha256.b6fd0bfda555e7e584ad7e56b30c68b01d5a04f9ee93989f4b93ca8473c49c74"
 }
