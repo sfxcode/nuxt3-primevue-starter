@@ -110,4 +110,4 @@ JetBrains is supporting this open source project with:
 
 [![Intellij IDEA](https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA.svg?_gl=1*186j7fd*_gcl_au*MjEwMzAyNDUzNi4xNzIwMTE5MTc0*_ga*MTg4NjQzMDA5MC4xNzIwMTE5MTc0*_ga_9J976DJZ68*MTcyMDExOTE3NC4xLjAuMTcyMDExOTE3OS41NS4wLjA.)](http://www.jetbrains.com/idea/)
 
-![](public/starter.png)
+![](public/starter_4.png)
