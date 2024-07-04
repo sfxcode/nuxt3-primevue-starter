@@ -1,0 +1,48 @@
+$borderRadius: 12px;
+
+:root {
+  font-family: Inter;
+  --formkit-error-color: var(--p-red-700);
+}
+
+html {
+  font-size: 16px;
+}
+
+#workspace {
+  a {
+    text-decoration: none;
+    color: var(--p-primary-color);
+  }
+
+  a:hover {
+    border-bottom: 1px solid var(--p-primary-color);
+    padding-bottom: 2px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .top-navbar {
+    display: inline-flex !important;
+  }
+}
+
+.card {
+  padding: 1.5rem;
+  color: var(--p-text-color);
+  margin-bottom: 1rem;
+  border-radius: $borderRadius;
+  box-shadow: 0 3px 5px rgba(0,0,0,.02), 0 0 2px rgba(0,0,0,.05), 0 1px 4px rgba(0,0,0,.08) !important;
+
+  h2 {
+    color: var(--p-primary-color);
+  }
+
+}
+
+
+.p-tiptap  {
+  strong {
+    color: var(--p-primary-color);
+  }
+}

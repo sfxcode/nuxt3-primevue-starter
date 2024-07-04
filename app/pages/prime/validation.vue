@@ -75,9 +75,9 @@ const schema = reactive(
       rows: '5',
     },
     {
-      $formkit: 'primeCalendar',
-      name: 'myCalendar',
-      label: 'Calendar',
+      $formkit: 'primeDatePicker',
+      name: 'myDatePicker',
+      label: 'Date Picker',
       validation: '',
       showIcon: true,
 
@@ -107,7 +107,7 @@ const schema = reactive(
 
     },
     {
-      $formkit: 'primeDropdown',
+      $formkit: 'primeSelect',
       if: '$eu_citizen', // 👀 Oooo, conditionals!
       name: 'cookie_notice',
       label: 'Cookie notice frequency',
@@ -129,11 +129,6 @@ const schema = reactive(
       min: 5,
       step: 5,
       value: 10,
-    },
-    {
-      $formkit: 'primeChips',
-      name: 'chips',
-      label: 'Use Chips',
     },
     {
       $formkit: 'primeKnob',

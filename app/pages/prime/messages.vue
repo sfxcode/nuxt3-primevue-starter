@@ -14,7 +14,7 @@ function showMessage(severity: ToastMessageOptions['severity'], summary: string,
     <div class="card">
       <h2>PrimeVue Toast Demo</h2>
 
-      <div class="grid grid-cols-4">
+      <div class="flex flex-row gap-4">
         <div>
           <Button label="Success" class="p-button-success" @click="showMessage('success', 'Success Message', 'Message Content')" />
         </div>
@@ -30,18 +30,20 @@ function showMessage(severity: ToastMessageOptions['severity'], summary: string,
         <Toast />
       </div>
       <h2>Messages</h2>
-      <Message severity="success">
-        Success Message Content
-      </Message>
-      <Message severity="info">
-        Info Message Content
-      </Message>
-      <Message severity="warn">
-        Warning Message Content
-      </Message>
-      <Message severity="error">
-        Error Message Content
-      </Message>
+      <div class="flex flex-row gap-4">
+        <Message severity="success">
+          Success Message Content
+        </Message>
+        <Message severity="info">
+          Info Message Content
+        </Message>
+        <Message severity="warn">
+          Warning Message Content
+        </Message>
+        <Message severity="error">
+          Error Message Content
+        </Message>
+      </div>
     </div>
   </div>
 </template>

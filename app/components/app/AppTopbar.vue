@@ -1,61 +1,5 @@
-<script setup lang='ts'>
-import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
-
-defineEmits(['menuToggle'])
-const { onMenuToggle } = useLayout()
-const outsideClickListener = ref(null)
-const topbarMenuActive = ref(false)
-
-onMounted(() => {
-  bindOutsideClickListener()
-})
-onBeforeUnmount(() => {
-  unbindOutsideClickListener()
-})
-
-function onTopBarMenuButton() {
-  topbarMenuActive.value = !topbarMenuActive.value
-}
-
-const topbarMenuClasses = computed(() => {
-  return {
-    'layout-topbar-menu-mobile-active': topbarMenuActive.value,
-  }
-})
-
-function bindOutsideClickListener() {
-  if (!outsideClickListener.value) {
-    outsideClickListener.value = (event) => {
-      if (isOutsideClicked(event))
-        topbarMenuActive.value = false
-    }
-
-    document.addEventListener('click', outsideClickListener.value)
-  }
-}
-
-function unbindOutsideClickListener() {
-  if (outsideClickListener.value) {
-    document.removeEventListener('click', outsideClickListener)
-    outsideClickListener.value = null
-  }
-}
-
-function isOutsideClicked(event) {
-  if (!topbarMenuActive.value)
-    return
-  const sidebarEl = document.querySelector('.layout-topbar-menu')
-  const topbarEl = document.querySelector('.layout-topbar-menu-button')
-
-  return !(sidebarEl.isSameNode(event.target) || sidebarEl.contains(event.target) || topbarEl.isSameNode(event.target) || topbarEl.contains(event.target))
-}
-
-const themeStore = useThemeStore()
-const op = ref<any>(null)
-
-function toggle(event: any) {
-  op.value.toggle(event)
-}
+<script setup lang="ts">
+import ColorMode from '~/components/app/ColorMode.vue'
 
 function redirectToGithub() {
   window.open('https://github.com/sfxcode/nuxt3-primevue-starter', '_blank')
@@ -63,118 +7,19 @@ function redirectToGithub() {
 </script>
 
 <template>
-  <div class="layout-topbar">
-    <NuxtLink to="/" class="layout-topbar-logo">
-      <span style="color: var(--primary-color)">Nuxt3 PrimeVue Starter</span>
-    </NuxtLink>
+  <nav>
+    <Toolbar>
+      <template #start />
 
-    <button class="p-link layout-menu-button layout-topbar-button" @click="onMenuToggle()">
-      <i class="pi pi-bars" />
-    </button>
-
-    <button class="p-link layout-topbar-menu-button layout-topbar-button" @click="onTopBarMenuButton()">
-      <i class="pi pi-ellipsis-v" />
-    </button>
-
-    <div class="layout-topbar-menu" :class="topbarMenuClasses">
-      <button class="p-link layout-topbar-button" @click="onTopBarMenuButton()">
-        <i class="pi pi-calendar" />
-        <span>Calendar</span>
-      </button>
-      <button class="p-link layout-topbar-button" @click="onTopBarMenuButton()">
-        <i class="pi pi-user" />
-        <span>Profile</span>
-      </button>
-      <button class="p-link layout-topbar-button" @click="toggle">
-        <i class="pi pi-cog" />
-        <span>Settings</span>
-      </button>
-      <button class="p-link layout-topbar-button" @click="redirectToGithub">
-        <i class="pi pi-github" />
-        <span>Github</span>
-      </button>
-    </div>
-    <client-only>
-      <OverlayPanel id="overlay_panel" ref="op" append-to="body" style="width: 200px">
-        <h6>Theme</h6>
-        <div class="field-radiobutton">
-          <RadioButton
-            v-model="themeStore.themeName"
-            input-id="aura-dark"
-            name="layoutColorMode"
-            value="aura-dark"
-            @change="themeStore.setTheme('aura-dark')"
-          />
-          <label for="aura-dark">Aura Dark</label>
-        </div>
-        <div class="field-radiobutton">
-          <RadioButton
-            v-model="themeStore.themeName"
-            input-id="aura-light"
-            name="layoutColorMode"
-            value="aura-light"
-            @change="themeStore.setTheme('aura-light')"
-          />
-          <label for="aura-light">Aura Light</label>
-        </div>
-        <div class="field-radiobutton">
-          <RadioButton
-            v-model="themeStore.themeName"
-            input-id="lara-dark"
-            name="layoutColorMode"
-            value="lara-dark"
-            @change="themeStore.setTheme('lara-dark')"
-          />
-          <label for="lara-dark">Lara Dark</label>
-        </div>
-        <div class="field-radiobutton">
-          <RadioButton
-            v-model="themeStore.themeName"
-            input-id="lara-light"
-            name="layoutColorMode"
-            value="lara-light"
-            @change="themeStore.setTheme('lara-light')"
-          />
-          <label for="lara-light">Lara Light</label>
-        </div>
-
-        <h6>Primary Color</h6>
-        <div class="flex">
-          <div
-            style="width:2rem;height:2rem;border-radius:6px; "
-            class="bg-green-500  mr-3  cursor-pointer"
-            @click="themeStore.setColor('green')"
-          />
-          <div
-            style="width:2rem;height:2rem;border-radius:6px"
-            class="bg-blue-500 mr-3 cursor-pointer"
-            @click="themeStore.setColor('blue')"
-          />
-          <div
-            style="width:2rem;height:2rem;border-radius:6px;"
-            class="bg-teal-500 mr-3 cursor-pointer"
-            @click="themeStore.setColor('teal')"
-          />
-          <div
-            style="width:2rem;height:2rem;border-radius:6px"
-            class="bg-purple-500 mr-3 cursor-pointer"
-            @click="themeStore.setColor('purple')"
-          />
-          <div
-            style="width:2rem;height:2rem;border-radius:6px"
-            class="bg-amber-500 mr-3 cursor-pointer"
-            @click="themeStore.setColor('amber')"
-          />
-        </div>
-      </OverlayPanel>
-    </client-only>
-  </div>
+      <template #end>
+        <ColorMode class="ml-6 mr-2" />
+        <Button icon="pi pi-github" class="mr-2" @click="redirectToGithub" />
+        <Button icon="pi pi-sign-out" severity="danger" />
+      </template>
+    </Toolbar>
+  </nav>
 </template>
 
-<style lang="scss" scoped>
-.layout-topbar-menu {
-  .p-link {
-      color: var(--primary-color);
-  }
-}
+<style scoped lang="scss">
+
 </style>

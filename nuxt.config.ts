@@ -1,3 +1,4 @@
+import Aura from '@primevue/themes/aura'
 import pkg from './package.json'
 
 export default defineNuxtConfig({
@@ -15,8 +16,7 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    'nuxt-primevue',
-    '@formkit/nuxt',
+    '@primevue/nuxt-module',
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/i18n',
@@ -24,6 +24,9 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/test-utils/module',
     '@nuxt/image',
+    '@nuxt/fonts',
+    '@formkit/nuxt',
+
   ],
   formkit: {
     autoImport: true,
@@ -47,15 +50,21 @@ export default defineNuxtConfig({
     vueI18n: './vue-i18n.options.ts',
   },
   primevue: {
+    autoImport: false,
     components: {
       exclude: ['Chart', 'Editor'],
     },
     options: {
+      theme: {
+        preset: Aura,
+        options: {
+          darkModeSelector: '.dark',
+        },
+      },
       ripple: true,
     },
   },
   css: [
-    'primevue/resources/primevue.css',
     'primeicons/primeicons.css',
     '@sfxcode/formkit-primevue/dist/sass/formkit-primevue.scss',
   ],

@@ -5,7 +5,7 @@ const router = useRouter()
 <template>
   <div class="card">
     <div class="col-12 mt-10 text-center">
-      <img src="/layout/images/logo-blue.svg" alt="Sakai logo" class="mb-5" style="width:81px; height:60px;">
+      <img src="/nuxt-logo.svg" alt="Nuxt logo" class="mb-5" style="width:81px; height:60px;">
     </div>
     <main class="px-4 py-10 text-center text-teal-700 text-8xl">
       <div>

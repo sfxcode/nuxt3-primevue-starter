@@ -7,13 +7,15 @@ const slug = route.params.slug?.toString()
   <div class="markdown">
     <ContentDoc :path="slug">
       <template #default="{ doc }">
-        <h1>{{ doc.title }}</h1>
-        <p>{{ doc.description }}</p>
-        <p class="font-bold">
-          Author: {{ doc.author }}
-        </p>
-        <hr>
-        <ContentRenderer :value="doc" />
+        <div class="card">
+          <h2>{{ doc.title }}</h2>
+          <p>{{ doc.description }}</p>
+          <p class="font-bold">
+            Author: {{ doc.author }}
+          </p>
+          <hr>
+          <ContentRenderer :value="doc" />
+        </div>
       </template>
       <!-- Slot if document is not found -->
       <template #not-found>

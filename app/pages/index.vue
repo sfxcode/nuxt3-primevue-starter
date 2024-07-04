@@ -13,48 +13,47 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       Starter for Vue.js Development with Nuxt 3.
     </h2>
     <div class="grid grid-cols-2 lg:grid-cols-3 gap-2">
-      <AdvertiseBox header="PrimeVue 3.52.x" icon="prime-check-circle" color="green-600">
-        Excellent Component Library for VUE
+      <AdvertiseBox header="PrimeVue 4.x" icon="prime-check-circle" color="green-600">
+        Excellent <ExternalLink href="https://github.com/sfxcode/formkit-primevue" text="Component Library" /> for VUE
       </AdvertiseBox>
-      <AdvertiseBox header="PrimeVue Theme & Layout" icon="prime-check-circle" color="green-600">
-        Free Sakai theme
+      <AdvertiseBox header="PrimeVue Theme" icon="prime-check-circle" color="green-600">
+        <ExternalLink href="https://primevue.org/theming/styled" text="Styled Mode" /> with preset: Aura
       </AdvertiseBox>
       <AdvertiseBox header="FormKit" icon="prime-check-circle" color="purple-500">
-        FormKit 1.6.x for Form Validation
+        <ExternalLink href="https://formkit.com" text="Formkit" /> 1.6.x support by <ExternalLink href="https://formkit-primevue.netlify.app/" text="PrimeVue-FormKit" />
       </AdvertiseBox>
       <AdvertiseBox header="UnoCSS" icon="prime-check-circle" color="green-600">
-        UnoCSS for rapid styling
+        <ExternalLink href="https://unocss.dev/" text="UnoCSS" /> for rapid styling
       </AdvertiseBox>
       <AdvertiseBox header="VUE 3.4.x" icon="prime-check-circle" color="green-600">
-        Composition Api
-      </AdvertiseBox>
-      <AdvertiseBox header="Script Setup" icon="prime-check-circle" color="green-600">
-        Reduce a lot of boilerplate code
+        <ExternalLink href="https://vuejs.org/guide/introduction.html" text="Composition Api" /> with Script Setup
       </AdvertiseBox>
       <AdvertiseBox header="Typescript 5" icon="prime-check-circle" color="blue-400">
         Typesafe by default
       </AdvertiseBox>
-
-      <AdvertiseBox header="Nuxt 3.11.x" icon="prime-check-circle" color="green-400">
-        Pages, Layouts, ...
+      <AdvertiseBox header="Nuxt 3.12.x (Nuxt 4 ready)" icon="prime-check-circle" color="green-400">
+        <ExternalLink href="https://nuxt.com/" text="Nuxt" /> with Pages, Layouts, ...
       </AdvertiseBox>
-      <AdvertiseBox header="Nuxt Content 2.12.x" icon="prime-check-circle" color="green-400">
-        Markdown, YML, CSV or JSON and MDC Syntax
+      <AdvertiseBox header="Nuxt Content 2.13.x" icon="prime-check-circle" color="green-400">
+        <ExternalLink href="https://content.nuxt.com/" text="Content" />: Markdown, YML, CSV or JSON and MDC Syntax
       </AdvertiseBox>
-      <AdvertiseBox header="I18n" icon="prime-check-circle" color="green-600">
-        Nuxt I18n
+      <AdvertiseBox header="Nuxt Modules" icon="prime-check-circle" color="green-600">
+        includes <ExternalLink href="https://nuxt.com/modules/image" text="Nuxt Images" />, <ExternalLink href="https://nuxt.com/modules/fonts" text="Nuxt Fonts" />
       </AdvertiseBox>
       <AdvertiseBox header="VueUse" icon="prime-check-circle" color="green-600">
-        VueUse included
+        <ExternalLink href="https://vueuse.org/" text="VueUse" /> included
       </AdvertiseBox>
-      <AdvertiseBox header="Pinia Store 2" icon="prime-check-circle" color="blue-400">
-        Replacement / Alternative for VUEX Store
-      </AdvertiseBox>
-      <AdvertiseBox header="Nitro" icon="prime-check-circle" color="green-400">
-        Nuxt 3 Server Engine
+      <AdvertiseBox header="Pinia 2.x" icon="prime-check-circle" color="blue-400">
+        <ExternalLink href="https://pinia.vuejs.org/" text="Pinia" />: Vue Store Implementation
       </AdvertiseBox>
       <AdvertiseBox header="TipTap" icon="prime-check-circle" color="green-600">
-        TipTap Editor Demo
+        <ExternalLink href="https://tiptap.dev/" text="TipTap" /> Editor
+      </AdvertiseBox>
+      <AdvertiseBox header="Vue Sidebar" icon="prime-check-circle" color="green-600">
+        <ExternalLink href="https://github.com/yaminncco/vue-sidebar-menu" text="Sidebar" /> component
+      </AdvertiseBox>
+      <AdvertiseBox header="Nitro" icon="prime-check-circle" color="green-400">
+        <ExternalLink href="https://nitro.unjs.io/" text="Nitro" />: Next Generation Server Toolkit
       </AdvertiseBox>
       <AdvertiseBox header="Vitest" icon="prime-check-circle" color="blue-600">
         Testing with Vitest

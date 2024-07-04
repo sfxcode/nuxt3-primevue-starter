@@ -1,76 +1,95 @@
 <script setup lang='ts'>
-import { computed, ref, watch } from 'vue'
+const config = useRuntimeConfig()
+const { menu } = useNavigationMenu()
 
-import AppMenu from '~/components/app/AppMenu.vue'
+const collapsed = useState<boolean>('collapsed')
+const isOnMobile = useState<boolean>('isOnMobile')
 
-const { layoutConfig, layoutState, isSidebarActive } = useLayout()
-const outsideClickListener = ref(null)
-const themeStore = useThemeStore()
-watch(isSidebarActive, (newVal) => {
-  if (newVal)
-    bindOutsideClickListener()
-  else
-    unbindOutsideClickListener()
+function onResize() {
+  if (window.innerWidth <= 980) {
+    collapsed.value = true
+    isOnMobile.value = true
+  }
+  else {
+    collapsed.value = false
+    isOnMobile.value = false
+  }
+}
+
+function onToggleCollapse() {
+
+}
+
+function onItemClick() {
+
+}
+
+onMounted(() => {
+  onResize()
+  window.addEventListener('resize', onResize)
 })
-const containerClass = computed(() => {
-  return {
-    'dark': themeStore.isDarkMode,
-    'layout-overlay': layoutConfig.menuMode.value === 'overlay',
-    'layout-static': layoutConfig.menuMode.value === 'static',
-    'layout-static-inactive': layoutState.staticMenuDesktopInactive.value && layoutConfig.menuMode.value === 'static',
-    'layout-overlay-active': layoutState.overlayMenuActive.value,
-    'layout-mobile-active': layoutState.staticMenuMobileActive.value,
-    'p-input-filled': layoutConfig.inputStyle.value === 'filled',
-    'p-ripple-disabled': !layoutConfig.ripple.value,
-  }
-})
-
-function bindOutsideClickListener() {
-  if (!outsideClickListener.value) {
-    outsideClickListener.value = (event) => {
-      if (isOutsideClicked(event)) {
-        layoutState.overlayMenuActive.value = false
-        layoutState.staticMenuMobileActive.value = false
-        layoutState.menuHoverActive.value = false
-      }
-    }
-
-    document.addEventListener('click', outsideClickListener.value)
-  }
-}
-
-function unbindOutsideClickListener() {
-  if (outsideClickListener.value) {
-    document.removeEventListener('click', outsideClickListener)
-    outsideClickListener.value = null
-  }
-}
-
-function isOutsideClicked(event) {
-  const sidebarEl = document.querySelector('.layout-sidebar')
-  const topbarEl = document.querySelector('.layout-menu-button')
-
-  return !(sidebarEl.isSameNode(event.target) || sidebarEl.contains(event.target) || topbarEl.isSameNode(event.target) || topbarEl.contains(event.target))
-}
 </script>
 
 <template>
-  <div>
-    <Link rel="stylesheet" :href="themeStore.link" />
-    <div class="layout-wrapper" :class="containerClass">
-      <app-topbar />
-      <div class="layout-sidebar">
-        <AppMenu />
-      </div>
-      <div class="layout-main-container">
-        <div class="layout-main">
-          <slot />
+  <div class="">
+    <sidebar-menu
+      v-model:collapsed="collapsed"
+      link-component-name="nuxt-sidebar-link"
+      :menu="menu"
+      :show-one-child="true"
+      width="220px"
+      @update:collapsed="onToggleCollapse"
+      @item-click="onItemClick"
+    >
+      <template #header>
+        <div v-if="!collapsed" class="flex">
+          <img class="m-6 w-8" src="/primevue-logo.webp" alt="PrimeVue">
+          <img class="m-6 w-8" src="/nuxt-logo.svg" alt="Nuxt">
         </div>
-        <app-footer />
+      </template>
+      <template #footer>
+        <div class="m-2 ml-5 text-color-[var(--p-primary-color)]">
+          <span v-if="!collapsed">Version {{ config.public.APP_VERSION }}</span>
+          <span v-if="collapsed">{{ config.public.APP_VERSION }}</span>
+        </div>
+      </template>
+    </sidebar-menu>
+    <div
+      v-if="isOnMobile && !collapsed"
+      class="sidebar-overlay"
+      @click="collapsed = true"
+    />
+    <div id="workspace" :class="[{ collapsed }, { onmobile: isOnMobile }]">
+      <AppTopbar />
+      <div class="mt-4">
+        <slot />
       </div>
-      <div class="layout-mask" />
     </div>
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+#workspace {
+  padding-left: 220px;
+  transition: 0.3s ease;
+}
+
+#workspace.collapsed {
+  padding-left: 65px;
+}
+
+#workspace.onmobile {
+  padding-left: 65px;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 900;
+}
+</style>

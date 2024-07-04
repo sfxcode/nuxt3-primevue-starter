@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-import { FilterMatchMode } from 'primevue/api'
+import { FilterMatchMode } from '@primevue/core/api'
 
 const { tableData, filters, dataTableRef, exportCSV } = usePrimeDataTable()
 
@@ -20,7 +20,7 @@ onMounted(async () => {
 
 <template>
   <div class="card">
-    <h5>DataTable Example</h5>
+    <h2>DataTable Example</h2>
     <DataTable
       ref="dataTableRef"
       v-model:filters="filters"
