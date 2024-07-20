@@ -4,6 +4,7 @@ import { defu } from 'defu'
 import { de, en } from '@formkit/i18n'
 import { createAutoAnimatePlugin } from '@formkit/addons'
 import { primeInputs } from '@sfxcode/formkit-primevue'
+import { addPrimeAsteriskPlugin } from '@sfxcode/formkit-primevue/plugins'
 
 const config: DefaultConfigOptions = {
   locales: { de, en },
@@ -27,6 +28,7 @@ const config: DefaultConfigOptions = {
         repeater: ['items'],
       },
     ),
+    addPrimeAsteriskPlugin,
   ],
 }
 
