@@ -64,7 +64,7 @@ Nuxt PrimeVue 3 under the [prime3](https://github.com/sfxcode/nuxt3-primevue-sta
 
 Install node:
 
-**Latest node LTS version required (18)**
+**Latest node LTS version required (20)**
 Use node manager like **nvm** to install.
 
 Install pnpm:
