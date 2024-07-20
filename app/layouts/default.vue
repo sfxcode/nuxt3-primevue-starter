@@ -46,6 +46,10 @@ onMounted(() => {
           <img class="m-6 w-8" src="/primevue-logo.webp" alt="PrimeVue">
           <img class="m-6 w-8" src="/nuxt-logo.svg" alt="Nuxt">
         </div>
+        <div v-else>
+          <img class="ml-5 mt-2 w-6" src="/primevue-logo.webp" alt="PrimeVue">
+          <img class="ml-5 mt-2 w-6" src="/nuxt-logo.svg" alt="Nuxt">
+        </div>
       </template>
       <template #footer>
         <div class="m-2 ml-5 text-color-[var(--p-primary-color)]">
