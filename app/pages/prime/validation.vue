@@ -1,27 +1,10 @@
 <script setup lang='ts'>
 import { FormKitSchema } from '@formkit/vue'
 import { reactive, ref } from 'vue'
-import { useFormKitSchema } from '@sfxcode/formkit-primevue/composables'
+import { useFormKitRepeater, useFormKitSchema } from '@sfxcode/formkit-primevue/composables'
 
-const { addElement, addList, addListGroup, addComponent, addListGroupFunctions } = useFormKitSchema()
-function addFlexElement(children: any[]) {
-  return addElement('div', children, { class: 'min-w-50rem flex gap-4' })
-}
-
-function addGroupButtons() {
-  const addButtonComponent = (onClick: string = '', label: string = '', icon: string = '', severity: string = '', render: string = 'true', styleClass: string = 'p-button-sm ml-2'): object => {
-    return addComponent('Button', { onClick, label, icon, class: styleClass, severity }, render)
-  }
-
-  return addElement('div', [
-    addButtonComponent('$removeNode($node, $index)', '', 'pi pi-times', 'danger'),
-    addButtonComponent('$copyNode($node, $index)', '', 'pi pi-plus'),
-    addButtonComponent('$moveNodeUp($node, $index)', '', 'pi pi-arrow-up', 'secondary', '$index != 0'),
-    addElement('span', [], { class: 'ml-2 mr-10' }, '$index == 0'),
-    addButtonComponent('$moveNodeDown($node, $index)', '', 'pi pi-arrow-down', 'secondary', '$index < $node.value.length -1'),
-    addElement('span', [], { class: 'ml-2 mr-10' }, '$index == $node.value.length -1'),
-  ], { class: 'pt-6' })
-}
+const { addElement, addList, addListGroup } = useFormKitSchema()
+const { addListGroupFunctions, addGroupButtons, addInsertButton } = useFormKitRepeater()
 
 const options = [
   { label: 'Every page load', value: 'refresh' },
@@ -47,23 +30,21 @@ const schema = reactive(
       label: 'Email',
       help: 'This will be used for your account.',
       validation: 'required|email',
-
+      outerClass: 'col-7',
     },
     addList('additionalMails', [
-      addFlexElement([
-        addElement('div', ['Additional Mails'], { class: 'text-xl mb-2' }),
-        addComponent('Button', { onClick: '$addNode($node)', label: 'Add', class: 'p-button-sm', icon: 'pi pi-plus' }, '$node.value.length == 0'),
-      ]),
+      addElement('div', ['Additional Mail'], { class: 'text-xl' }),
+      addInsertButton(),
       addListGroup(
         [
-          addFlexElement([
-            {
-              $formkit: 'primeInputText',
-              label: 'Additional Mail',
-              name: 'email',
-            },
-            addGroupButtons(),
-          ]),
+          {
+            $formkit: 'primeInputText',
+            label: 'Additional Mail',
+            name: 'email',
+            outerClass: 'col-6',
+
+          },
+          addGroupButtons('', 'col-6'),
         ],
       ),
     ], true, 'true'),
@@ -88,6 +69,7 @@ const schema = reactive(
       label: 'Password',
       help: 'Enter your new password.',
       validation: 'required|length:5,16',
+      outerClass: 'col-6',
     },
     {
       $formkit: 'primePassword',
@@ -98,13 +80,14 @@ const schema = reactive(
       help: 'Enter your new password again to confirm it.',
       validation: 'required|confirm',
       validationLabel: 'password confirmation',
+      outerClass: 'col-6',
     },
     {
       $formkit: 'primeCheckbox',
       name: 'eu_citizen',
       id: 'eu',
       label: 'Are you a european citizen?',
-
+      outerClass: 'col-6',
     },
     {
       $formkit: 'primeSelect',
@@ -118,8 +101,7 @@ const schema = reactive(
       optionValue: 'value',
       options,
       help: 'How often should we display a cookie notice?',
-      class: 'test',
-
+      outerClass: 'col-6',
     },
     {
       $formkit: 'primeSlider',
@@ -146,10 +128,9 @@ async function submitHandler() {
 </script>
 
 <template>
-  <div class="card flex flex-wrap gap-16">
-    <div class="basis-1/2 md:basis-1/3">
-      <span class="" />
-      <div v-if="data" class="myFormkit max-w-25rem">
+  <div class="card flex flex-wrap gap-4">
+    <div class="basis-1/3 md:basis-1/4">
+      <div v-if="data" class="min-w-25rem">
         <FormKit
           id="form"
           v-model="data"

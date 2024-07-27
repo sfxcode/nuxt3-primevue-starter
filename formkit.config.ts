@@ -1,16 +1,15 @@
 // formkit.config.ts
 import type { DefaultConfigOptions } from '@formkit/vue'
-import { defu } from 'defu'
 import { de, en } from '@formkit/i18n'
 import { createAutoAnimatePlugin } from '@formkit/addons'
-import { primeInputs } from '@sfxcode/formkit-primevue'
+import { primeInputs, primeOutputs } from '@sfxcode/formkit-primevue'
 import { addPrimeAsteriskPlugin } from '@sfxcode/formkit-primevue/plugins'
 
 const config: DefaultConfigOptions = {
   locales: { de, en },
   // Define the active locale
   locale: 'de',
-  inputs: defu(primeInputs),
+  inputs: { ...primeInputs, ...primeOutputs },
 
   plugins: [
     createAutoAnimatePlugin(
