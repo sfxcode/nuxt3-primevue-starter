@@ -1,10 +1,11 @@
 <script setup lang='ts'>
-import { FormKitSchema } from '@formkit/vue'
 import { reactive, ref } from 'vue'
 import { useFormKitRepeater, useFormKitSchema } from '@sfxcode/formkit-primevue/composables'
+import { FormKitDataEdit } from '@sfxcode/formkit-primevue/components'
 
 const { addElement, addList, addListGroup } = useFormKitSchema()
 const { addListGroupFunctions, addGroupButtons, addInsertButton } = useFormKitRepeater()
+const { t } = useI18n()
 
 const options = [
   { label: 'Every page load', value: 'refresh' },
@@ -86,8 +87,7 @@ const schema = reactive(
       $formkit: 'primeCheckbox',
       name: 'eu_citizen',
       id: 'eu',
-      label: 'Are you a european citizen?',
-      outerClass: 'col-6',
+      suffix: 'Are you a european citizen?',
     },
     {
       $formkit: 'primeSelect',
@@ -101,7 +101,6 @@ const schema = reactive(
       optionValue: 'value',
       options,
       help: 'How often should we display a cookie notice?',
-      outerClass: 'col-6',
     },
     {
       $formkit: 'primeSlider',
@@ -128,31 +127,23 @@ async function submitHandler() {
 </script>
 
 <template>
-  <div class="card flex flex-wrap gap-4">
+  <div class="card flex flex-wrap gap-10">
     <div class="basis-1/3 md:basis-1/4">
       <div v-if="data" class="min-w-25rem">
-        <FormKit
-          id="form"
-          v-model="data"
-          type="form"
-          :submit-attrs="{
-            inputClass: 'p-button p-component',
-            wrapperClass: '',
-            outerClass: '',
-          }"
-          @submit="submitHandler"
-        >
-          <FormKitSchema :schema="schema" :data="data" />
-        </FormKit>
+        <FormKitDataEdit
+          :schema="schema" :data="data"
+          :debug-schema="false" :debug-data="true"
+          :submit-label="t('save')"
+          @data-saved="submitHandler"
+        />
       </div>
     </div>
     <div class="basis-1/2 md:basis-1/3">
       <h2>Formkit Debug</h2>
-      <div class="text-xl">
-        More examples: <a href="https://formkit-primevue.netlify.app/">Formkit PrimeVue Demo</a>
+      <div class="text-xl mt-12">
+        <h3>More examples</h3>
+        <a href="https://formkit-primevue.netlify.app/">Formkit PrimeVue Demo</a>
       </div>
-      <h3>Data</h3>
-      <pre>{{ data }}</pre>
     </div>
   </div>
 </template>
