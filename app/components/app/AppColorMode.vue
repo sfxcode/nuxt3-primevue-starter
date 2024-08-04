@@ -7,11 +7,12 @@ const mode = useColorMode({
   },
 })
 
-const { state, next } = useCycleList(['dark', 'light', 'auto'], { initialValue: mode })
+const modes = ['dark', 'light', 'auto']
+// const allModes = [...modes, 'cafe', 'contrast']
 
-watchEffect(() => {
-  mode.value = state.value as any
-})
+const { state, next } = useCycleList(modes, { initialValue: mode })
+
+watchEffect(() => mode.value = state.value)
 </script>
 
 <template>

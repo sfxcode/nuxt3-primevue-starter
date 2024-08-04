@@ -8,7 +8,6 @@ export function useNavigationMenu() {
         title: 'Home',
         icon: 'pi pi-fw pi-home',
       },
-
       {
         component: markRaw(separator),
       },

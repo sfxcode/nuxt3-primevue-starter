@@ -9,6 +9,7 @@ html {
 }
 
 #workspace {
+  padding-left: 220px;
   a {
     text-decoration: none;
     color: var(--p-primary-color);
@@ -18,6 +19,14 @@ html {
     border-bottom: 1px solid var(--p-primary-color);
     padding-bottom: 2px;
   }
+}
+
+#workspace.collapsed {
+  padding-left: 50px;
+}
+
+#workspace.onmobile {
+  padding-left: 50px;
 }
 
 @media (min-width: 1024px) {
