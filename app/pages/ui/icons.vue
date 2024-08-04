@@ -4,10 +4,7 @@
 
 <template>
   <div class="card">
-    <h5>Icons</h5>
-    <h1 class="text-blue-600">
-      Icons by UnoCSS
-    </h1>
+    <h2>Icons by UnoCSS</h2>
     <div class="i-logos-vue text-6xl" />
     <h3>Iconset: MDI</h3>
     <div class="mt-6 grid grid-cols-3">

@@ -23,8 +23,7 @@ onMounted(() => {
 
 const schema = reactive(
   [
-    addElement('h2', ['Validation with FormKit']),
-    addElement('h3', ['Inputs from PrimeVue']),
+    addElement('h5', ['Validation with FormKit - Inputs from PrimeVue']),
     {
       $formkit: 'primeInputText',
       name: 'email',
@@ -129,6 +128,8 @@ async function submitHandler() {
 <template>
   <div class="card flex flex-wrap gap-10">
     <div class="basis-1/3 md:basis-1/4">
+      <h2>Data Edit</h2>
+
       <div v-if="data" class="min-w-25rem">
         <FormKitDataEdit
           :schema="schema" :data="data"
@@ -139,9 +140,11 @@ async function submitHandler() {
       </div>
     </div>
     <div class="basis-1/2 md:basis-1/3">
-      <h2>Formkit Debug</h2>
+      <h2>Formkit-PrimeVue</h2>
       <div class="text-xl mt-12">
-        <h3>More examples</h3>
+        <h4>GitHub</h4>
+        <a href="https://github.com/sfxcode/formkit-primevue">formkit-primevue</a>
+        <h4>More examples</h4>
         <a href="https://formkit-primevue.netlify.app/">Formkit PrimeVue Demo</a>
       </div>
     </div>

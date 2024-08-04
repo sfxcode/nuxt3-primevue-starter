@@ -10,7 +10,7 @@ onMounted(async () => {
 
 <template>
   <div class="card">
-    <h5>Store Settings</h5>
+    <h2>Store Settings</h2>
     <h5 class="font-bold text-2xl mb-4">
       Primevue Theme Store
     </h5>

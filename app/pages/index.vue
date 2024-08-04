@@ -3,7 +3,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
 </script>
 
 <template>
-  <div class="surface-0 text-center">
+  <div class="card surface-0 text-center">
     <div class="mb-3 font-bold text-4xl">
       <span class="text-green-600">PrimeVue </span>
       <span class="text-blue-400"> & TypeScript</span>

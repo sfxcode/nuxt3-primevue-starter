@@ -11,7 +11,7 @@ function resetText() {
 
 <template>
   <div class="card">
-    <h5>TipTap as alternative Editor</h5>
+    <h2>TipTap as alternative Editor</h2>
 
     <div class="pb-2">
       <Button size="small" label="Reset" @click="resetText" />
