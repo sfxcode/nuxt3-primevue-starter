@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import { useToast } from 'primevue/usetoast'
-import type { ToastMessageOptions } from 'primevue/toast'
+const { showSuccessMessage, showInfoMessage, showWarnMessage, showErrorMessage } = useMessages()
+const { confirmAction, confirmDelete } = useConfirmation()
+function doSomeAction() {
+  // do something
+}
 
-const toast = useToast()
-
-function showMessage(severity: ToastMessageOptions['severity'], summary: string, detail: string) {
-  toast.add({ severity, summary, detail, life: 3000 })
+function doSomeDeleteAction(idToDelete: number) {
+  // do something
 }
 </script>
 
@@ -16,18 +17,23 @@ function showMessage(severity: ToastMessageOptions['severity'], summary: string,
 
       <div class="flex flex-row gap-4">
         <div>
-          <Button label="Success" class="p-button-success" @click="showMessage('success', 'Success Message', 'Message Content')" />
+          <Button label="Success" class="p-button-success" @click="showSuccessMessage('Success Message', 'Message Content')" />
         </div>
         <div>
-          <Button label="Info" class="p-button-info" @click="showMessage('info', 'Info Message', 'Message Content')" />
+          <Button label="Info" class="p-button-info" @click="showInfoMessage('Info Message', 'Message Content')" />
         </div>
         <div>
-          <Button label="Warn" class="p-button-warning" @click="showMessage('warn', 'Warn Message', 'Message Content')" />
+          <Button label="Warn" class="p-button-warning" @click="showWarnMessage('Warn Message', 'Message Content')" />
         </div>
         <div>
-          <Button label="Error" class="p-button-danger" @click="showMessage('error', 'Error Message', 'Message Content')" />
+          <Button label="Error" class="p-button-danger" @click="showErrorMessage('Error Message', 'Message Content')" />
         </div>
         <Toast />
+      </div>
+      <h2>Confirmation</h2>
+      <div class="flex flex-row gap-4">
+        <Button label="Trigger action with confirmation" class="p-button-info" @click="confirmAction(doSomeAction)" />
+        <Button label="Trigger delete action with confirmation" class="p-button-danger" @click="confirmDelete(1, doSomeDeleteAction)" />
       </div>
       <h2>Messages</h2>
       <div class="flex flex-row gap-4">
