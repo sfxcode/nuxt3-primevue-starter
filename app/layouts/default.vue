@@ -8,7 +8,7 @@ const isOnMobile = useState<boolean>('isOnMobile')
     <AppSidebar />
     <div id="workspace" :class="[{ collapsed }, { mobile: isOnMobile }]">
       <AppTopbar />
-      <div class="m-4">
+      <div class="m-1 mt-4">
         <slot />
       </div>
     </div>
