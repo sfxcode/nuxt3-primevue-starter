@@ -13,7 +13,6 @@ function doSomeDeleteAction(idToDelete: number) {
 <template>
   <div class="card">
     <h2>PrimeVue Toast Demo</h2>
-
     <div class="flex flex-row gap-4">
       <div>
         <Button label="Success" class="p-button-success" @click="showSuccessMessage('Success Message', 'Message Content')" />
@@ -27,7 +26,6 @@ function doSomeDeleteAction(idToDelete: number) {
       <div>
         <Button label="Error" class="p-button-danger" @click="showErrorMessage('Error Message', 'Message Content')" />
       </div>
-      <Toast />
     </div>
     <h2>Confirmation</h2>
     <div class="flex flex-row gap-4">
