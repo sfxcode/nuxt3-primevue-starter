@@ -5,6 +5,8 @@ const isOnMobile = useState<boolean>('isOnMobile')
 
 <template>
   <div class="">
+    <ConfirmDialog />
+    <Toast />
     <AppSidebar />
     <div id="workspace" :class="[{ collapsed }, { mobile: isOnMobile }]">
       <AppTopbar />
