@@ -1,7 +1,7 @@
-import VueSidebarMenu from 'vue-sidebar-menu'
 import type { Component } from 'vue'
-import { h } from 'vue'
 import { NuxtLink } from '#components'
+import { h } from 'vue'
+import VueSidebarMenu from 'vue-sidebar-menu'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const nuxtLink: Component = {

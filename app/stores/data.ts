@@ -1,5 +1,5 @@
-import { acceptHMRUpdate, defineStore } from 'pinia'
 import { consola } from 'consola'
+import { acceptHMRUpdate, defineStore } from 'pinia'
 
 export const useDataStore = defineStore({
   id: 'data',
@@ -14,8 +14,7 @@ export const useDataStore = defineStore({
         consola.debug('fetching data ...')
         await fetch('/api/products').then(res => res.json()).then((d) => {
           this.products = d.data
-        })
-          .catch(error => consola.error(error))
+        }).catch(error => consola.error(error))
       }
     },
   },

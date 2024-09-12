@@ -1,12 +1,16 @@
 <script setup lang="ts">
 const { showSuccessMessage, showInfoMessage, showWarnMessage, showErrorMessage } = useMessages()
 const { confirmAction, confirmDelete } = useConfirmation()
+
+const lastDeletedId = ref(0)
+
 function doSomeAction() {
   // do something
 }
 
 function doSomeDeleteAction(idToDelete: number) {
   // do something
+  lastDeletedId.value = idToDelete
 }
 </script>
 
