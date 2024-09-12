@@ -25,13 +25,13 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       <AdvertiseBox header="UnoCSS" icon="prime-check-circle" color="green-600">
         <ExternalLink href="https://unocss.dev/" text="UnoCSS" /> for rapid styling
       </AdvertiseBox>
-      <AdvertiseBox header="VUE 3.4.x" icon="prime-check-circle" color="green-600">
+      <AdvertiseBox header="VUE 3.5.x" icon="prime-check-circle" color="green-600">
         <ExternalLink href="https://vuejs.org/guide/introduction.html" text="Composition Api" /> with Script Setup
       </AdvertiseBox>
       <AdvertiseBox header="Typescript 5" icon="prime-check-circle" color="blue-400">
         Typesafe by default
       </AdvertiseBox>
-      <AdvertiseBox header="Nuxt 3.12.x (Nuxt 4 ready)" icon="prime-check-circle" color="green-400">
+      <AdvertiseBox header="Nuxt 3.13.x (Nuxt 4 ready)" icon="prime-check-circle" color="green-400">
         <ExternalLink href="https://nuxt.com/" text="Nuxt" /> with Pages, Layouts, ...
       </AdvertiseBox>
       <AdvertiseBox header="Nuxt Content 2.13.x" icon="prime-check-circle" color="green-400">
