@@ -34,7 +34,7 @@
     "@pinia/nuxt": "^0.5.4",
     "@primevue/nuxt-module": "4.0.7",
     "@primevue/themes": "4.0.7",
-    "@sfxcode/formkit-primevue": "^2.4.8",
+    "@sfxcode/formkit-primevue": "^2.4.9",
     "@tiptap/extension-highlight": "^2.6.6",
     "@tiptap/extension-text-align": "^2.6.6",
     "@tiptap/extension-text-style": "^2.6.6",
@@ -57,7 +57,8 @@
     "unstorage": "^1.12.0",
     "vitest": "^2.1.0",
     "vue-i18n": "9.14.0",
-    "vue-sidebar-menu": "^5.4.1"
+    "vue-sidebar-menu": "^5.4.1",
+    "@intlify/core": "9.14.0"
   },
   "packageManager": "pnpm@9.10.0+sha256.355a8ab8dbb6ad41befbef39bc4fd6b5df85e12761d2724bd01f13e878de4b13"
 }

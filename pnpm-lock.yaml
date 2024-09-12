@@ -26,6 +26,9 @@ importers:
       '@iconify-json/twemoji':
         specifier: ^1.2.0
         version: 1.2.0
+      '@intlify/core':
+        specifier: 9.14.0
+        version: 9.14.0
       '@nuxt/content':
         specifier: 2.13.2
         version: 2.13.2(ioredis@5.4.1)(magicast@0.3.5)(nuxt@3.13.1(@parcel/watcher@2.4.1)(@types/node@22.5.4)(encoding@0.1.13)(eslint@9.10.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.21.3)(sass@1.78.0)(terser@5.32.0)(typescript@5.6.2)(vite@5.4.4(@types/node@22.5.4)(sass@1.78.0)(terser@5.32.0))(webpack-sources@3.2.3))(rollup@4.21.3)(vue@3.5.4(typescript@5.6.2))(webpack-sources@3.2.3)
@@ -54,8 +57,8 @@ importers:
         specifier: 4.0.7
         version: 4.0.7
       '@sfxcode/formkit-primevue':
-        specifier: ^2.4.8
-        version: 2.4.8(unocss@0.62.3(@unocss/webpack@0.62.3(rollup@4.21.3)(webpack@5.94.0(esbuild@0.23.1)))(postcss@8.4.45)(rollup@4.21.3)(vite@5.4.4(@types/node@22.5.4)(sass@1.78.0)(terser@5.32.0)))(vue@3.5.4(typescript@5.6.2))
+        specifier: ^2.4.9
+        version: 2.4.9(unocss@0.62.3(@unocss/webpack@0.62.3(rollup@4.21.3)(webpack@5.94.0(esbuild@0.23.1)))(postcss@8.4.45)(rollup@4.21.3)(vite@5.4.4(@types/node@22.5.4)(sass@1.78.0)(terser@5.32.0)))(vue@3.5.4(typescript@5.6.2))
       '@tiptap/extension-highlight':
         specifier: ^2.6.6
         version: 2.6.6(@tiptap/core@2.6.6(@tiptap/pm@2.6.6))
@@ -936,10 +939,6 @@ packages:
       vue-i18n:
         optional: true
 
-  '@intlify/core-base@10.0.1':
-    resolution: {integrity: sha512-6kpRGjhos95ph7QmEtP4tnWFTW102s71CLQAQwfsIGqOAcoJhzcYFpzIQ0gKXzqAIXsMD/hwM5qJ4ewqMHw3gg==}
-    engines: {node: '>= 16'}
-
   '@intlify/core-base@9.14.0':
     resolution: {integrity: sha512-zJn0imh9HIsZZUtt9v8T16PeVstPv6bP2YzlrYJwoF8F30gs4brZBwW2KK6EI5WYKFi3NeqX6+UU4gniz5TkGg==}
     engines: {node: '>= 16'}
@@ -952,16 +951,8 @@ packages:
     resolution: {integrity: sha512-cgfrtD3qu3BPJ47gfZ35J2LJpI64Riic0K8NGgid5ilyPXRQTNY7mXlT/B+HZYQg1hmBxKa5G5HJXyAZ4R2H5A==}
     engines: {node: '>= 18'}
 
-  '@intlify/message-compiler@10.0.1':
-    resolution: {integrity: sha512-fPeykrcgVT5eOIlshTHiPCN8FV3AZyBOdMS3XaXzfQ6eL5wqfc29I/EdIv5YXVW5X8e/BgYeWjBC0Cuznsl/2g==}
-    engines: {node: '>= 16'}
-
   '@intlify/message-compiler@9.14.0':
     resolution: {integrity: sha512-sXNsoMI0YsipSXW8SR75drmVK56tnJHoYbPXUv2Cf9lz6FzvwsosFm6JtC1oQZI/kU+n7qx0qRrEWkeYFTgETA==}
-    engines: {node: '>= 16'}
-
-  '@intlify/shared@10.0.1':
-    resolution: {integrity: sha512-b4h7IWdZl710DnAhET8lgfgZ4Y9A2IZx/gbli3Ec/zHtYCoPqLHmiM7kUNBrSZj7d/SSjcMMZHuz5I09x3PYZw==}
     engines: {node: '>= 16'}
 
   '@intlify/shared@9.14.0':
@@ -1456,8 +1447,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@sfxcode/formkit-primevue@2.4.8':
-    resolution: {integrity: sha512-QEuVwLq+aUkUusBlv4slJYP2ENCHpSM3VzXzSmDWTeKHBNiKG+a1h6t50q2WGPTeNqz8TrUi1muQbAsv3rZoHg==}
+  '@sfxcode/formkit-primevue@2.4.9':
+    resolution: {integrity: sha512-Nw6AewRgiZ2e2lH4PUHkZghSwgK765emrACFJ5Zk/skFfXv5Yudazr7vQM5KkDk07SfFiwE2Pjrdbg7alAqLpw==}
     peerDependencies:
       vue: ^3.4.0
 
@@ -5784,12 +5775,6 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  vue-i18n@10.0.1:
-    resolution: {integrity: sha512-SQVlSm/1S6AaG1wexvwq3ebXUrrkx75ZHD78UAs4/rYD/X3tsQxfm6ElpT4ZPegJQEgRtOJjGripqSrfqAENtg==}
-    engines: {node: '>= 16'}
-    peerDependencies:
-      vue: ^3.0.0
-
   vue-i18n@9.14.0:
     resolution: {integrity: sha512-LxmpRuCt2rI8gqU+kxeflRZMQn4D5+4M3oP3PWZdowW/ePJraHqhF7p4CuaME52mUxdw3Mmy2yAUKgfZYgCRjA==}
     engines: {node: '>= 16'}
@@ -6719,11 +6704,6 @@ snapshots:
     optionalDependencies:
       vue-i18n: 9.14.0(vue@3.5.4(typescript@5.6.2))
 
-  '@intlify/core-base@10.0.1':
-    dependencies:
-      '@intlify/message-compiler': 10.0.1
-      '@intlify/shared': 10.0.1
-
   '@intlify/core-base@9.14.0':
     dependencies:
       '@intlify/message-compiler': 9.14.0
@@ -6739,17 +6719,10 @@ snapshots:
       '@intlify/core': 9.14.0
       '@intlify/utils': 0.12.0
 
-  '@intlify/message-compiler@10.0.1':
-    dependencies:
-      '@intlify/shared': 10.0.1
-      source-map-js: 1.2.1
-
   '@intlify/message-compiler@9.14.0':
     dependencies:
       '@intlify/shared': 9.14.0
       source-map-js: 1.2.1
-
-  '@intlify/shared@10.0.1': {}
 
   '@intlify/shared@9.14.0': {}
 
@@ -7581,7 +7554,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.21.3':
     optional: true
 
-  '@sfxcode/formkit-primevue@2.4.8(unocss@0.62.3(@unocss/webpack@0.62.3(rollup@4.21.3)(webpack@5.94.0(esbuild@0.23.1)))(postcss@8.4.45)(rollup@4.21.3)(vite@5.4.4(@types/node@22.5.4)(sass@1.78.0)(terser@5.32.0)))(vue@3.5.4(typescript@5.6.2))':
+  '@sfxcode/formkit-primevue@2.4.9(unocss@0.62.3(@unocss/webpack@0.62.3(rollup@4.21.3)(webpack@5.94.0(esbuild@0.23.1)))(postcss@8.4.45)(rollup@4.21.3)(vite@5.4.4(@types/node@22.5.4)(sass@1.78.0)(terser@5.32.0)))(vue@3.5.4(typescript@5.6.2))':
     dependencies:
       '@formkit/addons': 1.6.6
       '@formkit/drag-and-drop': 0.1.6
@@ -7591,7 +7564,7 @@ snapshots:
       primevue: 4.0.7(vue@3.5.4(typescript@5.6.2))
       uuid: 10.0.0
       vue: 3.5.4(typescript@5.6.2)
-      vue-i18n: 10.0.1(vue@3.5.4(typescript@5.6.2))
+      vue-i18n: 9.14.0(vue@3.5.4(typescript@5.6.2))
     transitivePeerDependencies:
       - tailwindcss
       - unocss
@@ -13061,13 +13034,6 @@ snapshots:
       semver: 7.6.3
     transitivePeerDependencies:
       - supports-color
-
-  vue-i18n@10.0.1(vue@3.5.4(typescript@5.6.2)):
-    dependencies:
-      '@intlify/core-base': 10.0.1
-      '@intlify/shared': 10.0.1
-      '@vue/devtools-api': 6.6.4
-      vue: 3.5.4(typescript@5.6.2)
 
   vue-i18n@9.14.0(vue@3.5.4(typescript@5.6.2)):
     dependencies:
