@@ -5,6 +5,8 @@ Based on PrimeVue Styled Theme with Aura Preset.
 
 [![CI](https://github.com/sfxcode/nuxt3-primevue-starter/actions/workflows/main.yml/badge.svg)](https://github.com/sfxcode/nuxt3-primevue-starter/actions/workflows/main.yml)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/436604a1-fe0c-4b76-aeae-75744104d16b/deploy-status)](https://app.netlify.com/sites/nuxt3-primevue-starter/deploys)
+
 THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for starter code
 
 ## Features
