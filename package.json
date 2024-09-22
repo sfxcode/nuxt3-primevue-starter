@@ -16,7 +16,8 @@
     "test:ui": "vitest --ui",
     "test:unit": "vitest --run --reporter verbose",
     "test:coverage": "vitest run --coverage",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "changelog": "changelogen --patch"
   },
   "devDependencies": {
     "@antfu/eslint-config": "3.6.0",
