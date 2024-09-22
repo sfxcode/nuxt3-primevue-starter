@@ -10,7 +10,7 @@ defineProps({
 <template>
   <div>
     <div class="todo m-4 flex gap-2">
-      <i class="i-mdi-information text-3xl text-[color:var(--primary-color)]" />
+      <i class="i-mdi-information text-3xl text-primary" />
       <div data-testid="test_todo" class="text-2xl">
         {{ text }}
       </div>

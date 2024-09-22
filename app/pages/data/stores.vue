@@ -50,6 +50,6 @@ onMounted(async () => {
 
 <style lang='scss' scoped>
 h5 {
-  color: var(--primary-color)
+  color: var(--p-primary-color)
 }
 </style>
