@@ -1,7 +1,7 @@
 {
   "name": "nuxt3-primevue-starter",
   "type": "module",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "license": "MIT",
   "scripts": {
     "build": "nuxi build",
@@ -47,6 +47,7 @@
     "@vue/test-utils": "^2.4.6",
     "@vueuse/nuxt": "^11.1.0",
     "c8": "^10.1.2",
+    "changelogen": "^0.5.5",
     "eslint": "^9.11.0",
     "happy-dom": "^15.7.4",
     "jsdom": "^25.0.1",
@@ -60,5 +61,5 @@
     "vue-i18n": "9.14.0",
     "vue-sidebar-menu": "^5.4.1"
   },
-  "packageManager": "pnpm@9.10.0+sha256.355a8ab8dbb6ad41befbef39bc4fd6b5df85e12761d2724bd01f13e878de4b13"
+  "packageManager": "pnpm@9.11.0+sha256.1c0e33f70e5df9eede84a357bdfa0b1f9dba6e58194628d48a1055756f553754"
 }
