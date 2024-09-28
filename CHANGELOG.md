@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.0.5
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.0.4...v2.0.5)
+
+### 🏡 Chore
+
+- **changelog:** Add changlog command ([b72e73e](https://github.com/sfxcode/nuxt3-primevue-starter/commit/b72e73e))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v2.0.4
 
 

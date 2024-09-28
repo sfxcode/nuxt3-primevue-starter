@@ -1,7 +1,7 @@
 {
   "name": "nuxt3-primevue-starter",
   "type": "module",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "license": "MIT",
   "scripts": {
     "build": "nuxi build",
@@ -17,7 +17,7 @@
     "test:unit": "vitest --run --reporter verbose",
     "test:coverage": "vitest run --coverage",
     "postinstall": "nuxt prepare",
-    "changelog": "changelogen --patch"
+    "changelog": "changelogen --patch --release"
   },
   "devDependencies": {
     "@antfu/eslint-config": "3.6.0",
