@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.0.7
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.0.6...v2.0.7)
+
+### 🏡 Chore
+
+- **dependencies:** Update to fix build problem ([7d03c59](https://github.com/sfxcode/nuxt3-primevue-starter/commit/7d03c59))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v2.0.6
 
 [compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.0.5...v2.0.6)
