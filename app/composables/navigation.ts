@@ -17,7 +17,14 @@ export function useNavigationMenu() {
         child: [
           { href: '/prime/datatable', title: 'DataTable' },
           { href: '/prime/messages', title: 'Messages' },
-          { href: '/prime/Validation', title: 'Validation' },
+        ],
+      },
+      {
+        title: 'Forms',
+        icon: 'pi pi-check-square',
+        child: [
+          { href: '/form', title: 'Basic' },
+          { href: '/form/toggle', title: 'Edit / View' },
         ],
       },
       {

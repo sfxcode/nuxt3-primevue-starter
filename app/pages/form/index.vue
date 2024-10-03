@@ -128,7 +128,7 @@ async function submitHandler() {
 <template>
   <div class="card flex flex-wrap gap-10">
     <div class="basis-1/3 md:basis-1/4">
-      <h2>Data Edit</h2>
+      <h2>Basic Demo</h2>
 
       <div v-if="data" class="min-w-25rem">
         <FormKitDataEdit
@@ -152,7 +152,4 @@ async function submitHandler() {
 </template>
 
 <style lang='scss' scoped>
-.myFormkit {
-
-}
 </style>
