@@ -36,7 +36,7 @@
     "@pinia/nuxt": "^0.5.5",
     "@primevue/nuxt-module": "4.0.7",
     "@primevue/themes": "4.0.7",
-    "@sfxcode/formkit-primevue": "^2.5.4",
+    "@sfxcode/formkit-primevue": "^2.5.5",
     "@tiptap/extension-highlight": "^2.8.0",
     "@tiptap/extension-text-align": "^2.8.0",
     "@tiptap/extension-text-style": "^2.8.0",
