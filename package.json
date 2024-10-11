@@ -17,7 +17,7 @@
     "test:unit": "vitest --run --reporter verbose",
     "test:coverage": "vitest run --coverage",
     "postinstall": "nuxt prepare",
-    "changelog": "changelogen --patch --release"
+    "release": "npm run lint && npm run build && changelogen --patch --release  && npm publish --access public && git push --follow-tags"
   },
   "devDependencies": {
     "@antfu/eslint-config": "3.6.0",
