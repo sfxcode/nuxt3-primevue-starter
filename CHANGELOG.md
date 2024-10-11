@@ -1,6 +1,21 @@
 # Changelog
 
 
+## v2.0.8
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.0.7...v2.0.8)
+
+### 🏡 Chore
+
+- **dependencies:** Fix formkit css problem ([7903302](https://github.com/sfxcode/nuxt3-primevue-starter/commit/7903302))
+- **dependencies:** PrimeVue 4.1 ([51d087f](https://github.com/sfxcode/nuxt3-primevue-starter/commit/51d087f))
+- **release:** Prepare new version ([86a6672](https://github.com/sfxcode/nuxt3-primevue-starter/commit/86a6672))
+- **release:** Prepare new version ([fb625fd](https://github.com/sfxcode/nuxt3-primevue-starter/commit/fb625fd))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v2.0.7
 
 [compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.0.6...v2.0.7)
