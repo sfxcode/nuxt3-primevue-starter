@@ -60,7 +60,7 @@ export default defineNuxtConfig({
   primevue: {
     autoImport: false,
     components: {
-      exclude: ['Chart', 'Editor'],
+      exclude: ['Chart', 'Editor', 'Form', 'FormField'],
     },
     options: {
       theme: {

@@ -13,7 +13,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       Starter for Vue.js Development with Nuxt 3.
     </h2>
     <div class="grid grid-cols-2 lg:grid-cols-3 gap-2">
-      <AdvertiseBox header="PrimeVue 4.1.x" icon="prime-check-circle" color="green-600">
+      <AdvertiseBox header="PrimeVue 4.2.x" icon="prime-check-circle" color="green-600">
         Excellent <ExternalLink href="https://github.com/sfxcode/formkit-primevue" text="Component Library" /> for VUE
       </AdvertiseBox>
       <AdvertiseBox header="PrimeVue Theme" icon="prime-check-circle" color="green-600">
