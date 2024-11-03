@@ -17,11 +17,10 @@
     "test:unit": "vitest --run --reporter verbose",
     "test:coverage": "vitest run --coverage",
     "postinstall": "nuxt prepare",
-    "release": "npm run lint && npm run build && changelogen --patch --release && git push --follow-tags"
+    "release": "npm run lint && npm run build && changelogen --minor --release && git push --follow-tags"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.8.0",
-    "@formkit/nuxt": "^1.6.7",
     "@iconify-json/carbon": "^1.2.4",
     "@iconify-json/mdi": "^1.2.1",
     "@iconify-json/prime": "^1.2.1",
@@ -32,11 +31,9 @@
     "@nuxt/fonts": "^0.10.2",
     "@nuxt/image": "^1.8.1",
     "@nuxt/test-utils": "^3.14.4",
-    "@nuxtjs/i18n": "8.5.5",
     "@pinia/nuxt": "^0.6.1",
-    "@primevue/nuxt-module": "^4.2.1",
     "@primevue/themes": "^4.2.1",
-    "@sfxcode/formkit-primevue": "^2.6.2",
+    "@sfxcode/formkit-primevue-nuxt": "^1.1.2",
     "@tiptap/extension-highlight": "^2.9.1",
     "@tiptap/extension-text-align": "^2.9.1",
     "@tiptap/extension-text-style": "^2.9.1",
@@ -52,14 +49,11 @@
     "eslint": "^9.14.0",
     "happy-dom": "^15.8.0",
     "jsdom": "^25.0.1",
-    "nitropack": "2.9.7",
     "nuxt": "^3.13.2",
-    "primevue": "^4.2.1",
     "sass": "1.78.0",
     "typescript": "^5.6.3",
     "unstorage": "^1.13.1",
     "vitest": "^2.1.4",
-    "vue-i18n": "9.14.0",
     "vue-sidebar-menu": "^5.4.2"
   },
   "packageManager": "pnpm@9.12.0+sha256.a61b67ff6cc97af864564f4442556c22a04f2e5a7714fbee76a1011361d9b726"

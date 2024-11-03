@@ -1,6 +1,7 @@
 # Nuxt 3 + PrimeVue 4 Starter
 
 Build your VUE.js App with Nuxt3 (Nuxt 4 ready). First Class PrimeVUE support. Validation by Formkit.
+Module by [FormKitPrimeVueNuxt](https://github.com/sfxcode/nuxt3-primevue-starter).
 Based on PrimeVue Styled Theme with Aura Preset.
 
 [![CI](https://github.com/sfxcode/nuxt3-primevue-starter/actions/workflows/main.yml/badge.svg)](https://github.com/sfxcode/nuxt3-primevue-starter/actions/workflows/main.yml)
@@ -12,7 +13,7 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 ## Features
 
 - [Nuxt 3](https://v3.nuxtjs.org) - SSR, ESR, File-based routing, components auto importing, modules, etc.
-- [PrimeVue](https://primevue.org/) 4.x with Aura Theme
+- [PrimeVue](https://primevue.org/) 4.2.x with Aura Theme
 - [Formkit-PrimeVue](https://formkit-primevue.netlify.app/) PrimeVue Formkit Integration
 - [Vite](https://vitejs.dev/) - Instant HMR
 - [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
@@ -20,29 +21,44 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 - [State Management via Pinia](https://pinia.esm.dev)
 - [TipTap](https://tiptap.dev) - Headless Editor
 - [Vitest](https://vitest.dev/) - Blazing Fast Unit Test Framework ([Getting started](https://vitest.dev/guide))
-- [nuxt-test-utils](https://github.com/nuxt/test-utils) - Support for e2e and unit testing ([Getting started](https://nuxt.com/docs/getting-started/testing))
 
-## Nuxt Modules
+## Nuxt Modules (included in formkit-prinevue-nuxt)
 
+- [FormKitPrimeVueNuxt](https://github.com/sfxcode/nuxt3-primevue-starter) FormKit PrimeVue Nuxt Module
 - [PrimeVue-Nuxt](https://primevue.org/nuxt/) PrimeVue Nuxt Module
+- [FormKit](https://formkit.com/) - Validation
+- [I18n](https://v8.i18n.nuxtjs.org) - Integration with [Vue I18n](https://vue-i18n.intlify.dev/)
+
+## Nuxt Modules (additional)
+
 - [Pinia](https://pinia.esm.dev/) - intuitive, type safe, light and flexible Store for Vue.
 - [VueUse](https://github.com/vueuse/vueuse) - collection of useful composition APIs.
-- [FormKit](https://formkit.com/) - Validation
 - [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine.
 - [Content](https://content.nuxtjs.org) - parses .md, .yml, .csv and .json files
 - [Images](https://nuxt.com/modules/images) - Optimised images for Nuxt
 - [Fonts](https://nuxt.com/modules/fonts) - Plug-and-play custom web font optimization and configuration for Nuxt apps
-- [I18n](https://v8.i18n.nuxtjs.org) - Integration with [Vue I18n](https://vue-i18n.intlify.dev/)
+- [nuxt-test-utils](https://github.com/nuxt/test-utils) - Support for e2e and unit testing ([Getting started](https://nuxt.com/docs/getting-started/testing))
 
-## Nuxt PrimeVue configuration
+## Module Configurations
 
-Important: use autoimport false if using primevue formkit validation
+### FormKit PrimeVue Nuxt
+
+```typescript
+formkitPrimevue: {
+    includePrimeIcons: true,
+    includeStyles: true,
+    formkitAutoConfig: true,
+    formkitLocale: 'en',
+    formkitPluginAnimate: true,
+    formkitPluginAsterisk: true,
+},
+```
+
+### Nuxt PrimeVue configuration
 
 ```typescript
   primevue: {
-  autoImport: false,
-    components: {
-    exclude: ['Chart', 'Editor'],
+    autoImport: true,
   },
   options: {
     theme: {

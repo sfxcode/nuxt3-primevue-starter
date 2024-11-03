@@ -20,23 +20,18 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    '@primevue/nuxt-module',
     '@unocss/nuxt',
     '@pinia/nuxt',
-    '@nuxtjs/i18n',
     '@nuxt/content',
     '@vueuse/nuxt',
     '@nuxt/test-utils/module',
     '@nuxt/image',
     '@nuxt/fonts',
-    '@formkit/nuxt',
-
+    '@sfxcode/formkit-primevue-nuxt',
   ],
-
   formkit: {
     autoImport: true,
   },
-
   content: {
     highlight: {
       theme: 'one-dark-pro',
@@ -56,12 +51,16 @@ export default defineNuxtConfig({
     ],
     vueI18n: './vue-i18n.options.ts',
   },
-
+  formkitPrimevue: {
+    includePrimeIcons: true,
+    includeStyles: true,
+    formkitAutoConfig: true,
+    formkitLocale: 'en',
+    formkitPluginAnimate: true,
+    formkitPluginAsterisk: true,
+  },
   primevue: {
-    autoImport: false,
-    components: {
-      exclude: ['Chart', 'Editor', 'Form', 'FormField'],
-    },
+    autoImport: true,
     options: {
       theme: {
         preset: Aura,
@@ -72,11 +71,6 @@ export default defineNuxtConfig({
       ripple: true,
     },
   },
-
-  css: [
-    'primeicons/primeicons.css',
-    '@sfxcode/formkit-primevue/dist/sass/formkit-primevue.scss',
-  ],
 
   build: {
     transpile: ['nuxt', 'primevue', 'formkit-primevue'],
