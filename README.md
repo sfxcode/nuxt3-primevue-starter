@@ -1,7 +1,7 @@
 # Nuxt 3 + PrimeVue 4 Starter
 
 Build your VUE.js App with Nuxt3 (Nuxt 4 ready). First Class PrimeVUE support. Validation by Formkit.
-Module by [FormKitPrimeVueNuxt](https://github.com/sfxcode/nuxt3-primevue-starter).
+Module by [FormKit-PrimeVue-Nuxt](https://github.com/sfxcode/formkit-primevue-nuxt).
 Based on PrimeVue Styled Theme with Aura Preset.
 
 [![CI](https://github.com/sfxcode/nuxt3-primevue-starter/actions/workflows/main.yml/badge.svg)](https://github.com/sfxcode/nuxt3-primevue-starter/actions/workflows/main.yml)
@@ -24,7 +24,7 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 
 ## Nuxt Modules (included in formkit-prinevue-nuxt)
 
-- [FormKitPrimeVueNuxt](https://github.com/sfxcode/nuxt3-primevue-starter) FormKit PrimeVue Nuxt Module
+- [FormKit-PrimeVue-Nuxt](https://github.com/sfxcode/formkit-primevue-nuxt) - FormKit PrimeVue Nuxt Module
 - [PrimeVue-Nuxt](https://primevue.org/nuxt/) PrimeVue Nuxt Module
 - [FormKit](https://formkit.com/) - Validation
 - [I18n](https://v8.i18n.nuxtjs.org) - Integration with [Vue I18n](https://vue-i18n.intlify.dev/)
