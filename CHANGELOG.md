@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v2.1.0
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.0.9...v2.1.0)
+
+### 🏡 Chore
+
+- **dependencies:** PrimeVue 4.2.1 - downgrade nitropack to 2.9.7 because of problems with version 2.10.0 and primevue ([cfd63fb](https://github.com/sfxcode/nuxt3-primevue-starter/commit/cfd63fb))
+- **dependencies:** Update to formkit-primevue-nuxt module ([f700455](https://github.com/sfxcode/nuxt3-primevue-starter/commit/f700455))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v2.0.9
 
 [compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.0.8...v2.0.9)
