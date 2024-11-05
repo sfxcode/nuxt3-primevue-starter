@@ -73,7 +73,7 @@ export default defineNuxtConfig({
   },
 
   build: {
-    transpile: ['nuxt', 'primevue', 'formkit-primevue'],
+    transpile: ['nuxt', 'primevue', '@sfxcode/formkit-primevue'],
   },
 
   sourcemap: {
