@@ -1,6 +1,27 @@
 # Changelog
 
 
+## v2.1.2
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.1.0...v2.1.2)
+
+### 💅 Refactors
+
+- **pages:** Formkit-primevue components / composables are auto imported ([96b6f33](https://github.com/sfxcode/nuxt3-primevue-starter/commit/96b6f33))
+
+### 📖 Documentation
+
+- **README:** Fix links ([5ba0b28](https://github.com/sfxcode/nuxt3-primevue-starter/commit/5ba0b28))
+
+### 🏡 Chore
+
+- **package:** Revert to patch build ([a90cbbe](https://github.com/sfxcode/nuxt3-primevue-starter/commit/a90cbbe))
+- **update:** Nuxt 3.14 ([4a27daa](https://github.com/sfxcode/nuxt3-primevue-starter/commit/4a27daa))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v2.1.0
 
 [compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.0.9...v2.1.0)
