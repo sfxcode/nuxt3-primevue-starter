@@ -1,8 +1,4 @@
 <script setup lang='ts'>
-import { FormKitDataEdit } from '@sfxcode/formkit-primevue/components'
-import { useFormKitRepeater, useFormKitSchema } from '@sfxcode/formkit-primevue/composables'
-import { reactive, ref } from 'vue'
-
 const { addElement, addList, addListGroup } = useFormKitSchema()
 const { addListGroupFunctions, addGroupButtons, addInsertButton } = useFormKitRepeater()
 const { t } = useI18n()

@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { FormKitDataEdit, FormKitDataView } from '@sfxcode/formkit-primevue/components'
-import { useFormKitSchema } from '@sfxcode/formkit-primevue/composables'
-
 const { addElement } = useFormKitSchema()
 const { t } = useI18n()
 
