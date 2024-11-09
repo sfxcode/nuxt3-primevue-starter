@@ -1,6 +1,10 @@
 # Changelog
 
 
+## v2.1.5
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.1.4...v2.1.5)
+
 ## v2.1.4
 
 [compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.1.2...v2.1.4)
