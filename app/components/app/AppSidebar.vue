@@ -52,7 +52,7 @@ onMounted(() => {
       </template>
       <template #footer>
         <div class="m-2 text-center text-xs text-color-primary">
-          <span v-if="!collapsed">MongoCamp Admin {{ config.public.APP_VERSION }}</span>
+          <span v-if="!collapsed">PrimeVue-Nuxt Starter {{ config.public.APP_VERSION }}</span>
           <span v-if="collapsed">{{ config.public.APP_VERSION }}</span>
         </div>
       </template>
