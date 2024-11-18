@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.1.8
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.1.7...v2.1.8)
+
+### 🏡 Chore
+
+- **package:** Update to formkit-primevue-nuxt module 1.2.2, add needed formkit.config.ts and modify nuxt.config.ts to changed properties for formkitPrimevue ([59bae95](https://github.com/sfxcode/nuxt3-primevue-starter/commit/59bae95))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v2.1.7
 
 [compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.1.5...v2.1.7)
