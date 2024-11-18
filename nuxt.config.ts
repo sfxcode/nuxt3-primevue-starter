@@ -20,7 +20,6 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxt/content',
     '@vueuse/nuxt',
@@ -28,10 +27,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/fonts',
     '@sfxcode/formkit-primevue-nuxt',
+    '@unocss/nuxt',
   ],
-  formkit: {
-    autoImport: true,
-  },
   content: {
     highlight: {
       theme: 'one-dark-pro',
@@ -54,10 +51,8 @@ export default defineNuxtConfig({
   formkitPrimevue: {
     includePrimeIcons: true,
     includeStyles: true,
-    formkitAutoConfig: true,
-    formkitLocale: 'en',
-    formkitPluginAnimate: true,
-    formkitPluginAsterisk: true,
+    installFormKit: true,
+    installI18N: true,
   },
   primevue: {
     autoImport: true,

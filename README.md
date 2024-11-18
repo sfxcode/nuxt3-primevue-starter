@@ -25,9 +25,9 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 ## Nuxt Modules (included in formkit-prinevue-nuxt)
 
 - [FormKit-PrimeVue-Nuxt](https://github.com/sfxcode/formkit-primevue-nuxt) - FormKit PrimeVue Nuxt Module
-- [PrimeVue-Nuxt](https://primevue.org/nuxt/) PrimeVue Nuxt Module
-- [FormKit](https://formkit.com/) - Validation
-- [I18n](https://v8.i18n.nuxtjs.org) - Integration with [Vue I18n](https://vue-i18n.intlify.dev/)
+- [PrimeVue-Nuxt](https://primevue.org/nuxt/) PrimeVue UI Framework
+- [FormKit-Nuxt](https://formkit.com/) - Form Handling
+- [I18n-Nuxt](https://v8.i18n.nuxtjs.org) - Integration with [Vue I18n](https://vue-i18n.intlify.dev/)
 
 ## Nuxt Modules (additional)
 
@@ -43,14 +43,15 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 
 ### FormKit PrimeVue Nuxt
 
+Module options for FormKit PrimeVue Nuxt.
+Below are the default values, if they fit your needs, you don't need to add them to your nuxt.config.ts.
+
 ```typescript
-formkitPrimevue: {
-    includePrimeIcons: true,
+  formkitPrimevue: {
+  includePrimeIcons: true,
     includeStyles: true,
-    formkitAutoConfig: true,
-    formkitLocale: 'en',
-    formkitPluginAnimate: true,
-    formkitPluginAsterisk: true,
+    installFormKit: true,
+    installI18N: true,
 },
 ```
 

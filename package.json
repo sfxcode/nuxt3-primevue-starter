@@ -33,7 +33,7 @@
     "@nuxt/test-utils": "^3.14.4",
     "@pinia/nuxt": "^0.7.0",
     "@primevue/themes": "^4.2.2",
-    "@sfxcode/formkit-primevue-nuxt": "^1.1.7",
+    "@sfxcode/formkit-primevue-nuxt": "^1.2.2",
     "@tiptap/extension-highlight": "^2.9.1",
     "@tiptap/extension-text-align": "^2.9.1",
     "@tiptap/extension-text-style": "^2.9.1",
@@ -55,6 +55,7 @@
     "unstorage": "^1.13.1",
     "vitest": "^2.1.5",
     "vue-sidebar-menu": "^5.4.2"
+
   },
   "packageManager": "pnpm@9.13.2+sha256.ccce81bf7498c5f0f80e31749c1f8f03baba99d168f64590fc7e13fad3ea1938"
 }
