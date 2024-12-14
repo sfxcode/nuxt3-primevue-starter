@@ -17,7 +17,7 @@
     "test:unit": "vitest --run --reporter verbose",
     "test:coverage": "vitest run --coverage",
     "postinstall": "nuxt prepare",
-    "release": "npm run lint && npm run build && changelogen --patch --release && git push --follow-tags"
+    "release": "npm run lint && npm run build && changelogen --minor --release && git push --follow-tags"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.12.0",
@@ -33,7 +33,7 @@
     "@nuxt/test-utils": "^3.15.1",
     "@pinia/nuxt": "^0.9.0",
     "@primevue/themes": "^4.2.5",
-    "@sfxcode/formkit-primevue-nuxt": "^1.2.5",
+    "@sfxcode/formkit-primevue-nuxt": "^1.2.6",
     "@tiptap/extension-highlight": "^2.10.3",
     "@tiptap/extension-text-align": "^2.10.3",
     "@tiptap/extension-text-style": "^2.10.3",

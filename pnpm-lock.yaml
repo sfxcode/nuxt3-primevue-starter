@@ -48,8 +48,8 @@ importers:
         specifier: ^4.2.5
         version: 4.2.5
       '@sfxcode/formkit-primevue-nuxt':
-        specifier: ^1.2.5
-        version: 1.2.5(@babel/parser@7.26.3)(esbuild@0.23.1)(magicast@0.3.5)(rollup@4.28.1)(unocss@0.65.1(@unocss/webpack@0.65.1(rollup@4.28.1)(webpack@5.94.0(esbuild@0.23.1)))(postcss@8.4.49)(rollup@4.28.1)(vite@5.4.11(@types/node@22.10.2)(sass@1.78.0)(terser@5.37.0))(vue@3.5.13(typescript@5.6.3)))(vite@5.4.11(@types/node@22.10.2)(sass@1.78.0)(terser@5.37.0))(vue@3.5.13(typescript@5.6.3))(webpack@5.94.0(esbuild@0.23.1))
+        specifier: ^1.2.6
+        version: 1.2.6(@babel/parser@7.26.3)(esbuild@0.23.1)(magicast@0.3.5)(rollup@4.28.1)(unocss@0.65.1(@unocss/webpack@0.65.1(rollup@4.28.1)(webpack@5.94.0(esbuild@0.23.1)))(postcss@8.4.49)(rollup@4.28.1)(vite@5.4.11(@types/node@22.10.2)(sass@1.78.0)(terser@5.37.0))(vue@3.5.13(typescript@5.6.3)))(vite@5.4.11(@types/node@22.10.2)(sass@1.78.0)(terser@5.37.0))(vue@3.5.13(typescript@5.6.3))(webpack@5.94.0(esbuild@0.23.1))
       '@tiptap/extension-highlight':
         specifier: ^2.10.3
         version: 2.10.3(@tiptap/core@2.10.3(@tiptap/pm@2.10.3))
@@ -1495,8 +1495,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@sfxcode/formkit-primevue-nuxt@1.2.5':
-    resolution: {integrity: sha512-/RA10R8MgTRmHQGmWF5tqlv8VPl9YM98XKWfgJsdwbxM4hxfi5WwWlgsIxwaE2iM9eeg9y0dUiPZk3XgsTbqlA==}
+  '@sfxcode/formkit-primevue-nuxt@1.2.6':
+    resolution: {integrity: sha512-TYaTocLxfSUP+KxIfwGjfTmh3ppoB+KZ2PXEBEdda/30B7/gSQkvv7ggUBQ98k9kRxPTZ8DK/mJPj1BfRs9URA==}
 
   '@sfxcode/formkit-primevue@2.7.0':
     resolution: {integrity: sha512-zQi0LQpZP8i7/bCaxyNkSB1zWv/zcYt3lAv/IoJ/fJw146+VI1vpfHk+ewFYiyLF4Kj5gxrzNLZxERSQcfiTOw==}
@@ -7678,7 +7678,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.28.1':
     optional: true
 
-  '@sfxcode/formkit-primevue-nuxt@1.2.5(@babel/parser@7.26.3)(esbuild@0.23.1)(magicast@0.3.5)(rollup@4.28.1)(unocss@0.65.1(@unocss/webpack@0.65.1(rollup@4.28.1)(webpack@5.94.0(esbuild@0.23.1)))(postcss@8.4.49)(rollup@4.28.1)(vite@5.4.11(@types/node@22.10.2)(sass@1.78.0)(terser@5.37.0))(vue@3.5.13(typescript@5.6.3)))(vite@5.4.11(@types/node@22.10.2)(sass@1.78.0)(terser@5.37.0))(vue@3.5.13(typescript@5.6.3))(webpack@5.94.0(esbuild@0.23.1))':
+  '@sfxcode/formkit-primevue-nuxt@1.2.6(@babel/parser@7.26.3)(esbuild@0.23.1)(magicast@0.3.5)(rollup@4.28.1)(unocss@0.65.1(@unocss/webpack@0.65.1(rollup@4.28.1)(webpack@5.94.0(esbuild@0.23.1)))(postcss@8.4.49)(rollup@4.28.1)(vite@5.4.11(@types/node@22.10.2)(sass@1.78.0)(terser@5.37.0))(vue@3.5.13(typescript@5.6.3)))(vite@5.4.11(@types/node@22.10.2)(sass@1.78.0)(terser@5.37.0))(vue@3.5.13(typescript@5.6.3))(webpack@5.94.0(esbuild@0.23.1))':
     dependencies:
       '@formkit/nuxt': 1.6.9(esbuild@0.23.1)(magicast@0.3.5)(rollup@4.28.1)(unocss@0.65.1(@unocss/webpack@0.65.1(rollup@4.28.1)(webpack@5.94.0(esbuild@0.23.1)))(postcss@8.4.49)(rollup@4.28.1)(vite@5.4.11(@types/node@22.10.2)(sass@1.78.0)(terser@5.37.0))(vue@3.5.13(typescript@5.6.3)))(vite@5.4.11(@types/node@22.10.2)(sass@1.78.0)(terser@5.37.0))(vue@3.5.13(typescript@5.6.3))(webpack@5.94.0(esbuild@0.23.1))
       '@nuxt/kit': 3.14.1592(magicast@0.3.5)(rollup@4.28.1)
