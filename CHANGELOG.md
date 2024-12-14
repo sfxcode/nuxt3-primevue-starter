@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.2.0
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.1.10...v2.2.0)
+
+### 🏡 Chore
+
+- **package:** Update to formkit-primevue-nuxt module 1.2.6 ([8c6483e](https://github.com/sfxcode/nuxt3-primevue-starter/commit/8c6483e))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v2.1.10
 
 [compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.1.9...v2.1.10)
