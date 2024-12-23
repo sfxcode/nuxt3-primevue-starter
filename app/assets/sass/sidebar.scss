@@ -41,7 +41,7 @@ $item-padding: 8px 14px ;
 $icon-height: 32px ;
 $icon-width: 32px ;
 
-@import "vue-sidebar-menu/src/scss/vue-sidebar-menu.scss";
+@use "vue-sidebar-menu/src/scss/vue-sidebar-menu.scss";
 
 .v-sidebar-menu hr {
   margin-bottom: 8px;
