@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v2.2.1
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.0...v2.2.1)
+
+### 🏡 Chore
+
+- **release:** Reset to patch releases ([4161712](https://github.com/sfxcode/nuxt3-primevue-starter/commit/4161712))
+- **dependencies:** Update nuxt i18n to v9 #44 ([#44](https://github.com/sfxcode/nuxt3-primevue-starter/issues/44))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v2.2.0
 
 [compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.1.10...v2.2.0)
