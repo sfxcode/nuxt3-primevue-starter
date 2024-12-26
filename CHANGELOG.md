@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.2.2
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.1...v2.2.2)
+
+### 🏡 Chore
+
+- **update:** Nuxt 3.15 ([b84abdb](https://github.com/sfxcode/nuxt3-primevue-starter/commit/b84abdb))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v2.2.1
 
 [compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.0...v2.2.1)
