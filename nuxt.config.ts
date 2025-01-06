@@ -5,6 +5,10 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
+  experimental: {
+    appManifest: false,
+  },
+
   compatibilityDate: '2024-07-04',
 
   ssr: true,
