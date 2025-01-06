@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.2.4
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.3...v2.2.4)
+
+### 💅 Refactors
+
+- **sidebar:** Set collapsed width to 60 px ([bd338d2](https://github.com/sfxcode/nuxt3-primevue-starter/commit/bd338d2))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v2.2.3
 
 [compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.2...v2.2.3)
