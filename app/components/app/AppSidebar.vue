@@ -36,7 +36,7 @@ onMounted(() => {
       :menu="menu"
       :show-one-child="true"
       width="180px"
-      width-collapsed="50px"
+      width-collapsed="60px"
       @update:collapsed="onToggleCollapse"
       @item-click="onItemClick"
     >
