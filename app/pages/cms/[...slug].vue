@@ -1,30 +1,22 @@
-<script setup lang='ts'>
+<script lang="ts" setup>
 const route = useRoute()
-const slug = route.params.slug?.toString()
+const path = route.path.replace('/cms', '')
+const { data: page } = await useAsyncData('page-' + path, () => {
+  return queryCollection('content').path(path).first()
+})
 </script>
 
 <template>
-  <div class="markdown">
-    <ContentDoc :path="slug">
-      <template #default="{ doc }">
-        <div class="card">
-          <h2>{{ doc.title }}</h2>
-          <p>{{ doc.description }}</p>
-          <p class="font-bold">
-            Author: {{ doc.author }}
-          </p>
-          <hr>
-          <ContentRenderer :value="doc" />
-        </div>
-      </template>
-      <!-- Slot if document is not found -->
-      <template #not-found>
-        <h1 class="text-2xl">
-          Content Page ({{ slug }}) not found
-        </h1>
-      </template>
-    </contentdoc>
+  <div class="card">
+    <h2>{{ page?.title }}</h2>
+    <p>{{ page?.description }}</p>
+    <p class="font-bold">
+      Author: {{ page?.meta.author }}
+    </p>
+    <hr>
+
+    <ContentRenderer v-if="page" :value="page" />
+
+    <footer><!-- ... --></footer>
   </div>
 </template>
-
-<style scoped></style>

@@ -35,10 +35,14 @@ export default defineNuxtConfig({
   ],
   content: {
     highlight: {
-      theme: 'one-dark-pro',
-      preload: ['json', 'js', 'ts', 'html', 'css', 'vue'],
-    },
-    // Options
+      theme: {
+        // Default theme (same as single string)
+        default: 'github-light',
+        // Theme used if `html.dark`
+        dark: 'github-dark',
+
+      }
+    }
   },
 
   i18n: {

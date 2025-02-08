@@ -34,7 +34,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       <AdvertiseBox header="Nuxt 3.14.x (Nuxt 4 ready)" icon="prime-check-circle" color="green-400">
         <ExternalLink href="https://nuxt.com/" text="Nuxt" /> with Pages, Layouts, ...
       </AdvertiseBox>
-      <AdvertiseBox header="Nuxt Content 2.13.x" icon="prime-check-circle" color="green-400">
+      <AdvertiseBox header="Nuxt Content 3.1.x" icon="prime-check-circle" color="green-400">
         <ExternalLink href="https://content.nuxt.com/" text="Content" />: Markdown, YML, CSV or JSON and MDC Syntax
       </AdvertiseBox>
       <AdvertiseBox header="Nuxt Modules" icon="prime-check-circle" color="green-600">
