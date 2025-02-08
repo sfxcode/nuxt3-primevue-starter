@@ -1,6 +1,35 @@
 # Changelog
 
 
+## v2.2.6
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.5...v2.2.6)
+
+### 🚀 Enhancements
+
+- **content:** Move toNuxt Content 3.1 ([b9022fc](https://github.com/sfxcode/nuxt3-primevue-starter/commit/b9022fc))
+- **content:** Move toNuxt Content 3.1 ([3f808d0](https://github.com/sfxcode/nuxt3-primevue-starter/commit/3f808d0))
+
+### 💅 Refactors
+
+- **gitignore:** Add more items ([89d3786](https://github.com/sfxcode/nuxt3-primevue-starter/commit/89d3786))
+
+### 📖 Documentation
+
+- Use actual Nuxt Version ([516119d](https://github.com/sfxcode/nuxt3-primevue-starter/commit/516119d))
+
+### 🏡 Chore
+
+- **dependencies:** Update all dependencies - Nuxt 3.15.4 ([a658d48](https://github.com/sfxcode/nuxt3-primevue-starter/commit/a658d48))
+
+### 🎨 Styles
+
+- **Sidebar:** Change width ([9f77310](https://github.com/sfxcode/nuxt3-primevue-starter/commit/9f77310))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v2.2.5
 
 [compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.4...v2.2.5)
