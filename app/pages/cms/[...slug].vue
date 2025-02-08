@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 const route = useRoute()
 const path = route.path.replace('/cms', '')
-const { data: page } = await useAsyncData('page-' + path, () => {
+const { data: page } = await useAsyncData(`page-${path}`, () => {
   return queryCollection('content').path(path).first()
 })
 </script>
