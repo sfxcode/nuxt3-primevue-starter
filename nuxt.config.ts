@@ -1,4 +1,4 @@
-import Aura from '@primevue/themes/aura'
+import Aura from '@primeuix/themes/aura'
 import pkg from './package.json'
 
 export default defineNuxtConfig({
