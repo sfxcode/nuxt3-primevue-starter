@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.2.8
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.7...v2.2.8)
+
+### 🏡 Chore
+
+- **dependencies:** Update to primevue 4.3.0 (within latest formkit-primevue-nuxt) and use @primeuix/themes instead of @primevue/themes ([d36f360](https://github.com/sfxcode/nuxt3-primevue-starter/commit/d36f360))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](http://github.com/sfxcode))
+
 ## v2.2.7
 
 [compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.6...v2.2.7)
