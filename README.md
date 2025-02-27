@@ -22,7 +22,7 @@ THX to [antfu / Vitesse Nuxt3](https://github.com/antfu/vitesse-nuxt3) for start
 - [TipTap](https://tiptap.dev) - Headless Editor
 - [Vitest](https://vitest.dev/) - Blazing Fast Unit Test Framework ([Getting started](https://vitest.dev/guide))
 
-## Nuxt Modules (included in formkit-prinevue-nuxt)
+## Nuxt Modules (included in formkit-primevue-nuxt)
 
 - [FormKit-PrimeVue-Nuxt](https://github.com/sfxcode/formkit-primevue-nuxt) - FormKit PrimeVue Nuxt Module
 - [PrimeVue-Nuxt](https://primevue.org/nuxt/) PrimeVue UI Framework
