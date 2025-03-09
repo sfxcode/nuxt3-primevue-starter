@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v2.2.9
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.8...v2.2.9)
+
+### 🩹 Fixes
+
+- **typo:** Update README.md ([4a86ba4](https://github.com/sfxcode/nuxt3-primevue-starter/commit/4a86ba4))
+- **linting:** Fix warnings ([7413309](https://github.com/sfxcode/nuxt3-primevue-starter/commit/7413309))
+
+### 🏡 Chore
+
+- **dependencies:** Update all dependencies ([7ba382d](https://github.com/sfxcode/nuxt3-primevue-starter/commit/7ba382d))
+- **dependencies:** Update all dependencies - Nuxt 3.16.0 ([ff4b942](https://github.com/sfxcode/nuxt3-primevue-starter/commit/ff4b942))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v2.2.8
 
 [compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.7...v2.2.8)
