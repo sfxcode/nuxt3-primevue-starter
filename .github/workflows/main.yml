@@ -1,4 +1,5 @@
 name: ci
+
 on:
   push:
     branches:
@@ -6,43 +7,34 @@ on:
   pull_request:
     branches:
       - main
+
 jobs:
-  cache-and-install:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - uses: pnpm/action-setup@v4
-        name: Install pnpm
-        with:
-          run_install: false
-
-      - name: Install Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - run: npm i -g --force corepack && corepack enable
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
+          cache: "pnpm"
 
-      - name: Get pnpm store directory
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+      - run: pnpm build
+      - run: pnpm lint
 
-      - uses: actions/cache@v4
-        name: Setup pnpm cache
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm i -g --force corepack && corepack enable
+      - uses: actions/setup-node@v4
         with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+          node-version: 20
+          cache: "pnpm"
 
-      - name: Install dependencies
-        run: pnpm install
+      - run: pnpm build
 
-      - name: Run Build
-        run: pnpm build
-
-      - name: Run unit tests
-        run: pnpm run test:unit
+      - name: Test
+        run: pnpm test:unit
