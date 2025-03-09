@@ -7,7 +7,6 @@ import { Editor, EditorContent } from '@tiptap/vue-3'
 const props = defineProps({
   modelValue: {
     type: String,
-    default: '',
     required: true,
   },
   editable: {

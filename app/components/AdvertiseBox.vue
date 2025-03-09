@@ -2,12 +2,10 @@
 defineProps({
   header: {
     type: String,
-    default: null,
     required: true,
   },
   icon: {
     type: String,
-    default: null,
     required: true,
   },
   color: {
