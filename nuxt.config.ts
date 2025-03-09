@@ -8,6 +8,7 @@ export default defineNuxtConfig({
   experimental: {
     appManifest: false,
   },
+  debug: false,
 
   compatibilityDate: '2024-07-04',
 
@@ -54,7 +55,7 @@ export default defineNuxtConfig({
       { code: 'en', file: 'en.json', name: 'English' },
       { code: 'de', file: 'de.json', name: 'German' },
     ],
-    vueI18n: './vue-i18n.options.ts',
+    vueI18n: '../vue-i18n.options.ts',
   },
   formkitPrimevue: {
     includePrimeIcons: true,
