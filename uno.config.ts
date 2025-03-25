@@ -10,7 +10,7 @@ import {
 } from 'unocss'
 
 function convert(color: string) {
-  return `color-mix(in srgb, ${color} calc(100% * <alpha-value>), transparent)`
+  return `color-mix(in srgb, ${color} 100%, transparent)`
 }
 
 export default defineConfig({

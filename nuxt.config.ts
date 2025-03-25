@@ -4,27 +4,6 @@ import pkg from './package.json'
 export const wrappedPrimeInputs: string[] = ['AutoComplete', 'CascadeSelect', 'Checkbox', 'Chip', 'ColorPicker', 'DatePicker', 'Editor', 'InputMask', 'InputNumber', 'InputOtp', 'InputText', 'Knob', 'Listbox', 'MultiSelect', 'Password', 'RadioButton', 'Rating', 'Select', 'SelectButton', 'Slider', 'Textarea', 'ToggleButton', 'ToggleSwitch', 'TreeSelect']
 
 export default defineNuxtConfig({
-  future: {
-    compatibilityVersion: 4,
-  },
-  experimental: {
-    appManifest: false,
-  },
-  debug: false,
-
-  compatibilityDate: '2024-07-04',
-
-  ssr: true,
-  devtools: { enabled: true },
-
-  runtimeConfig: {
-    public: {
-      APP_VERSION: pkg.version,
-      APP_NAME: pkg.name,
-      // eslint-disable-next-line node/prefer-global/process
-      APP_MODE: process.env?.NODE_ENV,
-    },
-  },
 
   modules: [
     '@pinia/nuxt',
@@ -37,6 +16,9 @@ export default defineNuxtConfig({
     '@sfxcode/formkit-primevue-nuxt',
     '@unocss/nuxt',
   ],
+
+  ssr: true,
+  devtools: { enabled: true },
   content: {
     highlight: {
       theme: {
@@ -47,6 +29,48 @@ export default defineNuxtConfig({
 
       },
     },
+  },
+
+  runtimeConfig: {
+    public: {
+      APP_VERSION: pkg.version,
+      APP_NAME: pkg.name,
+      // eslint-disable-next-line node/prefer-global/process
+      APP_MODE: process.env?.NODE_ENV,
+    },
+  },
+
+  build: {
+    transpile: ['nuxt', 'primevue', '@sfxcode/formkit-primevue'],
+  },
+
+  sourcemap: {
+    client: false,
+    server: false,
+  },
+  future: {
+    compatibilityVersion: 4,
+  },
+  experimental: {
+    appManifest: false,
+  },
+
+  compatibilityDate: '2024-07-04',
+  debug: false,
+
+  eslint: {
+    config: {
+      standalone: false,
+      nuxt: {
+        sortConfigKeys: true,
+      },
+    },
+  },
+  formkitPrimevue: {
+    includePrimeIcons: true,
+    includeStyles: true,
+    installFormKit: true,
+    installI18N: true,
   },
 
   i18n: {
@@ -63,12 +87,6 @@ export default defineNuxtConfig({
       optimizeTranslationDirective: false,
     },
   },
-  formkitPrimevue: {
-    includePrimeIcons: true,
-    includeStyles: true,
-    installFormKit: true,
-    installI18N: true,
-  },
   primevue: {
     autoImport: true,
     options: {
@@ -81,28 +99,9 @@ export default defineNuxtConfig({
       ripple: true,
     },
     components: {
-      exclude: [...wrappedPrimeInputs, 'Button', 'Form', 'FormField'],
+      exclude: [...wrappedPrimeInputs, 'Button', 'Form', 'FormField', 'Chart'],
     },
 
-  },
-
-  build: {
-    transpile: ['nuxt', 'primevue', '@sfxcode/formkit-primevue'],
-  },
-
-  eslint: {
-    config: {
-      standalone: false,
-      nuxt: {
-        sortConfigKeys: true,
-      },
-    },
-  },
-
-
-  sourcemap: {
-    client: false,
-    server: false,
   },
 
 })
