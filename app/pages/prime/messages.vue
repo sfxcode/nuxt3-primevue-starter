@@ -37,7 +37,7 @@ function doSomeDeleteAction(idToDelete: number) {
       <Button label="Trigger delete action with confirmation" class="p-button-danger" @click="confirmDelete(1, doSomeDeleteAction)" />
     </div>
     <h2>Messages</h2>
-    <div class="flex flex-row gap-4 flex-wrap">
+    <div class="flex flex-row flex-wrap gap-4">
       <Message severity="success">
         Success Message Content
       </Message>

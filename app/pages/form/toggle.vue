@@ -109,10 +109,10 @@ async function submitHandler() {
 </script>
 
 <template>
-  <div class="card  gap-10">
+  <div class="card gap-10">
     <div class="basis-1/2 md:basis-1/3">
       <h2>Data Edit</h2>
-      <div class="flex gap-2 mb-4">
+      <div class="mb-4 flex gap-2">
         Edit Mode  <ToggleSwitch v-model="edit" />
         Horizontal  <ToggleSwitch v-model="horizontal" />
       </div>

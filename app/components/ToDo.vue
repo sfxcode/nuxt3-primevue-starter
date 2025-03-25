@@ -15,7 +15,7 @@ defineProps({
         {{ text }}
       </div>
     </div>
-    <div class="pt-4 pl-1">
+    <div class="pl-1 pt-4">
       <slot />
     </div>
   </div>

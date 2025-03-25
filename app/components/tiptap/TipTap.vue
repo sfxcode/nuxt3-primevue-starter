@@ -208,7 +208,7 @@ onBeforeUnmount(() => {
         />
       </template>
     </Toolbar>
-    <EditorContent :editor="editor" class="p-tiptap p-inputtext" />
+    <EditorContent :editor="editor" class="p-inputtext p-tiptap" />
   </div>
 </template>
 
@@ -234,8 +234,8 @@ onBeforeUnmount(() => {
 }
 
 .p-tiptap :focus {
-  outline-offset:2px;
-  outline:2px solid transparent;
+  outline-offset: 2px;
+  outline: 2px solid transparent;
 }
 #bold {
   font-weight: 900;
@@ -246,6 +246,6 @@ onBeforeUnmount(() => {
 }
 
 #strike {
-  text-decoration:line-through;
+  text-decoration: line-through;
 }
 </style>

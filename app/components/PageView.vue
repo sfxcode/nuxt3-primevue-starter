@@ -5,8 +5,8 @@ const pageview = data.value?.pageview
 </script>
 
 <template>
-  <div class="text-gray:80 text-2xl">
-    <span font-500 text-gray>{{ pageview }}</span>
+  <div class="text-2xl text-gray:80">
+    <span text-gray font-500>{{ pageview }}</span>
     page views since
     <span text-gray>{{ time }}</span>
   </div>

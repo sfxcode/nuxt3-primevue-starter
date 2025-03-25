@@ -4,7 +4,7 @@ import {
   presetAttributify,
   presetIcons,
   presetTypography,
-  presetUno,
+  presetWind4,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -57,7 +57,7 @@ export default defineConfig({
 
   },
   presets: [
-    presetUno(),
+    presetWind4(),
     presetAttributify(),
     presetIcons(),
     presetTypography(),

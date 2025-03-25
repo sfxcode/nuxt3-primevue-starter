@@ -1,51 +1,19 @@
-$primary-color: var(--p-primary-color) ;
-$base-bg: #2a2a2e ;
-
-$item-color: #fff ;
-
-$item-active-color: null ;
-$item-active-bg: null ;
-$item-active-line-color: $primary-color ;
-
-$item-open-color: #fff ;
-$item-open-bg: $primary-color ;
-
-$item-hover-color: null ;
-$item-hover-bg: rgba(darken($base-bg, 5%), 0.5) ;
-
-$icon-color: null ;
-$icon-bg: darken($base-bg, 2%) ;
-
-$icon-active-color: null ;
-$icon-active-bg: null ;
-
-$icon-open-color: null ;
-$icon-open-bg: $item-open-bg ;
-
-$mobile-item-color: #fff ;
-$mobile-item-bg: $primary-color ;
-$mobile-icon-color: $mobile-item-color ;
-$mobile-icon-bg: $mobile-item-bg ;
-
-$dropdown-color: null ;
-$dropdown-bg: lighten($base-bg, 5%) ;
-
-$header-item-color: rgba($item-color, 0.7) ;
-
-$toggle-btn-color: $primary-color ;
-$toggle-btn-bg: darken($base-bg, 5%) ;
-
-$item-font-size: 14px ;
-$item-line-height: 18px ;
-$item-padding: 8px 14px ;
-$icon-height: 32px ;
-$icon-width: 32px ;
-
-@use "vue-sidebar-menu/src/scss/vue-sidebar-menu.scss";
+@use 'sass:color';
+@use 'vue-sidebar-menu/src/scss/vue-sidebar-menu.scss' with (
+  $primary-color: var(--p-primary-color),
+  $base-bg: #2a2a2e,
+  $item-color: #fff,
+  $item-active-color: var(--p-primary-color),
+  $item-font-size: 14px,
+  $item-line-height: 18px,
+  $item-padding: 8px 14px,
+  $icon-height: 32px,
+  $icon-width: 32px,
+);
 
 .v-sidebar-menu hr {
   margin-bottom: 8px;
-  background-color: $item-hover-bg;
+  background-color: rgba(color.adjust(#2a2a2e, $lightness: -5%), 0.5);
   border: 0 none;
   height: 0.1rem;
 }

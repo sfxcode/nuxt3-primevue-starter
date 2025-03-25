@@ -8,6 +8,45 @@ html {
   font-size: 16px;
 }
 
+body {
+  margin: 1rem;
+}
+
+// Header
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin: 1.5rem 0 1rem 0;
+  line-height: 1.2;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1;
+}
+h2 {
+  font-size: 1.25rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 1.125rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.875rem;
+}
+
 #workspace {
   padding-left: 200px;
   a {
@@ -40,16 +79,17 @@ html {
   color: var(--p-text-color);
   margin-bottom: 1rem;
   border-radius: $borderRadius;
-  box-shadow: 0 3px 5px rgba(0,0,0,.02), 0 0 2px rgba(0,0,0,.05), 0 1px 4px rgba(0,0,0,.08) !important;
+  box-shadow:
+    0 3px 5px rgba(0, 0, 0, 0.02),
+    0 0 2px rgba(0, 0, 0, 0.05),
+    0 1px 4px rgba(0, 0, 0, 0.08) !important;
 
   h2 {
     color: var(--p-primary-color);
   }
-
 }
 
-
-.p-tiptap  {
+.p-tiptap {
   strong {
     color: var(--p-primary-color);
   }

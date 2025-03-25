@@ -1,6 +1,8 @@
 import Aura from '@primeuix/themes/aura'
 import pkg from './package.json'
 
+export const wrappedPrimeInputs: string[] = ['AutoComplete', 'CascadeSelect', 'Checkbox', 'Chip', 'ColorPicker', 'DatePicker', 'Editor', 'InputMask', 'InputNumber', 'InputOtp', 'InputText', 'Knob', 'Listbox', 'MultiSelect', 'Password', 'RadioButton', 'Rating', 'Select', 'SelectButton', 'Slider', 'Textarea', 'ToggleButton', 'ToggleSwitch', 'TreeSelect']
+
 export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
@@ -42,8 +44,8 @@ export default defineNuxtConfig({
         // Theme used if `html.dark`
         dark: 'github-dark',
 
-      }
-    }
+      },
+    },
   },
 
   i18n: {
@@ -56,6 +58,9 @@ export default defineNuxtConfig({
       { code: 'de', file: 'de.json', name: 'German' },
     ],
     vueI18n: '../vue-i18n.options.ts',
+    bundle: {
+      optimizeTranslationDirective: false,
+    },
   },
   formkitPrimevue: {
     includePrimeIcons: true,
@@ -74,6 +79,10 @@ export default defineNuxtConfig({
       },
       ripple: true,
     },
+    components: {
+      exclude: [...wrappedPrimeInputs, 'Button', 'Form', 'FormField'],
+    },
+
   },
 
   build: {

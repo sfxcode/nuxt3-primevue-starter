@@ -4,15 +4,15 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
 
 <template>
   <div class="card surface-0 text-center">
-    <div class="mb-3 font-bold text-4xl">
+    <div class="mb-3 text-4xl font-bold">
       <span class="text-green-600">PrimeVue </span>
       <span class="text-blue-400"> & TypeScript</span>
       <span class="text-green-400"> & Nuxt 3</span>
     </div>
-    <h2 class="text-2xl pb-6">
+    <h2 class="pb-6 text-2xl">
       Starter for Vue.js Development with Nuxt 3.
     </h2>
-    <div class="grid grid-cols-2 lg:grid-cols-3 gap-2">
+    <div class="grid grid-cols-2 gap-2 lg:grid-cols-3">
       <AdvertiseBox header="PrimeVue 4.2.x" icon="prime-check-circle" color="green-600">
         Excellent <ExternalLink href="https://github.com/sfxcode/formkit-primevue" text="Component Library" /> for VUE
       </AdvertiseBox>

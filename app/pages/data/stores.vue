@@ -11,26 +11,26 @@ onMounted(async () => {
 <template>
   <div class="card">
     <h2>Store Settings</h2>
-    <h5 class="font-bold text-2xl mb-4">
+    <h5>
       Primevue Theme Store
     </h5>
-    <div class="grid grid-cols-2  gap-4">
+    <div class="gap-4 grid grid-cols-2">
       <div>Theme Name</div>
       <div>{{ themeStore.themeName }}</div>
       <div>Theme Color</div>
       <div>{{ themeStore.themeColor }}</div>
     </div>
 
-    <h5 class="font-bold text-2xl mb-4">
+    <h5>
       Data Store (Option Store)
     </h5>
     <span class="text-xs">Example of a Data Store</span>
-    <div class="grid grid-cols-2 mt-6 gap-4">
+    <div class="mt-6 gap-4 grid grid-cols-2">
       <div>Products</div>
       <div>{{ dataStore.products.length }}</div>
     </div>
 
-    <h5 class="font-bold text-2xl mb-4">
+    <h5>
       Counter Store (Setup Store)
     </h5>
     <span class="text-xs">Example of a Data Store</span>
@@ -50,6 +50,6 @@ onMounted(async () => {
 
 <style lang='scss' scoped>
 h5 {
-  color: var(--p-primary-color)
+  color: var(--p-primary-color);
 }
 </style>

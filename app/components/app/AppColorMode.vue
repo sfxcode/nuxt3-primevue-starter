@@ -32,9 +32,9 @@ watchEffect(() => mode.value = state.value)
 
 <style>
 html.cafe {
-    filter: sepia(0.9) hue-rotate(315deg) brightness(0.9);
+  filter: sepia(0.9) hue-rotate(315deg) brightness(0.9);
 }
 html.contrast {
-    filter: contrast(2);
+  filter: contrast(2);
 }
 </style>

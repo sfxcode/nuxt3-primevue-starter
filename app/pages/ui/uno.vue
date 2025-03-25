@@ -5,12 +5,12 @@ const config = useRuntimeConfig()
 <template>
   <div class="card">
     <h2>UnoCSS</h2>
-    <div h-full text-center flex select-none all:transition-400>
+    <div h-full flex select-none text-center all:transition-400>
       <div ma>
-        <div text-6xl font-bold fw100 animate-bounce-alt animate-count-infinite animate-5s>
+        <div animate-5s animate-bounce-alt animate-count-infinite text-6xl font-bold fw100>
           unocss
         </div>
-        <div dark:op30 text-lg fw300 m1>
+        <div m1 text-lg fw300 dark:op30>
           The instant on-demand Atomic CSS engine.
         </div>
         <div
@@ -22,9 +22,8 @@ const config = useRuntimeConfig()
           hover="op80"
         >
           <a
-            i-mdi-github-circle
-            text-inherit
-            text-8xl
+
+            i-mdi-github-circle text-8xl text-inherit
             href="https://github.com/antfu/unocss"
             target="_blank"
           />
@@ -32,12 +31,8 @@ const config = useRuntimeConfig()
       </div>
     </div>
     <div
-      bottom-5
-      right-0
-      left-0
-      text-center
-      dark:op30
-      fw300
+
+      bottom-5 left-0 right-0 text-center fw300 dark:op30
     >
       on-demand · instant · fully customizable
     </div>
@@ -51,7 +46,7 @@ const config = useRuntimeConfig()
           <span>Only visible in Development mode - click info icon below</span>
         </div>
         <a href="../__unocss" target="_blank">
-          <div class="i-mdi-information text-4xl text-green-600-500-500" />
+          <div class="i-mdi-information text-green-600-500-500 text-4xl" />
         </a>
         <article class="pt-4 text-base prose prose-truegray xl:text-xl">
           View, play and analyse rules and setup ...

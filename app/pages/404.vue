@@ -7,7 +7,7 @@ const router = useRouter()
     <div class="col-12 mt-10 text-center">
       <img src="/nuxt-logo.svg" alt="Nuxt logo" class="mb-5" style="width:81px; height:60px;">
     </div>
-    <main class="px-4 py-10 text-center text-teal-700 text-8xl">
+    <main class="px-4 py-10 text-center text-8xl text-teal-700">
       <div>
         <p class="text-8xl text-red-600">
           <span class="i-codicon-error inline-block" />
@@ -15,7 +15,7 @@ const router = useRouter()
       </div>
     </main>
     <div style="alignment: center">
-      <h1 class="font-bold text-5xl text-2xl text-center">
+      <h1 class="text-center text-2xl text-5xl font-bold">
         Page not found ...
       </h1>
       <div class="col-12 mt-5 text-center">

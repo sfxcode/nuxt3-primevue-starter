@@ -138,9 +138,9 @@ async function submitHandler() {
     <div class="basis-1/2 md:basis-1/3">
       <h2>Formkit-PrimeVue</h2>
       <div class="text-xl mt-12">
-        <h4>GitHub</h4>
+        <h3>GitHub</h3>
         <a href="https://github.com/sfxcode/formkit-primevue">formkit-primevue</a>
-        <h4>More examples</h4>
+        <h3>More examples</h3>
         <a href="https://formkit-primevue.netlify.app/">Formkit PrimeVue Demo</a>
       </div>
     </div>
