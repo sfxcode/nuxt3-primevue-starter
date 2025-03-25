@@ -17,7 +17,7 @@ defineProps({
 
 <template>
   <div class="mb-4 px-5">
-    <span class="shadow-2 mb-1 inline-block p-3" style="border-radius: 10px">
+    <span class="shadow-2 mb-1 p-3 inline-block" style="border-radius: 10px">
       <span :class="`text-2xl text-${color} i-${icon}`" />
     </span>
     <div :class="`mb-3 text-2xl text-${color}`">

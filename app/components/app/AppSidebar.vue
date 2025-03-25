@@ -51,7 +51,7 @@ onMounted(() => {
         </div>
       </template>
       <template #footer>
-        <div class="m-2 text-center text-xs text-color-primary">
+        <div class="text-xs text-color-primary m-2 text-center">
           <span v-if="!collapsed">PrimeVue-Nuxt Starter {{ config.public.APP_VERSION }}</span>
           <span v-if="collapsed">{{ config.public.APP_VERSION }}</span>
         </div>

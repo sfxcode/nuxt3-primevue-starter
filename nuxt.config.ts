@@ -31,6 +31,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt',
     '@nuxt/test-utils/module',
+    '@nuxt/eslint',
     '@nuxt/image',
     '@nuxt/fonts',
     '@sfxcode/formkit-primevue-nuxt',
@@ -88,6 +89,16 @@ export default defineNuxtConfig({
   build: {
     transpile: ['nuxt', 'primevue', '@sfxcode/formkit-primevue'],
   },
+
+  eslint: {
+    config: {
+      standalone: false,
+      nuxt: {
+        sortConfigKeys: true,
+      },
+    },
+  },
+
 
   sourcemap: {
     client: false,
