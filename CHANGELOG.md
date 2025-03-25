@@ -1,6 +1,27 @@
 # Changelog
 
 
+## v2.2.10
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.9...v2.2.10)
+
+### 🚀 Enhancements
+
+- **unocss:** Ues wind4 preset ([2cbb323](https://github.com/sfxcode/nuxt3-primevue-starter/commit/2cbb323))
+
+### 🏡 Chore
+
+- **linting:** Add nuxt linting rules ([89bcb34](https://github.com/sfxcode/nuxt3-primevue-starter/commit/89bcb34))
+- **build:** Fix warnings ([652551b](https://github.com/sfxcode/nuxt3-primevue-starter/commit/652551b))
+
+### 🎨 Styles
+
+- **home:** Fix shadow ([6620d7a](https://github.com/sfxcode/nuxt3-primevue-starter/commit/6620d7a))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v2.2.9
 
 [compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.8...v2.2.9)
