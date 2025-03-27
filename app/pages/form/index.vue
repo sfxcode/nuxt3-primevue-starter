@@ -128,7 +128,9 @@ async function submitHandler() {
 
       <div v-if="data" class="min-w-25rem">
         <FormKitDataEdit
-          :schema="schema" :data="data"
+          v-model="data"
+          :schema="schema"
+          :show-reset="true"
           :debug-schema="false" :debug-data="true"
           :submit-label="t('save')"
           @data-saved="submitHandler"
