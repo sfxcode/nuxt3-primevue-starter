@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v2.2.11
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.10...v2.2.11)
+
+### 💅 Refactors
+
+- **form:** Use v-model for data and enable reset button ([0bbb34b](https://github.com/sfxcode/nuxt3-primevue-starter/commit/0bbb34b))
+
+### 🏡 Chore
+
+- **linting:** Add eslint plugin format ([30b6ac5](https://github.com/sfxcode/nuxt3-primevue-starter/commit/30b6ac5))
+- **dependencies:** Update all dependencies - formkit-primevue-nuxt 1.3.0 ([83bf073](https://github.com/sfxcode/nuxt3-primevue-starter/commit/83bf073))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v2.2.10
 
 [compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.9...v2.2.10)
