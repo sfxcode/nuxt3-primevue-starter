@@ -40,7 +40,8 @@ export function useNavigationMenu() {
         title: 'Data',
         icon: 'pi pi-server',
         child: [
-          { href: '/data/stores', title: 'Stores' },
+          { href: '/data/stores', title: 'Pinia Stores' },
+          { href: '/data/colada', title: 'Pinia Colada' },
           { href: '/data/i18n', title: 'Localization' },
           { href: '/data/server', title: 'Server' },
         ],

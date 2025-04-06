@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@sfxcode/formkit-primevue-nuxt',
     '@unocss/nuxt',
+    '@pinia/colada-nuxt',
   ],
 
   ssr: true,
