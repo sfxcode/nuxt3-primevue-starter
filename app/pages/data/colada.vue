@@ -1,6 +1,5 @@
 <script setup lang='ts'>
 const { catsFacts } = useCatsStore()
-const { d } = useI18n()
 </script>
 
 <template>
