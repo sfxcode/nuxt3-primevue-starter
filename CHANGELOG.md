@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v2.2.12
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.11...v2.2.12)
+
+### 🚀 Enhancements
+
+- **pinia:** Add pinia-colada sample ([f84582f](https://github.com/sfxcode/nuxt3-primevue-starter/commit/f84582f))
+- **pinia:** Add pinia-colada sample ([f8ddf97](https://github.com/sfxcode/nuxt3-primevue-starter/commit/f8ddf97))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v2.2.11
 
 [compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.10...v2.2.11)
