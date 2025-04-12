@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.2.13
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.12...v2.2.13)
+
+### 🏡 Chore
+
+- **dependencies:** Update all dependencies ([a067b32](https://github.com/sfxcode/nuxt3-primevue-starter/commit/a067b32))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v2.2.12
 
 [compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.11...v2.2.12)
