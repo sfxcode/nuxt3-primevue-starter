@@ -20,18 +20,6 @@ export default defineNuxtConfig({
 
   ssr: true,
   devtools: { enabled: true },
-  content: {
-    highlight: {
-      theme: {
-        // Default theme (same as single string)
-        default: 'github-light',
-        // Theme used if `html.dark`
-        dark: 'github-dark',
-
-      },
-    },
-  },
-
   runtimeConfig: {
     public: {
       APP_VERSION: pkg.version,
