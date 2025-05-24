@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v2.2.14
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.13...v2.2.14)
+
+### 🩹 Fixes
+
+- **actions:** Better-sqlite3 ([36b441e](https://github.com/sfxcode/nuxt3-primevue-starter/commit/36b441e))
+- **store:** New defineStore syntax ([89a883d](https://github.com/sfxcode/nuxt3-primevue-starter/commit/89a883d))
+
+### 🏡 Chore
+
+- **dependencies:** Update to primevue 4.3.4 ([44e92de](https://github.com/sfxcode/nuxt3-primevue-starter/commit/44e92de))
+- **dependencies:** Update all dependencies ([1724627](https://github.com/sfxcode/nuxt3-primevue-starter/commit/1724627))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v2.2.13
 
 [compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.12...v2.2.13)
