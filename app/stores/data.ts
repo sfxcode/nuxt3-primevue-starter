@@ -1,8 +1,7 @@
 import { consola } from 'consola'
 import { acceptHMRUpdate, defineStore } from 'pinia'
 
-export const useDataStore = defineStore({
-  id: 'data',
+export const useDataStore = defineStore('data', {
 
   state: () => ({
     appVersion: useRuntimeConfig().public.APP_VERSION,
@@ -19,8 +18,7 @@ export const useDataStore = defineStore({
     },
   },
 
-},
-)
+})
 
 if (import.meta.hot)
   import.meta.hot.accept(acceptHMRUpdate(useDataStore, import.meta.hot))
