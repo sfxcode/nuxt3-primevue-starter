@@ -7,7 +7,7 @@ const config = useRuntimeConfig()
     <h2>UnoCSS</h2>
     <div text-center flex h-full select-none all:transition-400>
       <div ma>
-        <div animate-5s text-6xl font-bold fw100 animate-bounce-alt animate-count-infinite>
+        <div animate-5s text-6xl fw100 font-bold animate-bounce-alt animate-count-infinite>
           unocss
         </div>
         <div text-lg fw300 m1 dark:op30>

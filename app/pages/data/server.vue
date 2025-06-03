@@ -11,7 +11,7 @@ const count = useCounter()
     <h2>Counter (useState)</h2>
 
     <div class="mt-8 grid grid-cols-3 w-80">
-      <Button icon="pi pi-plus" class="p-button-rounded p-button-info" @click="count.inc()" />
+      <Button icon="pi pi-plus" class="p-button-info p-button-rounded" @click="count.inc()" />
       <span class="text-4xl">{{ count.count }}</span>
       <Button icon="pi pi-minus" class="p-button-rounded p-button-success" @click="count.dec()" />
     </div>
