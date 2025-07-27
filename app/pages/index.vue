@@ -34,7 +34,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       <AdvertiseBox header="Nuxt 3.17.x (Nuxt 4 ready)" icon="prime-check-circle" color="green-400">
         <ExternalLink href="https://nuxt.com/" text="Nuxt" /> with Pages, Layouts, ...
       </AdvertiseBox>
-      <AdvertiseBox header="Nuxt Content 3.5.x" icon="prime-check-circle" color="green-400">
+      <AdvertiseBox header="Nuxt Content 3.6.x" icon="prime-check-circle" color="green-400">
         <ExternalLink href="https://content.nuxt.com/" text="Content" />: Markdown, YML, CSV or JSON and MDC Syntax
       </AdvertiseBox>
       <AdvertiseBox header="Nuxt Modules" icon="prime-check-circle" color="green-600">
@@ -46,7 +46,7 @@ import AdvertiseBox from '@/components/AdvertiseBox.vue'
       <AdvertiseBox header="Pinia 2.x" icon="prime-check-circle" color="blue-400">
         <ExternalLink href="https://pinia.vuejs.org/" text="Pinia (Colada)" />: Vue Store Implementation
       </AdvertiseBox>
-      <AdvertiseBox header="TipTap" icon="prime-check-circle" color="green-600">
+      <AdvertiseBox header="TipTap 3.x" icon="prime-check-circle" color="green-600">
         <ExternalLink href="https://tiptap.dev/" text="TipTap" /> Editor
       </AdvertiseBox>
       <AdvertiseBox header="Vue Sidebar" icon="prime-check-circle" color="green-600">
