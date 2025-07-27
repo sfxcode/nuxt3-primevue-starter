@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v2.2.15
+
+[compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.14...v2.2.15)
+
+### 🏡 Chore
+
+- **dependencies:** Update all dependencies ([4d3dd88](https://github.com/sfxcode/nuxt3-primevue-starter/commit/4d3dd88))
+- **dependencies:** Update all dependencies - latest sfxcode formkit included ([3fa5f4b](https://github.com/sfxcode/nuxt3-primevue-starter/commit/3fa5f4b))
+- **linting:** Fix errors ([0021947](https://github.com/sfxcode/nuxt3-primevue-starter/commit/0021947))
+- **dependencies:** Update all dependencies ([312eb92](https://github.com/sfxcode/nuxt3-primevue-starter/commit/312eb92))
+- **dependencies:** Update devDependencies to latest versions ([2d9c2f9](https://github.com/sfxcode/nuxt3-primevue-starter/commit/2d9c2f9))
+- **docs:** Update Nuxt Content and TipTap versions in index.vue ([3c7cd49](https://github.com/sfxcode/nuxt3-primevue-starter/commit/3c7cd49))
+- **config:** Rename vue-i18n.options.ts to i18n.config.ts and update wrappedPrimeInputs ([bc2d902](https://github.com/sfxcode/nuxt3-primevue-starter/commit/bc2d902))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v2.2.14
 
 [compare changes](https://github.com/sfxcode/nuxt3-primevue-starter/compare/v2.2.13...v2.2.14)
