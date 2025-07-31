@@ -18,7 +18,7 @@
     "test:ci": "vitest --run --reporter verbose --exclude \"**/app.test.ts\"",
     "test:coverage": "vitest run --coverage",
     "postinstall": "nuxt prepare",
-    "release": "npm run lint && npm run build && changelogen --minor --release && git push --follow-tags"
+    "release": "npm run lint && npm run build && changelogen --patch --release && git push --follow-tags"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^5.0.0",
