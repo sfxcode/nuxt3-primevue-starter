@@ -15,7 +15,7 @@
     "lint:fix": "eslint --fix ./app",
     "test:ui": "vitest --ui",
     "test:unit": "vitest --run --reporter verbose",
-    "test:ci": "vitest --run --reporter verbose --exclude \"**/app.test.ts\"",
+    "test:ci": "vitest --run --reporter verbose",
     "test:coverage": "vitest run --coverage",
     "postinstall": "nuxt prepare",
     "release": "npm run lint && npm run build && changelogen --patch --release && git push --follow-tags"
